@@ -104,7 +104,7 @@ namespace Tasky.Web.Controllers
 
             if (userId == null || token == null)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Index");
             }
 
             var usuario = await _userManager.FindByIdAsync(userId);
@@ -117,7 +117,7 @@ namespace Tasky.Web.Controllers
             var resultado = await _userManager.ConfirmEmailAsync(usuario, token);
             if (resultado.Succeeded)
             {
-                return View("Login", "Index");
+                return RedirectToAction("Index", "Login");
             } else
             {
                 ModelState.AddModelError(string.Empty, "Error al confirmar el correo electrónico.");

@@ -69,3 +69,4 @@ C:\Users\44729038\source\repos\Tasky\Tasky.Web\obj\Debug\net6.0\refint\Tasky.Web
 C:\Users\44729038\source\repos\Tasky\Tasky.Web\obj\Debug\net6.0\Tasky.Web.pdb
 C:\Users\44729038\source\repos\Tasky\Tasky.Web\obj\Debug\net6.0\Tasky.Web.genruntimeconfig.cache
 C:\Users\44729038\source\repos\Tasky\Tasky.Web\obj\Debug\net6.0\ref\Tasky.Web.dll
+C:\Users\44729038\source\repos\Tasky\Tasky.Web\obj\Debug\net6.0\Tasky.Web.sourcelink.json

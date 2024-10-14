@@ -13,3 +13,4 @@ C:\Users\44729038\source\repos\Tasky\Tasky.Logica\obj\Debug\net6.0\Tasky.Logica.
 C:\Users\44729038\source\repos\Tasky\Tasky.Logica\obj\Debug\net6.0\refint\Tasky.Logica.dll
 C:\Users\44729038\source\repos\Tasky\Tasky.Logica\obj\Debug\net6.0\Tasky.Logica.pdb
 C:\Users\44729038\source\repos\Tasky\Tasky.Logica\obj\Debug\net6.0\ref\Tasky.Logica.dll
+C:\Users\44729038\source\repos\Tasky\Tasky.Logica\obj\Debug\net6.0\Tasky.Logica.sourcelink.json

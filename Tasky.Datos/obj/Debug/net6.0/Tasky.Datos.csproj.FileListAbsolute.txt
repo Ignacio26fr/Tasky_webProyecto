@@ -12,3 +12,4 @@ C:\Users\44729038\source\repos\Tasky\Tasky.Datos\obj\Debug\net6.0\refint\Tasky.D
 C:\Users\44729038\source\repos\Tasky\Tasky.Datos\obj\Debug\net6.0\Tasky.Datos.pdb
 C:\Users\44729038\source\repos\Tasky\Tasky.Datos\obj\Debug\net6.0\Tasky.Datos.genruntimeconfig.cache
 C:\Users\44729038\source\repos\Tasky\Tasky.Datos\obj\Debug\net6.0\ref\Tasky.Datos.dll
+C:\Users\44729038\source\repos\Tasky\Tasky.Datos\obj\Debug\net6.0\Tasky.Datos.sourcelink.json
