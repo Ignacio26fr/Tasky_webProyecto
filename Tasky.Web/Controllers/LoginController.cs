@@ -75,9 +75,9 @@ namespace Tasky.Web.Controllers
 
                 if (resultado.Succeeded)
                 {
-                    Console.WriteLine($"Nuevo usuario creado con ID: {identity.Id}");
+                    //Aca podria activar la doble autenticacion
+                    await _userManager.SetTwoFactorEnabledAsync(identity, false);
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(identity);
-                    
                     var callbackUrl = Url.Action("ConfirmarEmail", "Login",
                 new { userId = identity.Id, token = token }, Request.Scheme);
 
@@ -129,6 +129,34 @@ namespace Tasky.Web.Controllers
         public IActionResult Verificar()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Ingresar(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+
+                if (user.EmailConfirmed)
+                {
+                    var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Fallo el ingreso verifique las credenciales");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Por favor verifica tu correo electrónico.");
+                }
+            }
+            return View("Login", model);
         }
 
 
