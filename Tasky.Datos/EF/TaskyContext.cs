@@ -11,6 +11,10 @@ namespace Tasky.Datos.EF
         {
         }
 
+        public TaskyContext() : base(new DbContextOptions<TaskyContext>())
+        {
+        }
+
         public virtual DbSet<Actividad> Actividades { get; set; } = null!;
         public virtual DbSet<Categoria> Categorias { get; set; } = null!;
         public virtual DbSet<Perfil> Perfiles { get; set; } = null!;
