@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Logica\\Tasky.Logica.csproj": {}
+    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Datos\\Tasky.Datos.csproj": {
+    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Datos\\Tasky.Datos.csproj",
+        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
         "projectName": "Tasky.Datos",
-        "projectPath": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Datos\\Tasky.Datos.csproj",
+        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
         "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Datos\\obj\\",
+        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Logica\\Tasky.Logica.csproj": {
+    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Logica\\Tasky.Logica.csproj",
+        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
         "projectName": "Tasky.Logica",
-        "projectPath": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Logica\\Tasky.Logica.csproj",
+        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
         "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Logica\\obj\\",
+        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,8 +112,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Datos\\Tasky.Datos.csproj": {
-                "projectPath": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Datos\\Tasky.Datos.csproj"
+              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
               }
             }
           }

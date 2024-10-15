@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8NzT5YI0BGQ=",
+  "dgSpecHash": "QyaDfqSdCpM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\44729038\\source\\repos\\Tasky\\Tasky.Logica\\Tasky.Logica.csproj",
+  "projectFilePath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\44729038\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\44729038\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

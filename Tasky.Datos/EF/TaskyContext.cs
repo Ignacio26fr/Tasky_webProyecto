@@ -23,7 +23,7 @@ namespace Tasky.Datos.EF
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            modelBuilder.Entity<Usuario>().ToTable("Usuario");
 
             modelBuilder.Entity<Categoria>(entity =>
             {

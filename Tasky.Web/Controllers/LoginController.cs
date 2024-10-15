@@ -68,7 +68,9 @@ namespace Tasky.Web.Controllers
                     Nombre = model.Nombre,
                     UserName = model.Email,
                     Email = model.Email,
+                    NormalizedEmail = model.Email,
                     IdPerfil = 1
+                    //Falta agregar el telefono para la dobleauth
 
                 };
                 var resultado = await _userManager.CreateAsync(identity, model.Password);
@@ -138,7 +140,14 @@ namespace Tasky.Web.Controllers
             {
                 var user = await _userManager.FindByEmailAsync(model.Email);
 
-                if (user.EmailConfirmed)
+                if(user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "El usuario no existe o el email es incorrecto.");
+                    return View("Login", model);
+                }
+
+                Console.WriteLine(user.EmailConfirmed);
+                if (user.EmailConfirmed )
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
 
@@ -157,6 +166,13 @@ namespace Tasky.Web.Controllers
                 }
             }
             return View("Login", model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Salir()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
         }
 
 
