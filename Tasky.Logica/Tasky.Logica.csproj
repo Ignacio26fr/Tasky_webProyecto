@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Tasky.Datos\Tasky.Datos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Twilio" Version="7.5.0" />
+  </ItemGroup>
+
 </Project>

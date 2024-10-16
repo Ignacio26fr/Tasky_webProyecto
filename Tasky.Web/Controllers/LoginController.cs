@@ -67,6 +67,7 @@ namespace Tasky.Web.Controllers
                    
                     Nombre = model.Nombre,
                     UserName = model.Email,
+                    PhoneNumber = model.Telefono,
                     Email = model.Email,
                     NormalizedEmail = model.Email,
                     IdPerfil = 1
@@ -138,7 +139,7 @@ namespace Tasky.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
+                var user =  await _userManager.FindByEmailAsync(model.Email);
 
                 if(user == null)
                 {
