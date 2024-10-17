@@ -4,6 +4,7 @@ using Tasky.Datos.EF;
 using Tasky.Logica;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 //Cambiarlo al appsettings.json
@@ -13,9 +14,14 @@ builder.Services.AddDbContext<TaskyContext>(options =>
     options.UseSqlServer(connectionString));
 
 
-builder.Services.AddIdentity<AspNetUser, AspNetRole>()
+builder.Services.AddIdentity<AspNetUser, IdentityRole>()
     .AddEntityFrameworkStores<TaskyContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
+{
+    options.TokenLifespan = TimeSpan.FromHours(3);
+});
 
 
 //ideal transient para servicios de mail(por eso lo uso)

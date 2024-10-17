@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
+using System.Net;
+using System.Text;
 using Tasky.Datos.EF;
 using Tasky.Logica;
 using Tasky.Web.Models;
@@ -78,8 +81,8 @@ namespace Tasky.Web.Controllers
                     PhoneNumber = model.Telefono,
                     Email = model.Email,
                     NormalizedEmail = model.Email,
-                    
-                    //Falta agregar el telefono para la dobleauth
+                    NormalizedUserName = model.Email,
+                    SecurityStamp = Guid.NewGuid().ToString()
 
                 };
                 var resultado = await _userManager.CreateAsync(identity, model.Password);
@@ -89,6 +92,7 @@ namespace Tasky.Web.Controllers
                     //Aca podria activar la doble autenticacion
                     await _userManager.SetTwoFactorEnabledAsync(identity, false);
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(identity);
+                  
                     var callbackUrl = Url.Action("ConfirmarEmail", "Login",
                 new { userId = identity.Id, token = token }, Request.Scheme);
 
@@ -124,14 +128,16 @@ namespace Tasky.Web.Controllers
                 Console.WriteLine("Usuario no encontrado");
                 return NotFound();
             }
-
+            
             var resultado = await _userManager.ConfirmEmailAsync(usuario, token);
             if (resultado.Succeeded)
             {
                 return RedirectToAction("Index", "Login");
             } else
             {
-                ModelState.AddModelError(string.Empty, "Error al confirmar el correo electrónico.");
+                var errores = string.Join(", ", resultado.Errors.Select(e => e.Description));
+                Console.WriteLine($"Error al confirmar correo: {errores}");
+                ModelState.AddModelError(string.Empty, $"Error: {errores}");
                 return View("Verificar");
             }
         }

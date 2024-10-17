@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Tasky.Datos.EF
 {
-    public partial class TaskyContext : IdentityDbContext<AspNetUser>
+    public partial class TaskyContext : DbContext
     {
         public TaskyContext()
         {
@@ -21,7 +22,6 @@ namespace Tasky.Datos.EF
         public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; } = null!;
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
-        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
         public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -92,19 +92,6 @@ namespace Tasky.Datos.EF
                     .WithMany(p => p.AspNetUserClaims)
                     .HasForeignKey(d => d.UserId)
                     .HasConstraintName("FK__AspNetUse__UserI__45F365D3");
-            });
-
-            modelBuilder.Entity<AspNetUserLogin>(entity =>
-            {
-                entity.HasKey(e => new { e.LoginProvider, e.ProviderKey })
-                    .HasName("PK__AspNetUs__2B2C5B52E7DEE426");
-
-                entity.Property(e => e.UserId).HasMaxLength(450);
-
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.AspNetUserLogins)
-                    .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__AspNetUse__UserI__4BAC3F29");
             });
 
             modelBuilder.Entity<AspNetUserToken>(entity =>

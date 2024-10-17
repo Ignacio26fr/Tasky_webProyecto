@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Tasky.Datos.EF
 {
-    public partial class AspNetRole : IdentityRole
+    public partial class AspNetRole
     {
         public AspNetRole()
         {
