@@ -7,17 +7,17 @@ using Tasky.Logica;
 var builder = WebApplication.CreateBuilder(args);
 
 //Cambiarlo al appsettings.json
-var connectionString = "Server=INF-037\\SQLEXPRESS;Database=SmartTask;Trusted_Connection=True;";
+var connectionString = "Server=INF-037\\SQLEXPRESS;Database=Tasky;Trusted_Connection=True;";
 
 builder.Services.AddDbContext<TaskyContext>(options =>
     options.UseSqlServer(connectionString));
 
 
-builder.Services.AddIdentity<Usuario, IdentityRole<int>>()
+builder.Services.AddIdentity<AspNetUser, AspNetRole>()
     .AddEntityFrameworkStores<TaskyContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddScoped<IUsuarioServicio, UsuarioServicio>();
+
 //ideal transient para servicios de mail(por eso lo uso)
 builder.Services.AddTransient<EmailService>();
 

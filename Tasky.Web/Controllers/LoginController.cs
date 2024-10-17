@@ -9,16 +9,16 @@ namespace Tasky.Web.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly UserManager<Usuario> _userManager;
-        private readonly SignInManager<Usuario> _signInManager;
-        private IUsuarioServicio _usuarioServicio;
+        private readonly UserManager<AspNetUser> _userManager;
+        private readonly SignInManager<AspNetUser> _signInManager;
+        
         private readonly EmailService _emailService;
 
-        public LoginController(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager, IUsuarioServicio usuarioServicio, EmailService emailService)
+        public LoginController(UserManager<AspNetUser> userManager, SignInManager<AspNetUser> signInManager, EmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _usuarioServicio = usuarioServicio;
+            
             _emailService = emailService;
         }
 
@@ -62,15 +62,23 @@ namespace Tasky.Web.Controllers
         {
             if(ModelState.IsValid)
             {
-                var identity = new Usuario
+
+                var existeUserName = await _userManager.FindByEmailAsync(model.Email);
+                if (existeUserName != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Este correo ya está en uso.");
+                    return View(model);
+                }
+
+                var identity = new AspNetUser
                 {
                    
-                    Nombre = model.Nombre,
+                   
                     UserName = model.Email,
                     PhoneNumber = model.Telefono,
                     Email = model.Email,
                     NormalizedEmail = model.Email,
-                    IdPerfil = 1
+                    
                     //Falta agregar el telefono para la dobleauth
 
                 };

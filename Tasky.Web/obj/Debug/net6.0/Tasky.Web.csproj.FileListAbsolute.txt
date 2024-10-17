@@ -142,3 +142,10 @@ C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\
 C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\Tasky.Web.pdb
 C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\Tasky.Web.genruntimeconfig.cache
 C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\ref\Tasky.Web.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Twilio.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
