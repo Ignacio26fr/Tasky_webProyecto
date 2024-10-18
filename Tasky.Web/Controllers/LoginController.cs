@@ -75,14 +75,14 @@ namespace Tasky.Web.Controllers
 
                 var identity = new AspNetUser
                 {
-                   
-                   
+
+                    
                     UserName = model.Email,
                     PhoneNumber = model.Telefono,
                     Email = model.Email,
                     NormalizedEmail = model.Email,
                     NormalizedUserName = model.Email,
-                    SecurityStamp = Guid.NewGuid().ToString()
+                   
 
                 };
                 var resultado = await _userManager.CreateAsync(identity, model.Password);
@@ -119,6 +119,7 @@ namespace Tasky.Web.Controllers
 
             if (userId == null || token == null)
             {
+                Console.WriteLine("Entre aca");
                 return RedirectToAction("Login", "Index");
             }
 

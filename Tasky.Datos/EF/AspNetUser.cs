@@ -13,15 +13,16 @@ namespace Tasky.Datos.EF
             Roles = new HashSet<AspNetRole>();
         }
 
-       // public override string Id { get; set; } = null!;
-       // public override string? UserName { get; set; }
+        public override string Id { get; set; } = null!;
+        public string Email { get; set; } = null!;
+        public int IdPerfil { get; set; }
+        public override string? UserName { get; set; }
         public string? NormalizedUserName { get; set; }
-        public string? Email { get; set; }
         public string? NormalizedEmail { get; set; }
-        public bool EmailConfirmed { get; set; }
-        public string? PasswordHash { get; set; }
-        public string? SecurityStamp { get; set; }
-        public string? ConcurrencyStamp { get; set; }
+        public override bool EmailConfirmed { get; set; }
+        public override string? PasswordHash { get; set; }
+        public override string? SecurityStamp { get; set; }
+        public override string? ConcurrencyStamp { get; set; }
         public string? PhoneNumber { get; set; }
         public bool PhoneNumberConfirmed { get; set; }
         public bool TwoFactorEnabled { get; set; }

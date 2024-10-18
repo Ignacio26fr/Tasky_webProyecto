@@ -8,7 +8,7 @@ using Tasky.Logica;
 var builder = WebApplication.CreateBuilder(args);
 
 //Cambiarlo al appsettings.json
-var connectionString = "Server=INF-037\\SQLEXPRESS;Database=Tasky;Trusted_Connection=True;";
+var connectionString = "Server=DESKTOP-CTSE8NE;Database=Tasky;Trusted_Connection=True;";
 
 builder.Services.AddDbContext<TaskyContext>(options =>
     options.UseSqlServer(connectionString));

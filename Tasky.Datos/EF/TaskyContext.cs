@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -29,7 +27,7 @@ namespace Tasky.Datos.EF
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=INF-037\\SQLEXPRESS;Database=Tasky;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-CTSE8NE;Database=Tasky;Trusted_Connection=True;");
             }
         }
 
@@ -49,24 +47,27 @@ namespace Tasky.Datos.EF
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetRoleClaims)
                     .HasForeignKey(d => d.RoleId)
-                    .HasConstraintName("FK__AspNetRol__RoleI__48CFD27E");
+                    .HasConstraintName("FK__AspNetRol__RoleI__4AB81AF0");
             });
 
             modelBuilder.Entity<AspNetUser>(entity =>
             {
-                entity.HasIndex(e => e.Email, "UQ__AspNetUs__A9D10534BB6262D4")
+                entity.ToTable("AspNetUser");
+
+                entity.HasIndex(e => e.Email, "UQ__AspNetUs__AB6E6164CB4F09EC")
                     .IsUnique();
 
-                entity.HasIndex(e => e.UserName, "UQ__AspNetUs__C9F284561E4A71B1")
-                    .IsUnique();
+                entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Email).HasMaxLength(256);
+                entity.Property(e => e.Email)
+                    .HasMaxLength(100)
+                    .HasColumnName("email");
+
+                entity.Property(e => e.IdPerfil).HasColumnName("idPerfil");
 
                 entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
 
                 entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
-
-                entity.Property(e => e.PhoneNumber).HasMaxLength(15);
 
                 entity.Property(e => e.UserName).HasMaxLength(256);
 
@@ -74,11 +75,11 @@ namespace Tasky.Datos.EF
                     .WithMany(p => p.Users)
                     .UsingEntity<Dictionary<string, object>>(
                         "AspNetUserRole",
-                        l => l.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId").HasConstraintName("FK__AspNetUse__RoleI__4316F928"),
-                        r => r.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId").HasConstraintName("FK__AspNetUse__UserI__4222D4EF"),
+                        l => l.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId").HasConstraintName("FK__AspNetUse__RoleI__4222D4EF"),
+                        r => r.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId").HasConstraintName("FK__AspNetUse__UserI__412EB0B6"),
                         j =>
                         {
-                            j.HasKey("UserId", "RoleId").HasName("PK__AspNetUs__AF2760ADD43502DA");
+                            j.HasKey("UserId", "RoleId").HasName("PK__AspNetUs__AF2760AD7E0AE6A7");
 
                             j.ToTable("AspNetUserRoles");
                         });
@@ -91,18 +92,18 @@ namespace Tasky.Datos.EF
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserClaims)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__AspNetUse__UserI__45F365D3");
+                    .HasConstraintName("FK__AspNetUse__UserI__47DBAE45");
             });
 
             modelBuilder.Entity<AspNetUserToken>(entity =>
             {
                 entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name })
-                    .HasName("PK__AspNetUs__8CC4984186FAEDE3");
+                    .HasName("PK__AspNetUs__8CC498415DF18429");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserTokens)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__AspNetUse__UserI__4E88ABD4");
+                    .HasConstraintName("FK__AspNetUse__UserI__4D94879B");
             });
 
             OnModelCreatingPartial(modelBuilder);
