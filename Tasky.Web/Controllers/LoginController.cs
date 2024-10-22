@@ -215,6 +215,7 @@ namespace Tasky.Web.Controllers
 
             
             var email = claimsIdentity?.FindFirst(ClaimTypes.Email)?.Value;
+            var phone = claimsIdentity?.FindFirst(ClaimTypes.MobilePhone)?.Value;
 
             var user = await _userManager.FindByEmailAsync(email);
 
@@ -226,7 +227,10 @@ namespace Tasky.Web.Controllers
                     UserName = email,
                     Email = email,
                     NormalizedEmail = email.ToUpper(),
-                    NormalizedUserName = email.ToUpper()
+                    NormalizedUserName = email.ToUpper(),
+                    PhoneNumber = phone,
+
+                    
                 };
 
                 var resultado = await _userManager.CreateAsync(user);
