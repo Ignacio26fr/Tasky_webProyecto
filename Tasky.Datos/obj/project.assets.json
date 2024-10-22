@@ -2213,19 +2213,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pc\\.nuget\\packages\\": {}
+    "C:\\Users\\Ezequiel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+      "projectUniqueName": "C:\\Users\\Ezequiel\\Downloads\\TP-PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
       "projectName": "Tasky.Datos",
-      "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
-      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
+      "projectPath": "C:\\Users\\Ezequiel\\Downloads\\TP-PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+      "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ezequiel\\Downloads\\TP-PW3\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

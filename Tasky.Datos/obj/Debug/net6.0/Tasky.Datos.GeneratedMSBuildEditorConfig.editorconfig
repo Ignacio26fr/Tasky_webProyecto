@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tasky.Datos
-build_property.ProjectDir = C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Datos\
+build_property.ProjectDir = C:\Users\Ezequiel\Downloads\TP-PW3\Tasky_webProyecto\Tasky.Datos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
