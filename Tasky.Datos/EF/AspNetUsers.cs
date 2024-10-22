@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Tasky.Datos.EF
 {
-    public partial class AspNetUser : IdentityUser
+    public partial class AspNetUsers : IdentityUser
     {
-        public AspNetUser()
+        public AspNetUsers()
         {
             AspNetUserClaims = new HashSet<AspNetUserClaim>();
             AspNetUserLogins = new HashSet<AspNetUserLogin>();

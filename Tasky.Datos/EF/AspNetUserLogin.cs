@@ -10,6 +10,6 @@ namespace Tasky.Datos.EF
         public override string ProviderKey { get; set; } = null!;
         public override string UserId { get; set; } = null!;
 
-        public virtual AspNetUser User { get; set; } = null!;
+        public virtual AspNetUsers User { get; set; } = null!;
     }
 }

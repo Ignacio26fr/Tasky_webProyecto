@@ -9,7 +9,7 @@ namespace Tasky.Datos.EF
         public AspNetRole()
         {
             AspNetRoleClaims = new HashSet<AspNetRoleClaim>();
-            Users = new HashSet<AspNetUser>();
+            Users = new HashSet<AspNetUsers>();
         }
 
         public override string Id { get; set; } = null!;
@@ -19,6 +19,6 @@ namespace Tasky.Datos.EF
 
         public virtual ICollection<AspNetRoleClaim> AspNetRoleClaims { get; set; }
 
-        public virtual ICollection<AspNetUser> Users { get; set; }
+        public virtual ICollection<AspNetUsers> Users { get; set; }
     }
 }

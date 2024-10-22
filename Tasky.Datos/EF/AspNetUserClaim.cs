@@ -11,6 +11,6 @@ namespace Tasky.Datos.EF
         public override string? ClaimType { get; set; }
         public override string? ClaimValue { get; set; }
 
-        public virtual AspNetUser User { get; set; } = null!;
+        public virtual AspNetUsers User { get; set; } = null!;
     }
 }

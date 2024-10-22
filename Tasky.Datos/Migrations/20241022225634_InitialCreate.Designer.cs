@@ -12,8 +12,8 @@ using Tasky.Datos.EF;
 namespace Tasky.Datos.Migrations
 {
     [DbContext(typeof(TaskyContext))]
-    [Migration("20241022121927_FixDbsetError")]
-    partial class FixDbsetError
+    [Migration("20241022225634_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -207,7 +207,7 @@ namespace Tasky.Datos.Migrations
                     b.ToTable("AspNetRolesClaims", (string)null);
                 });
 
-            modelBuilder.Entity("Tasky.Datos.EF.AspNetUser", b =>
+            modelBuilder.Entity("Tasky.Datos.EF.AspNetUsers", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -336,7 +336,7 @@ namespace Tasky.Datos.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Tasky.Datos.EF.AspNetUser", null)
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -358,7 +358,7 @@ namespace Tasky.Datos.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__AspNetUse__RoleI__4316F928");
 
-                    b.HasOne("Tasky.Datos.EF.AspNetUser", null)
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -368,7 +368,7 @@ namespace Tasky.Datos.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Tasky.Datos.EF.AspNetUser", null)
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -389,7 +389,7 @@ namespace Tasky.Datos.Migrations
 
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUserClaim", b =>
                 {
-                    b.HasOne("Tasky.Datos.EF.AspNetUser", "User")
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", "User")
                         .WithMany("AspNetUserClaims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -401,7 +401,7 @@ namespace Tasky.Datos.Migrations
 
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUserLogin", b =>
                 {
-                    b.HasOne("Tasky.Datos.EF.AspNetUser", "User")
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", "User")
                         .WithMany("AspNetUserLogins")
                         .HasForeignKey("UserId1")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -412,7 +412,7 @@ namespace Tasky.Datos.Migrations
 
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUserToken", b =>
                 {
-                    b.HasOne("Tasky.Datos.EF.AspNetUser", "User")
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", "User")
                         .WithMany("AspNetUserTokens")
                         .HasForeignKey("UserId1")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -421,7 +421,7 @@ namespace Tasky.Datos.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Tasky.Datos.EF.AspNetUser", b =>
+            modelBuilder.Entity("Tasky.Datos.EF.AspNetUsers", b =>
                 {
                     b.Navigation("AspNetUserClaims");
 

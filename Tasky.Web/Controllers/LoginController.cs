@@ -15,12 +15,12 @@ namespace Tasky.Web.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly UserManager<AspNetUser> _userManager;
-        private readonly SignInManager<AspNetUser> _signInManager;
+        private readonly UserManager<AspNetUsers> _userManager;
+        private readonly SignInManager<AspNetUsers> _signInManager;
         
         private readonly EmailService _emailService;
 
-        public LoginController(UserManager<AspNetUser> userManager, SignInManager<AspNetUser> signInManager, EmailService emailService)
+        public LoginController(UserManager<AspNetUsers> userManager, SignInManager<AspNetUsers> signInManager, EmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -76,7 +76,7 @@ namespace Tasky.Web.Controllers
                     return View(model);
                 }
 
-                var identity = new AspNetUser
+                var identity = new AspNetUsers
                 {
 
                     
@@ -222,7 +222,7 @@ namespace Tasky.Web.Controllers
             if (user == null)
             {
                 
-                user = new AspNetUser
+                user = new AspNetUsers
                 {
                     UserName = email,
                     Email = email,

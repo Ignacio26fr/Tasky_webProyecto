@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Tasky.Datos.EF
 {
-    public partial class TaskyContext : IdentityDbContext<AspNetUser>
+    public partial class TaskyContext : IdentityDbContext<AspNetUsers>
     {
         public TaskyContext()
         {
@@ -20,7 +20,7 @@ namespace Tasky.Datos.EF
 
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; } = null!;
         public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
-        public virtual DbSet<AspNetUser> AspNetUsers { get; set; } = null!;
+        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; } = null!;
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
     //    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
        // public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
@@ -29,7 +29,7 @@ namespace Tasky.Datos.EF
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=INF-037\\SQLEXPRESS;Database=Tasky;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-CTSE8NE;Database=Tasky;Trusted_Connection=True;");
             }
         }
 
@@ -54,7 +54,7 @@ namespace Tasky.Datos.EF
                     .HasConstraintName("FK__AspNetRol__RoleI__48CFD27E");
             });
 
-            modelBuilder.Entity<AspNetUser>(entity =>
+            modelBuilder.Entity<AspNetUsers>(entity =>
             {
                 entity.HasIndex(e => e.Email, "UQ__AspNetUs__A9D10534BB6262D4").IsUnique();
                 entity.HasIndex(e => e.UserName, "UQ__AspNetUs__C9F284561E4A71B1").IsUnique();
@@ -74,7 +74,7 @@ namespace Tasky.Datos.EF
                             .HasForeignKey("RoleId")
                             .HasConstraintName("FK__AspNetUse__RoleI__4316F928"),
                         j => j
-                            .HasOne<AspNetUser>()
+                            .HasOne<AspNetUsers>()
                             .WithMany()
                             .HasForeignKey("UserId")
                             .HasConstraintName("FK__AspNetUse__UserI__4222D4EF"),
