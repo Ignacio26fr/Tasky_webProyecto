@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
@@ -7,6 +9,7 @@ using System.Text;
 using Tasky.Datos.EF;
 using Tasky.Logica;
 using Tasky.Web.Models;
+using System.Security.Claims;
 
 namespace Tasky.Web.Controllers
 {
@@ -189,6 +192,53 @@ namespace Tasky.Web.Controllers
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Login");
+        }
+
+        [HttpPost]
+        public IActionResult IniciarConGoogle(string returnUrl = null)
+        {
+            var redirectUrl = Url.Action("ExternalLoginCallback", "Login", new { ReturnUrl = returnUrl });
+            var properties = new AuthenticationProperties { RedirectUri = redirectUrl };
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
+        [HttpGet]
+        public async Task<IActionResult> ExternalLoginCallback(string returnUrl = null)
+        {
+            var result = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+
+            if (!result.Succeeded)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var claimsIdentity = result.Principal.Identity as ClaimsIdentity;
+
+            
+            var email = claimsIdentity?.FindFirst(ClaimTypes.Email)?.Value;
+
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                
+                user = new AspNetUser
+                {
+                    UserName = email,
+                    Email = email,
+                    NormalizedEmail = email.ToUpper(),
+                    NormalizedUserName = email.ToUpper()
+                };
+
+                var resultado = await _userManager.CreateAsync(user);
+                if (!resultado.Succeeded)
+                {
+                    return RedirectToAction("Login");
+                }
+            }
+
+            
+            await _signInManager.SignInAsync(user, isPersistent: false);
+            return LocalRedirect(returnUrl ?? "/Home");
         }
 
 
