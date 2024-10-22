@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tasky.Datos.EF;
 
@@ -11,9 +12,10 @@ using Tasky.Datos.EF;
 namespace Tasky.Datos.Migrations
 {
     [DbContext(typeof(TaskyContext))]
-    partial class TaskyContextModelSnapshot : ModelSnapshot
+    [Migration("20241022121927_FixDbsetError")]
+    partial class FixDbsetError
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

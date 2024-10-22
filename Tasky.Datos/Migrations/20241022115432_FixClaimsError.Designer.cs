@@ -12,8 +12,8 @@ using Tasky.Datos.EF;
 namespace Tasky.Datos.Migrations
 {
     [DbContext(typeof(TaskyContext))]
-    [Migration("20241017153550_UpdateAspNetUser")]
-    partial class UpdateAspNetUser
+    [Migration("20241022115432_FixClaimsError")]
+    partial class FixClaimsError
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -180,6 +180,28 @@ namespace Tasky.Datos.Migrations
                     b.ToTable("AspNetUserClaims");
                 });
 
+            modelBuilder.Entity("Tasky.Datos.EF.AspNetUserLogin", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUserToken", b =>
                 {
                     b.Property<string>("UserId")
@@ -241,6 +263,17 @@ namespace Tasky.Datos.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Tasky.Datos.EF.AspNetUserLogin", b =>
+                {
+                    b.HasOne("Tasky.Datos.EF.AspNetUser", "User")
+                        .WithMany("AspNetUserLogins")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUserToken", b =>
                 {
                     b.HasOne("Tasky.Datos.EF.AspNetUser", "User")
@@ -261,6 +294,8 @@ namespace Tasky.Datos.Migrations
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUser", b =>
                 {
                     b.Navigation("AspNetUserClaims");
+
+                    b.Navigation("AspNetUserLogins");
 
                     b.Navigation("AspNetUserTokens");
                 });

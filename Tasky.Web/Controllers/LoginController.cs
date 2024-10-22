@@ -162,7 +162,7 @@ namespace Tasky.Web.Controllers
                     return View("Login", model);
                 }
 
-                Console.WriteLine(user.EmailConfirmed);
+                
                 if (user.EmailConfirmed )
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
