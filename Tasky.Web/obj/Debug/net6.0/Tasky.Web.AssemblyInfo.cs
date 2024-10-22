@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tasky.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e50e47f66c6f2602103421cbc6e8366c846571ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c58e040f2809c4981cfbbddb6f564501efc779fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tasky.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tasky.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

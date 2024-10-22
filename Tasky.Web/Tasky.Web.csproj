@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Tasky.Logica\Tasky.Logica.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Login\" />
+  </ItemGroup>
+
 </Project>

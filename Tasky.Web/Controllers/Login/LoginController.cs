@@ -8,23 +8,23 @@ using System.Net;
 using System.Text;
 using Tasky.Datos.EF;
 using Tasky.Logica;
-using Tasky.Web.Models;
 using System.Security.Claims;
+using Tasky.Web.Models;
 
-namespace Tasky.Web.Controllers
+namespace Tasky.Web.Controllers.Login
 {
     public class LoginController : Controller
     {
         private readonly UserManager<AspNetUsers> _userManager;
         private readonly SignInManager<AspNetUsers> _signInManager;
-        
+
         private readonly EmailService _emailService;
 
         public LoginController(UserManager<AspNetUsers> userManager, SignInManager<AspNetUsers> signInManager, EmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            
+
             _emailService = emailService;
         }
 
@@ -36,10 +36,10 @@ namespace Tasky.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(LoginViewModel model)
         {
-            
+
             if (ModelState.IsValid)
             {
-               
+
 
 
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
@@ -66,7 +66,7 @@ namespace Tasky.Web.Controllers
         [HttpPost]
         public async Task<ActionResult> Registro(RegistroViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
 
                 var existeUserName = await _userManager.FindByEmailAsync(model.Email);
@@ -79,13 +79,13 @@ namespace Tasky.Web.Controllers
                 var identity = new AspNetUsers
                 {
 
-                    
+
                     UserName = model.Email,
                     PhoneNumber = model.Telefono,
                     Email = model.Email,
                     NormalizedEmail = model.Email,
                     NormalizedUserName = model.Email,
-                   
+
 
                 };
                 var resultado = await _userManager.CreateAsync(identity, model.Password);
@@ -95,9 +95,9 @@ namespace Tasky.Web.Controllers
                     //Aca podria activar la doble autenticacion
                     await _userManager.SetTwoFactorEnabledAsync(identity, false);
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(identity);
-                  
+
                     var callbackUrl = Url.Action("ConfirmarEmail", "Login",
-                new { userId = identity.Id, token = token }, Request.Scheme);
+                new { userId = identity.Id, token }, Request.Scheme);
 
 
                     await EnviarCorreoAsync(model.Email, "Confirma tu correo",
@@ -127,17 +127,18 @@ namespace Tasky.Web.Controllers
             }
 
             var usuario = await _userManager.FindByIdAsync(userId);
-            if(usuario == null)
+            if (usuario == null)
             {
                 Console.WriteLine("Usuario no encontrado");
                 return NotFound();
             }
-            
+
             var resultado = await _userManager.ConfirmEmailAsync(usuario, token);
             if (resultado.Succeeded)
             {
                 return RedirectToAction("Index", "Login");
-            } else
+            }
+            else
             {
                 var errores = string.Join(", ", resultado.Errors.Select(e => e.Description));
                 Console.WriteLine($"Error al confirmar correo: {errores}");
@@ -157,16 +158,16 @@ namespace Tasky.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user =  await _userManager.FindByEmailAsync(model.Email);
+                var user = await _userManager.FindByEmailAsync(model.Email);
 
-                if(user == null)
+                if (user == null)
                 {
                     ModelState.AddModelError(string.Empty, "El usuario no existe o el email es incorrecto.");
                     return View("Login", model);
                 }
 
-                
-                if (user.EmailConfirmed )
+
+                if (user.EmailConfirmed)
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
 
@@ -213,7 +214,7 @@ namespace Tasky.Web.Controllers
 
             var claimsIdentity = result.Principal.Identity as ClaimsIdentity;
 
-            
+
             var email = claimsIdentity?.FindFirst(ClaimTypes.Email)?.Value;
             var phone = claimsIdentity?.FindFirst(ClaimTypes.MobilePhone)?.Value;
 
@@ -221,7 +222,7 @@ namespace Tasky.Web.Controllers
 
             if (user == null)
             {
-                
+
                 user = new AspNetUsers
                 {
                     UserName = email,
@@ -230,7 +231,7 @@ namespace Tasky.Web.Controllers
                     NormalizedUserName = email.ToUpper(),
                     PhoneNumber = phone,
 
-                    
+
                 };
 
                 var resultado = await _userManager.CreateAsync(user);
@@ -240,7 +241,7 @@ namespace Tasky.Web.Controllers
                 }
             }
 
-            
+
             await _signInManager.SignInAsync(user, isPersistent: false);
             return LocalRedirect(returnUrl ?? "/Home");
         }
