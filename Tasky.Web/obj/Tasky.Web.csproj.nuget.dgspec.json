@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj": {}
+    "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+    "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+        "projectUniqueName": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
         "projectName": "Tasky.Datos",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
+        "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+        "packagesPath": "C:\\Users\\cerni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cerni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,17 +87,17 @@
         }
       }
     },
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
+    "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
+        "projectUniqueName": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
         "projectName": "Tasky.Logica",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
+        "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
+        "packagesPath": "C:\\Users\\cerni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cerni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,8 +112,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
-                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
+              "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+                "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
               }
             }
           }
@@ -158,17 +158,17 @@
         }
       }
     },
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj": {
+    "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
+        "projectUniqueName": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
         "projectName": "Tasky.Web",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\obj\\",
+        "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
+        "packagesPath": "C:\\Users\\cerni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cerni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -183,11 +183,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
-                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
+              "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+                "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
               },
-              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
-                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj"
+              "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
+                "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj"
               }
             }
           }

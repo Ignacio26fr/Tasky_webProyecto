@@ -2213,19 +2213,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\44729038\\.nuget\\packages\\": {}
+    "C:\\Users\\cerni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+      "projectUniqueName": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
       "projectName": "Tasky.Datos",
-      "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
-      "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
+      "projectPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+      "packagesPath": "C:\\Users\\cerni\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cerni\\Source\\Repos\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cerni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
