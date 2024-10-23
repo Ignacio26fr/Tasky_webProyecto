@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tasky.Datos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+330faa9ee1363a92711da4ac14badf3c8cc6480b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c58e040f2809c4981cfbbddb6f564501efc779fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tasky.Datos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tasky.Datos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

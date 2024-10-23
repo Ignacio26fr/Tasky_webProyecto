@@ -145,6 +145,7 @@ C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\
 C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\Tasky.Web.pdb
 C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\Tasky.Web.genruntimeconfig.cache
 C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\obj\Debug\net6.0\ref\Tasky.Web.dll
+C:\Users\44729038\Documents\Github\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\appsettings.json
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Tasky.Web.staticwebassets.runtime.json
@@ -154,6 +155,7 @@ C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Tasky.
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Tasky.Web.dll
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Tasky.Web.pdb
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Pc\Documents\GitHub\Tasky_webProyecto\Tasky.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll

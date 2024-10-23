@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
@@ -6,22 +8,23 @@ using System.Net;
 using System.Text;
 using Tasky.Datos.EF;
 using Tasky.Logica;
+using System.Security.Claims;
 using Tasky.Web.Models;
 
-namespace Tasky.Web.Controllers
+namespace Tasky.Web.Controllers.Login
 {
     public class LoginController : Controller
     {
-        private readonly UserManager<AspNetUser> _userManager;
-        private readonly SignInManager<AspNetUser> _signInManager;
-        
+        private readonly UserManager<AspNetUsers> _userManager;
+        private readonly SignInManager<AspNetUsers> _signInManager;
+
         private readonly EmailService _emailService;
 
-        public LoginController(UserManager<AspNetUser> userManager, SignInManager<AspNetUser> signInManager, EmailService emailService)
+        public LoginController(UserManager<AspNetUsers> userManager, SignInManager<AspNetUsers> signInManager, EmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            
+
             _emailService = emailService;
         }
 
@@ -33,10 +36,10 @@ namespace Tasky.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(LoginViewModel model)
         {
-            
+
             if (ModelState.IsValid)
             {
-               
+
 
 
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
@@ -63,7 +66,7 @@ namespace Tasky.Web.Controllers
         [HttpPost]
         public async Task<ActionResult> Registro(RegistroViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
 
                 var existeUserName = await _userManager.FindByEmailAsync(model.Email);
@@ -73,16 +76,16 @@ namespace Tasky.Web.Controllers
                     return View(model);
                 }
 
-                var identity = new AspNetUser
+                var identity = new AspNetUsers
                 {
 
-                    
+
                     UserName = model.Email,
                     PhoneNumber = model.Telefono,
                     Email = model.Email,
                     NormalizedEmail = model.Email,
                     NormalizedUserName = model.Email,
-                   
+
 
                 };
                 var resultado = await _userManager.CreateAsync(identity, model.Password);
@@ -92,9 +95,9 @@ namespace Tasky.Web.Controllers
                     //Aca podria activar la doble autenticacion
                     await _userManager.SetTwoFactorEnabledAsync(identity, false);
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(identity);
-                  
+
                     var callbackUrl = Url.Action("ConfirmarEmail", "Login",
-                new { userId = identity.Id, token = token }, Request.Scheme);
+                new { userId = identity.Id, token }, Request.Scheme);
 
 
                     await EnviarCorreoAsync(model.Email, "Confirma tu correo",
@@ -124,17 +127,18 @@ namespace Tasky.Web.Controllers
             }
 
             var usuario = await _userManager.FindByIdAsync(userId);
-            if(usuario == null)
+            if (usuario == null)
             {
                 Console.WriteLine("Usuario no encontrado");
                 return NotFound();
             }
-            
+
             var resultado = await _userManager.ConfirmEmailAsync(usuario, token);
             if (resultado.Succeeded)
             {
                 return RedirectToAction("Index", "Login");
-            } else
+            }
+            else
             {
                 var errores = string.Join(", ", resultado.Errors.Select(e => e.Description));
                 Console.WriteLine($"Error al confirmar correo: {errores}");
@@ -154,16 +158,16 @@ namespace Tasky.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user =  await _userManager.FindByEmailAsync(model.Email);
+                var user = await _userManager.FindByEmailAsync(model.Email);
 
-                if(user == null)
+                if (user == null)
                 {
                     ModelState.AddModelError(string.Empty, "El usuario no existe o el email es incorrecto.");
                     return View("Login", model);
                 }
 
-                Console.WriteLine(user.EmailConfirmed);
-                if (user.EmailConfirmed )
+
+                if (user.EmailConfirmed)
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
 
@@ -189,6 +193,57 @@ namespace Tasky.Web.Controllers
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Login");
+        }
+
+        [HttpPost]
+        public IActionResult IniciarConGoogle(string returnUrl = null)
+        {
+            var redirectUrl = Url.Action("ExternalLoginCallback", "Login", new { ReturnUrl = returnUrl });
+            var properties = new AuthenticationProperties { RedirectUri = redirectUrl };
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
+        [HttpGet]
+        public async Task<IActionResult> ExternalLoginCallback(string returnUrl = null)
+        {
+            var result = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+
+            if (!result.Succeeded)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var claimsIdentity = result.Principal.Identity as ClaimsIdentity;
+
+
+            var email = claimsIdentity?.FindFirst(ClaimTypes.Email)?.Value;
+            var phone = claimsIdentity?.FindFirst(ClaimTypes.MobilePhone)?.Value;
+
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+
+                user = new AspNetUsers
+                {
+                    UserName = email,
+                    Email = email,
+                    NormalizedEmail = email.ToUpper(),
+                    NormalizedUserName = email.ToUpper(),
+                    PhoneNumber = phone,
+
+
+                };
+
+                var resultado = await _userManager.CreateAsync(user);
+                if (!resultado.Succeeded)
+                {
+                    return RedirectToAction("Login");
+                }
+            }
+
+
+            await _signInManager.SignInAsync(user, isPersistent: false);
+            return LocalRedirect(returnUrl ?? "/Home");
         }
 
 

@@ -5,7 +5,7 @@ namespace Tasky.Web.Models
     public class RegistroViewModel
     {
 
-       
+
 
         [Required(ErrorMessage = "El nombre es obligatorio.")]
         public string Nombre { get; set; } = null!;
@@ -25,7 +25,7 @@ namespace Tasky.Web.Models
 
         [Required(ErrorMessage = "Se debe confirmar la contraseña.")]
         [Compare("Password", ErrorMessage = "Las contraseñas no coinciden.")]
-        
+
         public string ConfirmarPassword { get; set; } = null!;
 
 
