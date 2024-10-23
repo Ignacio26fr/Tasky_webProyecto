@@ -1,6 +1,6 @@
 ﻿using Microsoft.ML.Data;
 
-namespace Tasky.AIModel
+namespace Tasky.AIModel.UrgencyModel
 {
     public class OutputData
     {

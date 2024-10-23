@@ -1,6 +1,6 @@
 ﻿using Microsoft.ML;
 
-namespace Tasky.AIModel
+namespace Tasky.AIModel.UrgencyModel
 {
     public class ModelTrainer
     {
@@ -56,6 +56,5 @@ namespace Tasky.AIModel
             string relativePath = Path.Combine(projectDirectory, "..\\..\\..\\Models", "modeloUrgencia.zip"); // Ruta en la que se va a guardar el modelo
             _mlContext.Model.Save(trainedModel, trainingData.Schema, relativePath);
         }
-
     }
 }
