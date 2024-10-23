@@ -1,7 +1,7 @@
 ﻿using Microsoft.ML;
-using Tasky.AIModel;
+using Tasky.AIModel.UrgencyModel;
 
-// ---------------------- CREACIÓN Y ENTRENAMIENTO DEL MODELO -------------
+// ---------------------- CREACIÓN Y ENTRENAMIENTO DE LOS MODELO -------------
 
 string projectDirectory = Directory.GetCurrentDirectory();
 
@@ -12,12 +12,12 @@ MLContext mlContext = new MLContext();
 var modelTrainer = new ModelTrainer(mlContext);
 modelTrainer.TrainModel(dataPath);
 
-Console.WriteLine("Modelo entrenado y guardado.");
+Console.WriteLine("Modelos entrenados y guardados.");
 
 
 
 
-// --------------------- CARGA Y USO DEL MODELO --------------------------
+// --------------------- CARGA Y USO DEL LOS MODELOS --------------------------
 
 string modelPath = Path.Combine(projectDirectory, "..\\..\\..\\Models", "modeloUrgencia.zip");
 
@@ -31,14 +31,14 @@ var inputData = new InputData
     Mensaje = "Buenos dias le recordamos que tiene un turno medico la proxima semana."
 };
 
+
 var prediction = predEngine.Predict(inputData);
 
 
 
+// -------------------- DEPURACIÓN URGENCIA --------------------------------
 
-// -------------------- DEPURACIÓN --------------------------------
-
-Console.WriteLine("Detalles de la predicción:");
+Console.WriteLine("Detalles de la predicción de urgencia:");
 Console.WriteLine($"Asunto: {inputData.Asunto}");
 Console.WriteLine($"Mensaje: {inputData.Mensaje}");
 
@@ -50,3 +50,4 @@ else
 {
     Console.WriteLine("No se pudo determinar la urgencia.");
 }
+
