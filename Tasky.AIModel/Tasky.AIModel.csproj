@@ -7,13 +7,19 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.LightGbm" Version="3.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="TrainingData\" />
   </ItemGroup>
   <ItemGroup Label="SpamMLModel">
     <None Include="SpamMLModel.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="UrgencyMLModel">
+    <None Include="UrgencyMLModel.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
