@@ -1,62 +1,5 @@
 ﻿using Microsoft.ML;
-using Tasky.AIModel.UrgencyModel;
 using Tasky_AIModel;
-
-// -------------------------------- MODELO DE URGENCIA --------------------------------
-// ---------------------- CREACIÓN Y ENTRENAMIENTO DEL MODELO ----------------------
-
-string projectDirectory = Directory.GetCurrentDirectory();
-
-string dataPath = Path.Combine(projectDirectory, "..\\..\\..\\TrainingData", "emails.csv");
-
-MLContext mlContext = new MLContext();
-
-var modelTrainer = new ModelTrainer(mlContext);
-modelTrainer.TrainModel(dataPath);
-
-Console.WriteLine("Modelo entrenado y guardado.");
-Console.WriteLine("\n\n");
-
-
-
-// --------------------- CARGA Y USO DEL MODELO --------------------------
-
-string modelPath = Path.Combine(projectDirectory, "..\\..\\..\\Models", "modeloUrgencia.zip");
-
-ITransformer loadedModel = mlContext.Model.Load(modelPath, out var modelSchema);
-
-var predEngine = mlContext.Model.CreatePredictionEngine<InputData, OutputData>(loadedModel);
-
-var inputData = new InputData
-{
-    Asunto = "Recordatorio del turno medico",
-    Mensaje = "Buenos dias le recordamos que tiene un turno medico la proxima semana."
-};
-
-
-var prediction = predEngine.Predict(inputData);
-
-
-
-// -------------------- DEPURACIÓN URGENCIA --------------------------------
-
-Console.WriteLine("Detalles de la predicción de urgencia:");
-Console.WriteLine($"Asunto: {inputData.Asunto}");
-Console.WriteLine($"Mensaje: {inputData.Mensaje}");
-
-if (!string.IsNullOrEmpty(prediction.Urgencia))
-{
-    Console.WriteLine($"Predicción de urgencia: {prediction.Urgencia}");
-}
-else
-{
-    Console.WriteLine("No se pudo determinar la urgencia.");
-}
-
-
-
-
-
 
 
 // ---------------------- MODELO SPAM ---------------------------------
@@ -86,6 +29,41 @@ Console.WriteLine($"{"Class",-40}{"Score",-20}");
 Console.WriteLine($"{"-----",-40}{"-----",-20}");
 
 foreach (var score in sortedScoresWithLabel)
+{
+    Console.WriteLine($"{score.Key,-40}{score.Value,-20}");
+}
+
+
+
+
+
+
+// ---------------------- MODELO URGENCIA  ---------------------------------
+
+var sampleDataUrgency = new UrgencyMLModel.ModelInput()
+{
+    Asunto = @"Turno para transplante de riñon semana que viene",
+    Texto = @"Porfavor recuerde que la semana que viene tiene un turno para su transplante de riñon.",
+};
+
+//Load model and predict output
+var resultUrgency = UrgencyMLModel.Predict(sampleDataUrgency);
+
+// Depuración
+Console.WriteLine("\n\n\n");
+Console.WriteLine("Detalles de la predicción de urgencia 2:");
+Console.WriteLine($"{sampleDataUrgency.Asunto}");
+Console.WriteLine($"{sampleDataUrgency.Texto}");
+Console.WriteLine($"Predicción de urgencia: {(resultUrgency.PredictedLabel)}");
+
+
+// Esto solo es con fines de medir la precisión, no es necesario.
+Console.WriteLine("\nPorcentaje de las probabilidades:");
+var sortedScoresWithLabelUrgency = UrgencyMLModel.PredictAllLabels(sampleDataUrgency);
+Console.WriteLine($"{"Class",-40}{"Score",-20}");
+Console.WriteLine($"{"-----",-40}{"-----",-20}");
+
+foreach (var score in sortedScoresWithLabelUrgency)
 {
     Console.WriteLine($"{score.Key,-40}{score.Value,-20}");
 }
