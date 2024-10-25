@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {}
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+        "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
         "projectName": "Tasky.Datos",
-        "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
-        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
+        "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+        "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+        "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,40 +78,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
+        "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
         "projectName": "Tasky.Logica",
-        "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
-        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
+        "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
+        "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+        "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,8 +112,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
-                "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
+              "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+                "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
               }
             }
           }
@@ -163,26 +149,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
