@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6 mt-5">
             <div class="card">
-                <div class="card-header text-center">
+                <div class="card-header text-center bg-primary text-white">
                     <h4>Iniciar Sesión</h4>
                 </div>
                 <div class="card-body">
@@ -19,16 +19,25 @@
                             <input asp-for="Password" type="password" class="form-control" placeholder="Ingresa tu contraseña" />
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
-                        
-                        <div class="text-center mt-5">
+
+                        <div class="text-center mt-4">
                             <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
                         </div>
                         <div class="text-center mt-3">
-                            <a asp-action="Registro">¿No tienes una cuenta? Regístrate aquí</a>
+                            <a asp-action="Registro" class="text-decoration-none">¿No tienes una cuenta? Regístrate aquí</a>
                         </div>
                     </form>
+                    <div class="text-center mt-4">
+                        <span class="d-block mb-3">O</span>
+                        <form asp-action="IniciarConGoogle" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-danger btn-block">
+                                <i class="fab fa-google me-2"></i> Iniciar sesión con Google
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+

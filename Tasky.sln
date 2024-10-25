@@ -14,7 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasky.Entidad", "Tasky.Entidad\Tasky.Entidad.csproj", "{A2251872-2D2E-4327-AF51-EE0255B2E821}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasky.AIModel", "Tasky.AIModel\Tasky.AIModel.csproj", "{1932E0DD-3AB8-4A6A-9FB0-2742AD8FD9B7}"
+>>>>>>> Dev
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +38,17 @@ Global
 		{05FA1D79-6084-400A-A5FF-2A1478970F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05FA1D79-6084-400A-A5FF-2A1478970F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05FA1D79-6084-400A-A5FF-2A1478970F66}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{A2251872-2D2E-4327-AF51-EE0255B2E821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2251872-2D2E-4327-AF51-EE0255B2E821}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2251872-2D2E-4327-AF51-EE0255B2E821}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2251872-2D2E-4327-AF51-EE0255B2E821}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{1932E0DD-3AB8-4A6A-9FB0-2742AD8FD9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1932E0DD-3AB8-4A6A-9FB0-2742AD8FD9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1932E0DD-3AB8-4A6A-9FB0-2742AD8FD9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1932E0DD-3AB8-4A6A-9FB0-2742AD8FD9B7}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Dev
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
