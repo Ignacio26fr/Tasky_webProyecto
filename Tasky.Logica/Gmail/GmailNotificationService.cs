@@ -6,6 +6,7 @@ using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
 using Tasky.Entidad.GmailAccount.PubSub;
+using Tasky.Logica.Core;
 using Tasky.Logica.Redis;
 
 namespace Tasky.Logica.Gmail;
@@ -24,16 +25,18 @@ public class GmailNotificationService : IGmailNotificationService
     private readonly IGmailTaskyService _gmailTaskyService;
     private readonly IRedisSessionService _redisSessionService;
     private readonly ConcurrentQueue<PubSubNotification> _notificationQueue;
+    private readonly ITaskManager _taskManager;
     private GmailService _gmailService;
     private bool _isProcessing;
     private string accessToken;
     private string _accessToken;
 
-    public GmailNotificationService(IGmailTaskyService gmailService, IRedisSessionService redisSessionService)
+    public GmailNotificationService(IGmailTaskyService gmailService, IRedisSessionService redisSessionService, ITaskManager taskManager)
     {
         _gmailTaskyService = gmailService;
         _redisSessionService = redisSessionService;
         _notificationQueue = new ConcurrentQueue<PubSubNotification>();
+        _taskManager = taskManager;
         _isProcessing = false;
     }
 
@@ -149,7 +152,11 @@ public class GmailNotificationService : IGmailNotificationService
                         Console.WriteLine($"Correo-fecha: {email.Date}");
                         Console.WriteLine($"Correo-remite: {email.Sender}");
                         Console.WriteLine($"Correo-body: {email.Body}");
+
+                        _taskManager.GenerateTaskFromEmail(email);
                     }
+
+
 
 
                 }

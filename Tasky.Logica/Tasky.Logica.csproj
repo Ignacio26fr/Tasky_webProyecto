@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tasky.AIModel\Tasky.AIModel.csproj" />
     <ProjectReference Include="..\Tasky.Datos\Tasky.Datos.csproj" />
     <ProjectReference Include="..\Tasky.Entidad\Tasky.Entidad.csproj" />
   </ItemGroup>

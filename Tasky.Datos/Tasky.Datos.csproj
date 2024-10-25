@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Migraciones\" />
+    <Compile Remove="Migraciones\**" />
+    <EmbeddedResource Remove="Migraciones\**" />
+    <None Remove="Migraciones\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Script\" />
   
   </ItemGroup>

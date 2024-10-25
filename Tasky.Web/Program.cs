@@ -4,20 +4,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Tasky.Datos.EF;
 using Tasky.Logica;
+using Tasky.Logica.Core;
 using Tasky.Logica.Gmail;
 using Tasky.Logica.Redis;
 
 
 
 var builder = WebApplication.CreateBuilder(args);
-// Obtén la ruta del directorio base de la aplicación
-string basePath = AppContext.BaseDirectory;
-string credentialPath = Path.Combine(basePath, "Credentials", "credentials.json");
-
-Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", credentialPath);
-
-builder.Services.AddScoped<HttpClient>();
-
 
 builder.Services.AddHttpContextAccessor();
 
@@ -31,11 +24,12 @@ builder.Services.AddAuthentication(options =>
 .AddCookie()
 .AddGoogle(googleOptions =>
 {
-    googleOptions.ClientId = "138514650967-12854bcvk5hauf89g2ss5b0frcsb5fi2.apps.googleusercontent.com";
-    googleOptions.ClientSecret = "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";
+    googleOptions.ClientId = builder.Configuration["Google:ClientId"];
+    googleOptions.ClientSecret = builder.Configuration["Google:ClienteSecret"];
     googleOptions.Scope.Add("https://www.googleapis.com/auth/gmail.readonly"); // Permisos para leer correos
     googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.email"); // Permisos para obtener información del usuario
     googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.profile"); // Permisos para obtener información del usuario
+    
     googleOptions.SaveTokens = true; // Guarda los tokens de acceso y refresh
 });
 
@@ -55,23 +49,12 @@ builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
     options.TokenLifespan = TimeSpan.FromHours(3);
 });
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
-})
-    .AddCookie()
-    .AddGoogle(options =>
-    {
-        options.ClientId = builder.Configuration["Google:ClientId"];
-        options.ClientSecret = builder.Configuration["Google:ClienteSecret"];
-        options.Scope.Add("email");
-    });
-
 
 //ideal transient para servicios de mail(por eso lo uso)
 builder.Services.AddTransient<EmailService>();
 builder.Services.AddScoped<IGmailAccountService, GmailAccountService>();
+builder.Services.AddScoped<HttpClient>();
+builder.Services.AddSingleton<ITaskManager, TaskManager>();
 builder.Services.AddSingleton<IGmailTaskyService, GmailTaskyService>();
 builder.Services.AddSingleton<IGmailNotificationService, GmailNotificationService>();
 builder.Services.AddSingleton<IRedisSessionService, RedisSessionService>();
