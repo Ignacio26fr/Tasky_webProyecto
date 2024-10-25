@@ -26,9 +26,9 @@ builder.Services.AddAuthentication(options =>
 {
     googleOptions.ClientId = builder.Configuration["Google:ClientId"];
     googleOptions.ClientSecret = builder.Configuration["Google:ClienteSecret"];
-    googleOptions.Scope.Add("https://www.googleapis.com/auth/gmail.readonly"); // Permisos para leer correos
-    googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.email"); // Permisos para obtener información del usuario
-    googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.profile"); // Permisos para obtener información del usuario
+    googleOptions.Scope.Add(builder.Configuration["email.readonly"]); // Permisos para leer correos
+    googleOptions.Scope.Add(builder.Configuration["userinfo.email"]); // Permisos para obtener información del usuario
+    googleOptions.Scope.Add(builder.Configuration["userinfo.profile"]); // Permisos para obtener información del usuario
     
     googleOptions.SaveTokens = true; // Guarda los tokens de acceso y refresh
 });
