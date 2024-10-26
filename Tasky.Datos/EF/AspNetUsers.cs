@@ -16,6 +16,11 @@ namespace Tasky.Datos.EF
 
         public override string Id { get; set; } = null!;
         public override string? UserName { get; set; }
+        public string? FirstName { get; set; }
+
+        public string? LastName { get; set; }
+
+        public string? imagenDePerfil { get; set; }
         public override string? NormalizedUserName { get; set; }
         public override string? Email { get; set; }
         public override string? NormalizedEmail { get; set; }

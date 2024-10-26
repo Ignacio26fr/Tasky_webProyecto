@@ -22,8 +22,15 @@ namespace Tasky.Datos.EF
         public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
         public virtual DbSet<AspNetUsers> AspNetUsers { get; set; } = null!;
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
-    //    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
-       // public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
+        //    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
+        // public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
+        public DbSet<TaskyStatus> TaskyStatuses { get; set; }
+        public DbSet<TaskyPriority> TaskyPriorities { get; set; }
+        public DbSet<TaskyObject> TaskyObjects { get; set; }
+        public DbSet<EventosCalendar> EventosCalendars { get; set; }
+        public DbSet<TablerosTrello> TablerosTrella { get; set; }
+        public DbSet<ListasTrello> ListasTrellos { get; set; }
+        public DbSet<TareasTrello> TareasTrella { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -94,9 +101,61 @@ namespace Tasky.Datos.EF
                     .HasConstraintName("FK__AspNetUse__UserI__45F365D3");
             });
 
-           
 
-           
+            modelBuilder.Entity<TaskyObject>()
+           .HasOne(t => t.Status)
+           .WithMany()
+           .HasForeignKey(t => t.IdStatus);
+
+            modelBuilder.Entity<TaskyObject>().HasKey(t => t.IdObject);
+
+            modelBuilder.Entity<TaskyObject>()
+                .HasOne(t => t.Priority)
+                .WithMany()
+                .HasForeignKey(t => t.IdPriority);
+
+
+            modelBuilder.Entity<EventosCalendar>()
+                .HasKey(e => e.IdEventoCalendar);
+
+            modelBuilder.Entity<EventosCalendar>()
+                .HasOne(e => e.TaskyObject)
+                .WithMany()
+                .HasForeignKey(e => e.IdObject)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity <ListasTrello>()
+                .HasKey(l => l.IdLista);
+
+            modelBuilder.Entity<ListasTrello>()
+                .HasOne(l => l.Tablero)
+                .WithMany()
+                .HasForeignKey(l => l.TableroId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<TablerosTrello>()
+            .HasKey(t => t.IdTablero);
+
+            modelBuilder.Entity<TareasTrello>()
+                .HasOne(t => t.Lista)
+                .WithMany()
+                .HasForeignKey(t => t.IdLista)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<TareasTrello>()
+                .HasOne(t => t.TaskyObject)
+                .WithMany()
+                .HasForeignKey(t => t.IdObject)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<TaskyPriority>().
+                HasKey(p => p.IdPriority);
+
+            modelBuilder.Entity<TaskyStatus>().
+                HasKey(s => s.IdStatus);
+
+
+
 
             OnModelCreatingPartial(modelBuilder);
         }
