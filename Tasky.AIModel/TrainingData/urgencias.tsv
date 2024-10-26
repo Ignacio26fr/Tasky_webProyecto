@@ -1,0 +1,607 @@
+urgencia	asunto	texto
+Urgente	Coordinar reunión de emergencia para revisión de presupuesto	Es necesaria una reunión para ajustar el presupuesto debido a gastos imprevistos.
+Urgente	Cita médica urgente	Estimado paciente, le recordamos que tiene una cita médica programada para mañana a las 10:00 AM. Es importante que asista.
+Urgente	Pago inmediato requerido	Por favor, realice el pago de la factura adjunta antes del final del día para evitar cargos adicionales.
+Medio	Solicitud de informe	Estimado equipo, por favor, envíenme el informe de ventas de este mes para revisarlo antes de la reunión.
+Medio	Confirmación de reunión	Este es un recordatorio para confirmar nuestra reunión el jueves a las 3:00 PM. ¿Sigue disponible?
+Poco Urgente	Cumpleaños de Juan	¡Hola a todos! No olviden que el cumpleaños de Juan es este viernes. ¡Hagamos una pequeña celebración!
+Poco Urgente	Reunión de seguimiento	Quiero programar una reunión de seguimiento para discutir el progreso del proyecto. ¿Qué días tienen libres la próxima semana?
+Urgente	Accidente de tráfico	Atención: ha habido un accidente de tráfico en la autopista. Se requiere asistencia inmediata.
+Medio	Actualización de proyecto	Hola, solo quería informarles que hemos avanzado en el proyecto y deberíamos estar listos para la revisión la próxima semana.
+Poco Urgente	Planificación de vacaciones	Quisiera discutir la planificación de nuestras vacaciones. Podemos hablar sobre esto en la próxima reunión.
+Urgente	Resultados de la prueba	Los resultados de su prueba están disponibles. Por favor, contáctenos inmediatamente para discutirlos.
+Urgente	Reunión urgente con el cliente	Necesitamos discutir el proyecto hoy a las 3 PM.
+Medio	Planificación de tareas	Planifiquemos las tareas para el próximo mes en nuestra próxima reunión.
+Poco Urgente	Notificación de cambio de horario	El horario de la reunión ha cambiado, revisa el calendario.
+Urgente	Revisión del contrato	Necesito que revises el contrato adjunto antes de firmarlo.
+Medio	Actualización del estado del proyecto	El estado del proyecto está actualizado. Por favor, consulta el documento adjunto.
+Medio	Consulta sobre el pago	Estoy consultando sobre el estado de un pago pendiente.
+Urgente	Recordatorio: pago de factura	No olvides el pago de la factura que vence el viernes.
+Poco Urgente	Planificación del evento	Estamos planificando el evento de fin de año. Más detalles pronto.
+Urgente	Problema de seguridad	Se ha detectado un problema de seguridad que necesita atención inmediata.
+Poco Urgente	Vacaciones programadas	Recuerda que estoy de vacaciones la próxima semana y no estaré disponible.
+Medio	Revisión de documentos	Necesito que revises los documentos antes del viernes.
+Urgente	Solicito confirmación de asistencia	Por favor, confirma tu asistencia a la reunión de mañana.
+Poco Urgente	Promoción de productos	Consulta nuestra nueva promoción de productos en la tienda.
+Urgente	Reunión de emergencia	Hay una reunión de emergencia programada para hoy a las 4 PM. Asistencia obligatoria.
+Medio	Actualización de la política de trabajo	Por favor, revisa la actualización de nuestra política de trabajo a distancia.
+Medio	Propuesta de colaboración	Estamos interesados en una colaboración potencial. ¿Podemos discutirlo la próxima semana?
+Urgente	Problemas con el sistema	El sistema se ha caído y necesita atención inmediata para evitar problemas mayores.
+Medio	Recordatorio de entrega	Este es un recordatorio para la entrega de tu informe el lunes.
+Poco Urgente	Invitación a la conferencia	Te invito a la conferencia sobre innovación tecnológica. Más detalles en el enlace.
+Medio	Actualizar perfil profesional en LinkedIn	Revise su perfil de LinkedIn y realice actualizaciones de logros recientes. No es urgente, pero ayudará a mejorar su presencia profesional.
+Medio	Planificar agenda para la próxima semana	Tome un momento para organizar su agenda de actividades y reuniones para la semana siguiente.
+Medio	Revisar facturas de servicios automáticos	Verifique los cobros automáticos de servicios y asegúrese de que todo esté en orden.
+Medio	Confirmar asistencia a evento virtual profesional	Revise la invitación y confirme su participación en el evento de networking.
+Medio	Hacer el presupuesto mensual de gastos	Es necesario planificar los gastos del mes para tener un mejor control financiero.
+Medio	Revisar términos de renovación del seguro	Verifique los términos de su seguro, la fecha de renovación se acerca y podría necesitar ajustes.
+Medio	Organizar documentos de impuestos	Empiece a organizar los documentos para la próxima declaración de impuestos.
+Medio	Preparar presentación para reunión de equipo	Revise y actualice la presentación que se usará en la próxima reunión.
+Medio	Actualizar registros médicos personales	Reúna y actualice sus registros médicos en el archivo familiar.
+Medio	Consultar recomendaciones sobre un curso en línea	Lea opiniones y recomendaciones de un curso que desea tomar, útil para su desarrollo profesional.
+Medio	Inscribirse en el gimnasio o club deportivo	Considere la inscripción en un gimnasio cercano. Sería beneficioso para su salud.
+Medio	Comprar insumos para proyectos de bricolaje	Revise los materiales necesarios y compre los faltantes para el proyecto de bricolaje que tiene en mente.
+Medio	Consultar con el médico sobre rutina de ejercicios	Agende una consulta para confirmar que su rutina física es adecuada.
+Medio	Planear un día de voluntariado con el equipo	Coordine un día de voluntariado para el equipo. No es urgente, pero motiva el trabajo en equipo.
+Medio	Verificar vencimiento de documentos personales	Revise si sus documentos (pasaporte, licencia) están al día y planifique renovaciones si es necesario.
+Medio	Crear lista de materiales para un nuevo curso	Si planea tomar un curso pronto, haga una lista de materiales necesarios.
+Medio	Revisar la limpieza de la oficina en casa	Es momento de organizar el espacio de trabajo en casa, mejorará la productividad.
+Medio	Leer artículos recientes de su campo profesional	Dedique tiempo a leer artículos relevantes para mantenerse actualizado.
+Medio	Planear actividades recreativas para el fin de semana	Organice alguna actividad para desconectar del trabajo, le ayudará a relajarse.
+Medio	Solicito tu opinión	Me gustaría saber tu opinión sobre la propuesta que envié anteriormente.
+Urgente	Acción requerida: Contraseña	Por favor, actualiza tu contraseña antes de que finalice la semana.
+Urgente	Reunión urgente con el cliente	Necesitamos discutir el proyecto hoy a las 3 PM.
+Medio	Planificación de tareas	Planifiquemos las tareas para el próximo mes en nuestra próxima reunión.
+Poco Urgente	Notificación de cambio de horario	El horario de la reunión ha cambiado, revisa el calendario.
+Urgente	Revisión del contrato	Necesito que revises el contrato adjunto antes de firmarlo.
+Medio	Actualización del estado del proyecto	El estado del proyecto está actualizado. Por favor, consulta el documento adjunto.
+Medio	Consulta sobre el pago	Estoy consultando sobre el estado de un pago pendiente.
+Urgente	Recordatorio: pago de factura	No olvides el pago de la factura que vence el viernes.
+Poco Urgente	Planificación del evento	Estamos planificando el evento de fin de año. Más detalles pronto.
+Urgente	Problema de seguridad	Se ha detectado un problema de seguridad que necesita atención inmediata.
+Poco Urgente	Vacaciones programadas	Recuerda que estoy de vacaciones la próxima semana y no estaré disponible.
+Medio	Revisión de documentos	Necesito que revises los documentos antes del viernes.
+Urgente	Solicito confirmación de asistencia	Por favor, confirma tu asistencia a la reunión de mañana.
+Poco Urgente	Promoción de productos	Consulta nuestra nueva promoción de productos en la tienda.
+Urgente	Reunión de emergencia	Hay una reunión de emergencia programada para hoy a las 4 PM. Asistencia obligatoria.
+Medio	Actualización de la política de trabajo	Por favor, revisa la actualización de nuestra política de trabajo a distancia.
+Medio	Propuesta de colaboración	Estamos interesados en una colaboración potencial. ¿Podemos discutirlo la próxima semana?
+Urgente	Problemas con el sistema	El sistema se ha caído y necesita atención inmediata para evitar problemas mayores.
+Medio	Recordatorio de entrega	Este es un recordatorio para la entrega de tu informe el lunes.
+Poco Urgente	Invitación a la conferencia	Te invito a la conferencia sobre innovación tecnológica. Más detalles en el enlace.
+Medio	Solicito tu opinión	Me gustaría saber tu opinión sobre la propuesta que envié anteriormente.
+Urgente	Acción requerida: Contraseña	Por favor, actualiza tu contraseña antes de que finalice la semana.
+Medio	Consulta sobre proyecto	¿Podrías darme una actualización sobre el estado del proyecto?
+Medio	Revisión de políticas de seguridad	Es hora de revisar nuestras políticas de seguridad. Por favor, consulta el documento adjunto.
+Urgente	Confirmación de cita	Necesito que confirmes nuestra cita del miércoles a las 2 PM.
+Poco Urgente	Newsletter mensual	Aquí tienes nuestra newsletter mensual con las últimas actualizaciones.
+Medio	Evaluación del desempeño	Es hora de completar la evaluación de desempeño del equipo.
+Urgente	Solicitud de presupuesto	Por favor, envía el presupuesto solicitado antes del fin de semana.
+Poco Urgente	Información sobre la nueva herramienta	Hemos lanzado una nueva herramienta que puede facilitar tu trabajo. Más detalles a continuación.
+Urgente	Planificación de proyecto	Debemos planificar el proyecto antes del fin de semana.
+Urgente	Recordatorio de entrega	Recuerda enviar la entrega final del informe antes del lunes.
+Medio	Revisión de documento	Por favor, revisa el documento que te envié ayer.
+Urgente	Confirmación de reunión	Confirma tu asistencia a la reunión de estrategia para la próxima semana.
+Poco Urgente	Investigar nuevos gadgets	Explora algunos gadgets interesantes online. No es urgente, solo para estar al tanto de novedades.
+Poco Urgente	Pintar algún mueble viejo	Podrías darle una nueva capa de pintura a algún mueble. No es urgente, solo para renovar un poco.
+Poco Urgente	Escuchar un podcast de entretenimiento	Busca un podcast para escuchar cuando tengas tiempo. No es urgente, simplemente para entretenimiento.
+Poco Urgente	Hacer un rompecabezas en casa	Si tienes tiempo, empieza un rompecabezas como pasatiempo. No es urgente, solo para distraerte.
+Poco Urgente	Pensar en un nuevo proyecto de bricolaje	Considera un proyecto sencillo de bricolaje. No es urgente, simplemente una idea para ser creativo.
+Poco Urgente	Leer artículos de noticias generales	Lee algunos artículos para mantenerte informado. No es urgente, solo para conocimiento general.
+Poco Urgente	Planificar una salida para el mes próximo	Piensa en una salida para el próximo mes. No es urgente, simplemente para organizarte.
+Poco Urgente	Revisar los documentos viejos en casa	Revisa y organiza algunos documentos. No es urgente, solo para mantener el orden.
+Poco Urgente	Practicar alguna receta internacional	Si tienes ganas, prueba una receta de otro país. No es urgente, solo para experimentar.
+Poco Urgente	Ver videos educativos sobre ciencia	Busca videos sobre temas interesantes en ciencia. No es urgente, solo por curiosidad.
+Poco Urgente	Actualizar tus redes sociales cuando puedas	Actualiza tus redes sociales si lo deseas. No es urgente, solo una actividad para el tiempo libre.
+Poco Urgente	Limpiar los correos viejos de la bandeja	Organiza tu bandeja de entrada cuando tengas tiempo. No es urgente, solo para mantener todo ordenado.
+Poco Urgente	Buscar eventos próximos en tu ciudad	Explora eventos que vienen en la ciudad. No es urgente, simplemente para futuras salidas.
+Poco Urgente	Armar un álbum de fotos familiar	Puedes organizar un álbum de fotos en algún momento libre. No es urgente, solo para preservar recuerdos.
+Poco Urgente	Hacer una lista de películas pendientes	Crea una lista de películas que te gustaría ver. No es urgente, solo para tener opciones de entretenimiento.
+Poco Urgente	Revisar tiendas para nuevas decoraciones	Explora tiendas en busca de decoración para la casa. No es urgente, simplemente para inspirarte.
+Poco Urgente	Buscar ideas para organizar el espacio de trabajo	Investiga formas de organizar mejor tu espacio. No es urgente, solo para optimizar el entorno.
+Poco Urgente	Empezar un diario o escribir tus pensamientos	Considera empezar un diario personal. No es urgente, solo una actividad para reflexionar.
+Poco Urgente	Revisar tus fotos antiguas en el teléfono	Limpia y organiza tus fotos en el teléfono. No es urgente, solo para ahorrar espacio.
+Medio	Actualización de la base de datos	Necesitamos actualizar la base de datos este mes.
+Poco Urgente	Consulta sobre el informe	¿Puedes explicarme algunos puntos del informe que enviaste?
+Medio	Seguimiento de tareas	Haz un seguimiento del progreso de las tareas asignadas.
+Urgente	Notificación de evento	Te notifico sobre el evento programado para este viernes.
+Medio	Revisión de políticas de empresa	Por favor, revisa las nuevas políticas de la empresa antes de aplicarlas.
+Poco Urgente	Petición de retroalimentación	Agradecería tu retroalimentación sobre el último proyecto.
+Medio	Actualización de horario	He actualizado el horario de trabajo para este mes.
+Urgente	Confirmación de asistencia	Por favor, confirma tu asistencia a la conferencia el próximo mes.
+Poco Urgente	Consulta sobre la próxima entrega	¿Tienes información sobre la próxima entrega del proyecto?
+Urgente	Recordatorio de la capacitación	No olvides asistir a la capacitación programada para mañana.
+Medio	Verificación de inventario	Verifica el inventario antes de hacer el pedido.
+Urgente	Confirmación de cita	Confirma tu cita con el cliente para la próxima semana.
+Poco Urgente	Planificación de vacaciones	Hablemos sobre la planificación de tus vacaciones para este año.
+Urgente	Cambio en los requisitos	Hay un cambio en los requisitos del proyecto, revisa el correo.
+Medio	Seguimiento de la entrega	Haciendo seguimiento de la entrega pendiente, ¿tienes novedades?
+Poco Urgente	Notificación de cambios en el equipo	Se han hecho cambios en el equipo, revisa los detalles.
+Urgente	Solicitud de propuesta	Por favor, envía la propuesta para el nuevo proyecto lo antes posible.
+Urgente	Reunión de evaluación	La reunión de evaluación del proyecto será el próximo lunes a las 10 AM.
+Urgente	Revisión de contrato	Es urgente que revises el contrato antes de firmarlo.
+Urgente	Anuncio de lanzamiento	Anuncio el lanzamiento del nuevo producto para el próximo mes.
+Urgente	Actualización sobre el proyecto	Por favor, actualiza sobre el estado del proyecto al final del día.
+Medio	Recordatorio de seguimiento	No olvides hacer seguimiento a los clientes esta semana.
+Medio	Consulta sobre el presupuesto	Necesito que me des tu opinión sobre el presupuesto presentado.
+Medio	Informe de progreso	Envía el informe de progreso antes del fin de semana.
+Medio	Reunión de equipo	La reunión del equipo está programada para el miércoles a las 3 PM.
+Poco Urgente	Actualización de contactos	Asegúrate de que la lista de contactos esté actualizada.
+Medio	Seguimiento de proveedores	Haz un seguimiento de los proveedores sobre la entrega programada.
+Urgente	Confirmación de cambios de horario	Por favor, confirma los cambios realizados en el horario.
+Urgente	Reunión de feedback	La reunión de feedback está programada para el jueves a las 1 PM.
+Urgente	Confirmación de la reunión de cierre	Confirma tu asistencia a la reunión de cierre del proyecto.
+Urgente	Solicitud de actualización	Necesito una actualización sobre el estado del proyecto a la brevedad.
+Urgente	Revisión de especificaciones	Por favor, revisa las especificaciones del proyecto antes de la reunión.
+Medio	Aviso de cambio de procedimiento	Te informo sobre un cambio en los procedimientos internos.
+Urgente	Confirmación de entregas	Por favor, confirma la entrega de los materiales para mañana.
+Medio	Consulta sobre la tarea asignada	¿Tienes alguna pregunta sobre la tarea que te asigné?
+Medio	Seguimiento a clientes potenciales	Haz un seguimiento a los clientes potenciales esta semana.
+Poco Urgente	Recordatorio de actividades	Recuerda las actividades programadas para esta semana.
+Urgente	Planificación de eventos	Necesitamos planificar el evento anual con anticipación.
+Medio	Revisión de documentos de ventas	Por favor, revisa los documentos de ventas antes de enviarlos.
+Urgente	Notificación de reunión	Te notifiqué sobre la reunión programada para mañana.
+Medio	Consulta sobre resultados de ventas	¿Cuáles son los resultados de ventas del último trimestre?
+Urgente	Recordatorio de pagos	Recuerda que los pagos deben ser procesados antes del fin de mes.
+Medio	Actualización de calendario	Asegúrate de que el calendario esté actualizado con los eventos próximos.
+Urgente	Confirmación de materiales	Confirma que los materiales necesarios estarán disponibles para el evento.
+Poco Urgente	Solicitud de feedback del cliente	Necesitamos feedback del cliente sobre el último proyecto.
+Urgente	Anuncio de cambios en el equipo	Anuncio cambios en la estructura del equipo, revisa el correo.
+Urgente	Petición de recursos	Por favor, envía los recursos necesarios para la reunión de mañana.
+Urgente	Recordatorio de la evaluación anual	No olvides la evaluación anual programada para el próximo mes.
+Medio	Consulta sobre la capacitación	¿Tienes información sobre la capacitación programada para la próxima semana?
+Urgente	Recordatorio de presupuesto	Recuerda que el presupuesto debe ser revisado antes del viernes.
+Urgente	Solicitud de firma	Por favor, firma el contrato y devuélvelo a la brevedad.
+Urgente	Confirmación de reunión de equipo	Confirma tu asistencia a la reunión del equipo el jueves a las 10 AM.
+Urgente	Actualización de estado de proyecto	Necesitamos una actualización del estado del proyecto antes de la reunión.
+Medio	Consulta sobre las métricas	¿Podrías proporcionar las métricas de rendimiento del último mes?
+Urgente	Anuncio de reunión de estrategia	Anuncio una reunión para discutir la estrategia de ventas el viernes.
+Urgente	Revisión de materiales de marketing	Por favor, revisa los materiales de marketing antes del lanzamiento.
+Medio	Seguimiento de tareas pendientes	Asegúrate de que todas las tareas pendientes estén completadas antes de la revisión.
+Medio	Notificación de eventos próximos	Te notifico sobre los eventos programados para la próxima semana.
+Urgente	Confirmación de asistencia al evento	Confirma tu asistencia al evento del próximo mes.
+Poco Urgente	Consulta sobre el informe de auditoría	¿Tienes información sobre el informe de auditoría que se realizó?
+Urgente	Recordatorio de fechas límites	No olvides que hay fechas límites importantes esta semana.
+Urgente	Solicitud de recursos adicionales	Por favor, envíame recursos adicionales para completar el proyecto.
+Medio	Verificación de cumplimiento	Asegúrate de que se cumplan todos los requisitos de cumplimiento.
+Medio	Consulta sobre el cambio de estrategia	¿Podemos hablar sobre el cambio de estrategia que propusiste?
+Poco Urgente	Notificación de vacaciones	Te informo que estaré de vacaciones la próxima semana.
+Medio	Revisión de la política de privacidad	Por favor, revisa la política de privacidad actualizada.
+Medio	Consulta sobre la planificación de eventos	¿Podemos discutir la planificación del próximo evento?
+Poco Urgente	Recordatorio de citas	No olvides tus citas programadas para esta semana.
+Urgente	Actualización sobre la campaña	Por favor, proporciona una actualización sobre la campaña actual.
+Urgente	Confirmación de la presentación	Confirma tu asistencia a la presentación del nuevo producto.
+Urgente	Solicitud de corrección	Por favor, realiza las correcciones necesarias en el informe.
+Urgente	Reunión para la revisión del proyecto	Necesitamos reunirnos para revisar el progreso del proyecto.
+Urgente	Notificación de cambio de fecha	Te notifico que la fecha de la reunión ha cambiado a viernes.
+Medio	Consulta sobre el informe de ventas	¿Puedes enviarme el informe de ventas del mes pasado?
+Urgente	Recordatorio de la entrega	Recuerda que la entrega de los documentos es mañana.
+Medio	Revisión del cronograma	Por favor, revisa el cronograma de tareas para el próximo mes.
+Poco Urgente	Actualización de información del cliente	Asegúrate de que la información del cliente esté actualizada.
+Medio	Consulta sobre el procedimiento de reclutamiento	¿Cuál es el procedimiento para el reclutamiento de nuevos empleados?
+Medio	Seguimiento de correos enviados	Asegúrate de hacer seguimiento a los correos enviados esta semana.
+Medio	Revisión de políticas de trabajo remoto	Por favor, revisa las políticas de trabajo remoto actualizadas.
+Poco Urgente	Notificación de cambios en el horario laboral	Te informo sobre los cambios en el horario laboral para el próximo mes.
+Medio	Planificación de la capacitación	Necesitamos planificar la capacitación del personal para el próximo trimestre.
+Urgente	Solicitud de información adicional	Por favor, envíame información adicional sobre el proyecto.
+Urgente	Confirmación de asistencia al seminario	Confirma tu asistencia al seminario programado para la próxima semana.
+Medio	Consulta sobre cambios en el equipo	¿Podemos discutir los cambios recientes en el equipo?
+Urgente	Revisión de presupuestos	Por favor, revisa los presupuestos propuestos antes de la reunión.
+Poco Urgente	Notificación de finalización de proyectos	Te informo que el proyecto ha sido completado.
+Urgente	Recordatorio de la evaluación de desempeño	No olvides la evaluación de desempeño programada para esta semana.
+Urgente	Solicitud de asistencia técnica	Necesito asistencia técnica para resolver un problema urgente.
+Medio	Revisión médica anual	Tu revisión médica anual está programada para la próxima semana. Por favor, confirma tu asistencia.
+Urgente	Recordatorio de cita médica	Tienes una cita médica programada para mañana a las 10:00 AM. No olvides llevar tus documentos.
+Medio	Receta médica lista	Tu receta está lista para ser recogida en la farmacia. Recuerda pasar antes del cierre.
+Medio	Pasear al perro	No olvides sacar a pasear al perro esta tarde. Lleva su juguete favorito.
+Poco Urgente	Revisión dental	Es hora de agendar tu revisión dental semestral. Por favor, contacta a la clínica para reservar una fecha.
+Poco Urgente	Visita de amigos	Este fin de semana vienen los amigos a casa. Debemos organizar algo para la cena.
+Urgente	Cambio de medicación	El doctor ha actualizado tu medicación. Por favor, recoge la nueva receta lo antes posible.
+Medio	Hora de baño	Recuerda que es día de baño. Necesitamos reponer el gel de baño que se acabó.
+Urgente	Vacuna para la gripe	Es momento de aplicarse la vacuna contra la gripe. Consulta con tu médico para agendar una cita.
+Poco Urgente	Salir con amigos	Tenemos una salida planeada para el sábado por la noche. ¿Te gustaría venir?
+Medio	Actualización de medicamentos	Tu tratamiento ha sido actualizado. El nuevo medicamento estará disponible para recoger en dos días.
+Medio	Medicamentos para el dolor	No olvides tomar los medicamentos para el dolor según lo recetado. Si empeoran los síntomas, contacta al médico.
+Medio	Revisión médica anual	Tu revisión médica anual está programada para la próxima semana. Por favor, confirma tu asistencia.
+Poco Urgente	Paseo en el parque	¿Te gustaría salir a dar un paseo por el parque esta tarde? Hace buen clima.
+Urgente	Cambio de horario para la cirugía	Se ha cambiado el horario de la cirugía. La nueva hora es a las 8:00 AM del lunes.
+Medio	Compra de medicamentos	Es necesario comprar los medicamentos recetados antes del fin de semana. La farmacia cierra temprano.
+Urgente	Cita con el fisioterapeuta	Recuerda tu cita con el fisioterapeuta para la rehabilitación. Es importante no faltar.
+Poco Urgente	Limpieza de la casa	Tenemos que hacer la limpieza general de la casa este fin de semana. Organízate para que podamos terminar rápido.
+Poco Urgente	Planear la compra de un nuevo libro para leer	No es necesario hacerlo de inmediato, tómate tu tiempo.
+Poco Urgente	Ver qué películas están disponibles para ver el fin de semana	Puedes decidirlo más adelante, no es urgente.
+Poco Urgente	Revisar qué ingredientes faltan para hacer un postre	No es necesario hacerlo ahora, puedes hacerlo más tarde.
+Poco Urgente	Recordar que es día de limpieza de la casa este fin de semana	Puedes hacerlo en cualquier momento, no es apremiante.
+Poco Urgente	Consultar qué tipo de helado comprar para el cumpleaños de un amigo	Puede decidirse más adelante, no hay prisa.
+Poco Urgente	Pensar en qué actividades hacer durante las vacaciones	No es necesario decidir ahora, puedes pensarlo más tarde.
+Poco Urgente	Ver qué accesorios necesitas para el próximo evento social	Puedes planearlo más cerca de la fecha, sin apuro.
+Poco Urgente	Revisar las ofertas de galletas en el supermercado	Puedes hacerlo cuando vayas a comprar, no es urgente.
+Poco Urgente	Hacer un seguimiento de las galletitas que sobraron en la fiesta	Puede hacerse cuando tengas tiempo, sin prisa.
+Poco Urgente	Pensar en qué juegos llevar para la reunión de amigos	Puedes decidirlo antes de la reunión, no es urgente.
+Medio	Resultados de análisis clínicos	Loss resultados de tus análisis están listos para ser recogidos. Puedes pasar por el laboratorio mañana.
+Urgente	Preparación para visita al médico	Prepara todos tus informes médicos para la cita del próximo martes.
+Poco Urgente	Entrenamiento en el gimnasio	Hoy toca entrenamiento en el gimnasio. No olvides llevar tu botella de agua y toalla.
+Medio	Cambio de dieta	El nutricionista ha recomendado algunos cambios en tu dieta. Nos reunimos la próxima semana para discutirlos.
+Poco Urgente	Organización de una reunión familiar	Estamos planeando una reunión familiar para el próximo mes. Ayúdanos a organizar los detalles.
+Urgente	Recordatorio de vacunación	No olvides que tienes que ponerte la vacuna de refuerzo el próximo viernes.
+Medio	Nueva rutina de ejercicios	El entrenador ha actualizado tu rutina de ejercicios. Revisa los cambios antes de la próxima sesión.
+Urgente	Cita con el dermatólogo	Tu cita con el dermatólogo ha sido programada para el próximo miércoles. Lleva el historial de tratamientos previos.
+Poco Urgente	Revisión de la vista	Es tiempo de agendar tu revisión anual de la vista. Llama a la óptica para programar una cita.
+Medio	Reparación del coche	El coche necesita una revisión en el taller. Agenda una cita para el mantenimiento este mes.
+Poco Urgente	Plan para salir a cenar	Estamos organizando una cena para el próximo viernes. ¿Quieres unirte?
+Urgente	Consulta sobre análisis de sangre	El médico necesita discutir los resultados de tus análisis de sangre. Te recomendamos que vayas lo antes posible.
+Poco Urgente	Tareas del jardín	Este fin de semana toca cortar el césped y regar las plantas.
+Medio	Chequeo de presión arterial	Es recomendable que controles tu presión arterial semanalmente. Tómate un momento para hacerlo hoy.
+Urgente	Visita al cardiólogo	Recuerda que tienes una cita con el cardiólogo mañana por la tarde. Es importante no faltar.
+Medio	Paseo con el perro	Hoy el perro necesita un paseo más largo. Aprovecha para ir al parque.
+Medio	Revisión de la vista	Tu revisión de la vista está programada para el viernes. Lleva tus gafas para el examen.
+Poco Urgente	Reunión familiar	Este domingo tenemos reunión familiar en casa de los abuelos. No olvides traer postre.
+Urgente	Renovación de receta	Debes renovar la receta del medicamento antes del fin de mes. Consulta con el médico para programar una cita.
+Poco Urgente	Revisar finanzas personales	Revisa tus finanzas personales y ajusta tu presupuesto. No es urgente, pero es importante estar al tanto.
+Poco Urgente	Planificar las vacaciones	Piensa en planificar tus vacaciones. No es urgente, pero es bueno tenerlo en mente.
+Poco Urgente	Hacer un chequeo dental	Considera hacer un chequeo dental. No es urgente, pero es recomendable no dejar pasar mucho tiempo.
+Poco Urgente	Organizar las fotos digitales	Dedica tiempo a organizar tus fotos digitales. No es urgente, pero te ayudará a tener todo en orden.
+Poco Urgente	Actualizar tus redes sociales	Revisa y actualiza tus perfiles en redes sociales. No es urgente, pero es bueno mantenerlos al día.
+Poco Urgente	Ver una película esta noche	Piensa en ver una película esta noche si tienes tiempo. No es urgente, solo una idea para relajarte.
+Poco Urgente	Reunión social el fin de semana	Hay una reunión con amigos este fin de semana. No es urgente, simplemente para que tengas en cuenta.
+Poco Urgente	Jugar videojuegos esta tarde	Si tienes tiempo, considera jugar un rato. No es urgente, solo algo para pasar el rato.
+Poco Urgente	Hacer una llamada de cortesía	Podrías hacer una llamada de cortesía a un amigo. No es urgente, solo para mantener el contacto.
+Poco Urgente	Buscar recetas nuevas	Explora recetas nuevas para cocinar en casa. No es urgente, simplemente una actividad recreativa.
+Poco Urgente	Planear un picnic	Considera planear un picnic en el parque. No es urgente, solo una idea para un momento de relajación.
+Poco Urgente	Pensar en redecorar la sala	Podrías pensar en nuevas ideas para la sala. No es urgente, solo algo que puedes hacer en tu tiempo libre.
+Poco Urgente	Visitar una librería local	Si tienes tiempo, visita una librería para ver novedades. No es urgente, solo una sugerencia para pasar el día.
+Medio	Preparación para viaje	Empieza a preparar tu maleta para el viaje de la próxima semana. No olvides llevar tus medicamentos.
+Poco Urgente	Cuidado de las plantas	Es momento de regar las plantas del jardín. Hace varios días que no llueve.
+Urgente	Vacuna para el perro	El perro necesita su vacuna anual. Consulta con el veterinario para agendar una cita.
+Poco Urgente	Clase de yoga	Hoy hay clase de yoga a las 6:00 PM. No olvides llevar tu esterilla y ropa cómoda.
+Urgente	Cobro de intereses	Los intereses de la tarjeta de crédito se han acumulado. Realiza el pago lo antes posible para evitar cargos adicionales.
+Urgente	Pago de factura atrasado	La factura del servicio de internet está atrasada. Por favor, realiza el pago antes del fin de semana.
+Medio	Revisión del presupuesto	Es necesario revisar el presupuesto del proyecto para el próximo trimestre. Programe una reunión.
+Medio	Actualización de tarifas	Las tarifas para nuestros servicios han cambiado. Consulta el nuevo listado de precios.
+Urgente	Pago de alquiler	El pago del alquiler está próximo a vencer. Asegúrate de realizar la transferencia antes del día 5.
+Medio	Solicitud de reembolso	Envía los documentos necesarios para procesar el reembolso de los gastos de viaje.
+Urgente	Revisión de contrato	El contrato para el nuevo proveedor necesita ser revisado y firmado. Por favor, confirma tu disponibilidad.
+Poco Urgente	Informe financiero trimestral	El informe financiero del trimestre pasado está listo. Programemos una reunión para discutir los resultados.
+Urgente	Pago de suscripción	La suscripción al servicio de software está por vencer. Renueva el pago para evitar la suspensión del servicio.
+Medio	Propuesta de negocio	Tengo una propuesta de negocio que podría ser interesante. Hablemos para revisar los detalles.
+Medio	Actualización del plan de negocios	El plan de negocios ha sido actualizado con los cambios recientes. Revísalo antes de la próxima junta.
+Urgente	Pago de factura de servicios	La factura de servicios del mes pasado está pendiente. Realiza el pago para evitar la suspensión.
+Medio	Renovación de seguro	El seguro de salud está próximo a vencer. No olvides renovarlo antes de fin de mes.
+Urgente	Transferencia de fondos	Se necesita aprobar la transferencia de fondos para el proyecto en curso. Por favor, revisa y aprueba.
+Medio	Revisión de los estados de cuenta	Los estados de cuenta del último mes ya están disponibles. Revisa para verificar movimientos sospechosos.
+Urgente	Pagos de proveedores	Asegúrate de realizar los pagos pendientes a los proveedores antes de la fecha límite.
+Poco Urgente	Comprar snacks para la noche de películas	Puede hacerse antes de la película, no es urgente.
+Poco Urgente	Hacer una lista de compras para el fin de semana	Puede planearse cuando tengas tiempo.
+Poco Urgente	Revisar si hay suficientes galletas para el té de la tarde	Puedes hacerlo antes del té, no es apremiante.
+Poco Urgente	Pensar en qué bebidas llevar a la barbacoa el próximo mes	No es necesario decidir ahora, puedes pensarlo más tarde.
+Poco Urgente	Consultar recetas de galletitas para probar este fin de semana	Tómalo como una opción, pero no hay prisa.
+Poco Urgente	Ver qué tipo de cerveza te gustaría comprar para la fiesta	Decídelo cuando tengas tiempo, no es urgente.
+Poco Urgente	Planear qué aperitivos comprar para el picnic del domingo	Puede hacerse en los próximos días, sin apuro.
+Poco Urgente	Revisar el inventario de galletas en la alacena	Puede hacerse más tarde, no es urgente.
+Poco Urgente	Consultar nuevas marcas de cerveza para probar en la próxima reunión	Puede hacerse cuando tengas tiempo, no es apremiante.
+Poco Urgente	Pensar en qué galletitas son las favoritas de los amigos para la próxima reunión	Puede hacerse antes de la reunión, sin apuro.
+Medio	Negociación de contrato	La negociación del contrato con el cliente está programada para la próxima semana. Necesitamos definir los términos.
+Urgente	Pago de impuestos	El pago de impuestos está próximo. Verifica que toda la documentación esté en regla para evitar multas.
+Medio	Cotización para servicios	La cotización para los servicios solicitados ha sido enviada. Confirma la recepción y revisa los detalles.
+Poco Urgente	Reunión sobre inversiones	Se programó una reunión para discutir nuevas oportunidades de inversión. No faltes, es importante.
+Poco Urgente	Descuento por pago anticipado	Recuerda que puedes aprovechar un descuento si realizas el pago anticipado de la suscripción anual.
+Urgente	Pago de la tarjeta de crédito	La fecha límite para el pago de la tarjeta de crédito es mañana. Evita cargos adicionales realizando el pago hoy.
+Medio	Revisión de inversiones	Las inversiones del último trimestre necesitan ser evaluadas. Programe una reunión para analizar los resultados.
+Medio	Actualización del balance general	El balance general ha sido actualizado con los últimos movimientos. Por favor, revisa y aprueba.
+Urgente	Pago de facturas múltiples	Hay varias facturas pendientes de pago este mes. Asegúrate de cubrirlas antes de la fecha límite.
+Medio	Propuesta de asociación	Recibimos una propuesta para una posible asociación comercial. Revísala y hagamos una videollamada para discutir.
+Urgente	Cambio de términos de crédito	Los términos del crédito han cambiado. Es importante revisar los nuevos requisitos y condiciones.
+Medio	Recordatorio de vencimiento de seguro	El seguro del vehículo vencerá la próxima semana. No olvides renovarlo para evitar inconvenientes.
+Poco Urgente	Informe de pérdidas y ganancias	El informe de pérdidas y ganancias del último trimestre ya está disponible. Programe una revisión con el equipo.
+Urgente	Renovación de contrato	El contrato con el cliente vence este mes. Contacta al cliente para iniciar el proceso de renovación.
+Urgente	Pendiente de liquidación	Hay un monto pendiente de liquidación por los gastos del último mes. Completa el proceso a la brevedad.
+Medio	Confirmación de pago recibido	Hemos recibido tu pago para la factura de servicios. Gracias por mantenerte al día.
+Urgente	Próximo pago de hipoteca	El próximo pago de la hipoteca se debe realizar en tres días. Asegúrate de tener fondos suficientes.
+Medio	Reunión sobre estrategia financiera	Programe una reunión para discutir la estrategia financiera del próximo año. Necesitamos definir los objetivos.
+Medio	Actualización de la cuenta bancaria	El banco ha realizado cambios en las políticas de la cuenta. Por favor, revisa los detalles para estar al tanto.
+Urgente	Cobro de servicios atrasados	Tienes servicios atrasados por pagar. Realiza el pago cuanto antes para evitar la suspensión.
+Medio	Propuesta de financiamiento	Hemos recibido una propuesta de financiamiento para el nuevo proyecto. Revísala y proporciona tu opinión.
+Urgente	Pago de servicios legales	Hay una factura pendiente por los servicios legales prestados. El pago vence mañana.
+Poco Urgente	Solicitud de crédito aprobada	Tu solicitud de crédito ha sido aprobada. Contacta al banco para proceder con los siguientes pasos.
+Medio	Revisión del plan de ahorro	Revisa el plan de ahorro y realiza los ajustes necesarios para alcanzar tus objetivos financieros.
+Medio	Aumento en las tarifas de servicios	Notificamos un aumento en las tarifas de nuestros servicios a partir del próximo mes. Revisa los nuevos precios.
+Urgente	Recordatorio de pago de factura	Este es un recordatorio de que la factura de electricidad vence en dos días. Por favor, realiza el pago a tiempo.
+Medio	Confirmación de pago a proveedores	Hemos procesado tu pago a los proveedores. Asegúrate de verificar la recepción en su cuenta.
+Medio	Ajuste en el presupuesto	Se requiere un ajuste en el presupuesto del proyecto. Revisa y presenta las modificaciones necesarias.
+Poco Urgente	Actualización sobre el préstamo	La solicitud de préstamo está en proceso. Espera una actualización en los próximos días.
+Urgente	Pago de servicios de marketing	El pago por los servicios de marketing digital está pendiente. Realiza el pago para evitar interrupciones en la campaña.
+Medio	Revisión de gastos	Es hora de revisar los gastos del último mes. Asegúrate de enviar tus informes antes de la reunión del viernes.
+Urgente	Consulta sobre facturación	¿Podrías aclarar las discrepancias en la factura enviada? Es importante resolverlo pronto.
+Medio	Propuesta de inversión recibida	Hemos recibido una nueva propuesta de inversión. Revísala y hagamos un seguimiento.
+Poco Urgente	Confirmación de pago de suscripción	Tu pago de suscripción ha sido confirmado. Gracias por tu preferencia.
+Urgente	Recordatorio de tratamiento	Recuerde que debe iniciar su tratamiento a partir de mañana. Es vital para su recuperación.
+Urgente	Operación de hígado	Su operación de hígado ha sido reprogramada para el viernes 10/11. Es crucial que confirme su asistencia lo antes posible.
+Urgente	Cirugía de apendicitis	Atención: Su cirugía de apendicitis está programada para mañana a las 8:00 AM. Por favor, llegue con una hora de anticipación.
+Urgente	Exámenes médicos	Los resultados de sus exámenes médicos están disponibles. Es necesario que venga a la consulta para discutirlos lo antes posible.
+Urgente	Tratamiento oncológico	Se ha adelantado su tratamiento oncológico para este jueves. Es importante que esté presente para recibir la terapia.
+Urgente	Consulta de emergencia	Su consulta médica ha sido programada para hoy. Debe asistir debido a la gravedad de su condición.
+Urgente	Cambio de medicación	Es imperativo que recoja su nueva medicación antes del fin de semana. Su salud depende de este cambio.
+Urgente	Cita para análisis	Su cita para los análisis de sangre se ha fijado para mañana. Asegúrese de asistir, es crucial para el diagnóstico.
+Urgente	Urgente: Hospitalización	Ha sido admitido para observación médica. Por favor, asegúrese de que su familia esté informada.
+Urgente	Control post-operatorio	Su control post-operatorio se ha programado para el lunes. Es esencial para evaluar su recuperación.
+Urgente	Fuego en la zona industrial	Un fuego ha estallado en la zona industrial. Los bomberos están trabajando para controlar la situación. Mantenga la distancia.
+Urgente	Incendio en el edificio	Atención: Se ha declarado un incendio en el edificio. Evacúe inmediatamente y diríjase al punto de reunión.
+Urgente	Accidente de tráfico	Se ha producido un accidente de tráfico grave en la avenida principal. Se recomienda evitar la zona y seguir las indicaciones de la policía.
+Urgente	Incendio forestal	Alertamos sobre un incendio forestal en las cercanías. Mantenga distancia y esté atento a las instrucciones de evacuación.
+Urgente	Accidente policial	Un vehículo policial ha estado involucrado en un accidente. Se están realizando investigaciones en el lugar. Por favor, evite la zona.
+Urgente	Emergencia en el hogar	Se ha reportado un incendio en una vivienda. Los bomberos están en camino, pero se solicita a los vecinos mantenerse alejados.
+Urgente	Colapso de edificio	Ha ocurrido un colapso en un edificio. Los servicios de emergencia están atendiendo la situación. Evite la zona hasta nuevo aviso.
+Urgente	Explosión en la fábrica	Se ha registrado una explosión en la fábrica local. Los equipos de emergencia están en el lugar. Por favor, mantenga la distancia.
+Urgente	Incendio en el parque	Se ha declarado un incendio en el parque central. Se recomienda a los visitantes que salgan inmediatamente y se dirijan a áreas seguras.
+Urgente	Accidente en la carretera	Se ha producido un accidente múltiple en la carretera. Se están desviando los vehículos. Evite el área y siga las indicaciones.
+Urgente	Incendio en la escuela	Se ha declarado un incendio en la escuela. Todos los estudiantes deben evacuar inmediatamente y dirigirse al punto de reunión designado.
+Urgente	Incendio en el vecindario	Se ha reportado un incendio en el vecindario. Todos los residentes deben evacuar inmediatamente y seguir las instrucciones de los bomberos.
+Urgente	Accidente de tren	Ha ocurrido un accidente en la línea de tren. Se recomienda evitar el área y buscar rutas alternativas.
+Urgente	Alerta de incendio	Se emite una alerta de incendio en la zona. Los residentes deben estar preparados para evacuar si es necesario.
+Urgente	Accidente de autobús	Un autobús ha tenido un accidente en la carretera. Los servicios de emergencia están en camino. Por favor, evite el área.
+Urgente	Incendio en la planta química	Se ha desatado un incendio en la planta química. Los bomberos están trabajando para controlar la situación. Mantenga distancia.
+Urgente	Colisión de vehículos	Se ha reportado una colisión entre varios vehículos en la autopista. Las autoridades están gestionando la situación. Evite la zona.
+Urgente	Emergencia por humo	Se ha detectado un incendio en el edificio. Evacúe inmediatamente y diríjase a un lugar seguro.
+Urgente	Incendio en el bosque	Un incendio forestal está avanzando rápidamente. Se recomienda a los residentes en áreas cercanas que se preparen para evacuar.
+Urgente	Accidente en la intersección	Un accidente grave ha ocurrido en la intersección de la calle X y Y. La policía está en el lugar, evite la zona.
+Poco Urgente	Recordatorio de compras	Solo un recordatorio amigable de que debes comprar fideos la próxima vez que salgas.
+Poco Urgente	Compra de fideos	Recuerda agregar fideos a tu lista de compras para la próxima vez que vayas al supermercado.
+Poco Urgente	Sugerencia de cena	Ten en cuenta que podrías preparar fideos para la cena algún día esta semana.
+Poco Urgente	Planificación de comidas	Pensando en la cena de esta semana, ¿qué te parece si incluyes fideos en el menú?
+Poco Urgente	Revisión de recetas	Si buscas algo fácil de hacer, no olvides que puedes hacer fideos. ¡Es una opción rápida!
+Poco Urgente	Lista de compras	No te olvides de revisar tu lista de compras y agregar fideos para la próxima vez que salgas.
+Poco Urgente	Sugerencia de cena fácil	Si no sabes qué cocinar, los fideos son una buena opción para una cena rápida.
+Poco Urgente	Recomendación de ingredientes	Asegúrate de tener fideos en casa, son útiles para muchas recetas.
+Poco Urgente	Pensando en la cena	Considera hacer fideos algún día esta semana; es un platillo sencillo.
+Poco Urgente	Plan de comidas	Mientras planeas tus comidas, considera agregar fideos a la lista para un plato fácil.
+Poco Urgente	Sugerencia para la cena	Recuerda que podrías preparar fideos un día de esta semana, es fácil y rápido.
+Poco Urgente	Recomendación para la compra	No olvides comprar fideos la próxima vez que vayas al supermercado, son un buen complemento.
+Poco Urgente	Planificación de la semana	Ten en mente que los fideos son una buena opción para una cena ligera esta semana.
+Poco Urgente	Idea de receta	Si te apetece algo sencillo, considera cocinar fideos algún día de esta semana.
+Poco Urgente	Recuerda la compra	Pensando en la próxima compra, ¿has considerado comprar fideos?
+Poco Urgente	Pregunta sobre la cena	¿Te gustaría incluir fideos en nuestra cena de esta semana? Es solo una sugerencia.
+Poco Urgente	Plan de comidas	Simplemente te recuerdo que tener fideos en casa puede ser útil para una comida rápida.
+Poco Urgente	Consejo de cocina	Para una cena fácil, no olvides que los fideos son una opción que siempre funciona.
+Poco Urgente	Organización de compras	Para la próxima vez que hagas compras, sería útil añadir fideos a la lista.
+Poco Urgente	Planificación de recetas	Puedes considerar incluir fideos en tu menú para la próxima semana, es una opción versátil.
+Medio	Compra de ingredientes	No olvides comprar fideos y otros ingredientes para la cena del sábado. Es importante que tengamos todo a tiempo.
+Medio	Sugerencia de menú	Para la cena de esta semana, podríamos preparar fideos. Confirma si estás de acuerdo con la idea.
+Medio	Organización de la cena	Por favor, asegúrate de comprar fideos y otros alimentos necesarios para la cena del viernes.
+Medio	Preparación de la lista de compras	Es hora de preparar la lista de compras. Asegúrate de incluir fideos, los necesitamos para la cena del próximo miércoles.
+Medio	Reunión para planificar la cena	Necesitamos planificar el menú para la cena. Los fideos son una opción, así que revisa tu disponibilidad para comprar.
+Medio	Confirmación de la compra	Por favor, confirma si podrás ir a comprar fideos para la cena de este fin de semana. 
+Medio	Planificación de la semana	Piensa en incluir fideos en el menú de la próxima semana. Haremos la compra el miércoles.
+Medio	Revisión de la receta	Asegúrate de que tengamos fideos para la receta que planeamos preparar el fin de semana.
+Medio	Cambio en la cena	La cena ha cambiado, así que por favor compra fideos para la nueva receta que vamos a hacer.
+Medio	Recordatorio de compra	Este es un recordatorio para que no olvides comprar fideos para la cena del jueves. Es mejor que estemos preparados.
+Urgente	Reunión de emergencia	Se ha convocado una reunión de emergencia para hoy a las 3 PM. Tu asistencia es obligatoria.
+Urgente	Informe de proyecto retrasado	El informe del proyecto debe ser entregado hoy. Asegúrate de tenerlo listo a más tardar a las 5 PM.
+Urgente	Actualización del sistema	El sistema debe ser actualizado de inmediato para evitar problemas de seguridad. Por favor, realiza la actualización ahora.
+Urgente	Contrato pendiente	Firma el contrato pendiente antes de finalizar el día para que podamos avanzar con el proyecto.
+Urgente	Solicitud de vacaciones	Tu solicitud de vacaciones debe ser aprobada antes de mañana. Asegúrate de enviarla a Recursos Humanos.
+Urgente	Cita médica urgente	Tu cita médica ha sido programada para mañana. Es crucial que asistas para evaluar tu salud.
+Urgente	Resultados de pruebas	Los resultados de tus pruebas médicas están listos. Debes acudir a la consulta para discutirlos hoy.
+Urgente	Medicamento crítico	Es imperativo que recojas tu medicamento antes del fin de semana. Tu salud depende de este tratamiento.
+Urgente	Cambio de médico	Tu médico ha cambiado la fecha de tu próxima cita. Por favor, asegúrate de confirmar tu asistencia.
+Urgente	Consulta de urgencia	Necesitas asistir a una consulta médica de urgencia. Por favor, no la pospongas.
+Medio	Lavar la ropa	No olvides lavar la ropa hoy. Es mejor que lo hagas antes de que se acumule más.
+Medio	Organizar el armario	Podrías organizar el armario este fin de semana. Así será más fácil encontrar lo que necesitas.
+Medio	Pagar la factura de electricidad	Tienes que pagar la factura de electricidad antes del fin de mes. No la dejes para el último momento.
+Medio	Comprar víveres	Recuerda hacer la compra de víveres el sábado. Haremos una comida en casa y necesitamos varios ingredientes.
+Medio	Planificación de la semana	Es hora de planificar la semana. Revisa tus tareas y asegúrate de que todo esté en orden.
+Urgente	Reportar falla de equipo	El equipo ha fallado y necesita ser reparado inmediatamente para evitar interrupciones en el trabajo.
+Urgente	Revisar la auditoría	La auditoría está programada para mañana. Debes revisarla y estar preparado para responder preguntas.
+Urgente	Cambio en la política de la empresa	Se ha implementado un cambio importante en la política de la empresa. Todos los empleados deben ser informados de inmediato.
+Urgente	Cita con el especialista	Tu cita con el especialista es mañana a las 10 AM. Asegúrate de tener todos los documentos necesarios.
+Urgente	Recoger resultados de exámenes	Tienes que recoger los resultados de tus exámenes médicos hoy. Es esencial para tu tratamiento.
+Medio	Actualizar tu CV	Es un buen momento para actualizar tu CV. Podrías necesitarlo pronto para nuevas oportunidades.
+Medio	Revisar los gastos del mes	Revisa los gastos del mes y asegúrate de que todo esté en orden antes de finalizar el informe financiero.
+Medio	Planificar la reunión del equipo	Necesitas planificar la reunión del equipo para la próxima semana. Reúne los puntos que se deben discutir.
+Medio	Organizar documentos importantes	Tómate un tiempo para organizar tus documentos importantes. Será útil para futuras referencias.
+Medio	Comprar medicamentos de rutina	Asegúrate de comprar tus medicamentos de rutina esta semana para no quedarte sin ellos.
+Poco Urgente	Revisar la presentación	La presentación para la próxima semana necesita ser revisada. Puedes hacerlo cuando tengas tiempo.
+Poco Urgente	Leer el informe de investigación	No olvides leer el informe de investigación. No es urgente, pero sería bueno que lo hagas pronto.
+Poco Urgente	Organizar la biblioteca	Sería útil organizar la biblioteca. Puedes hacerlo a lo largo de la semana sin prisa.
+Poco Urgente	Actualizar el software	El software tiene una actualización disponible. No es urgente, pero es recomendable hacerlo pronto.
+Poco Urgente	Revisar la lista de tareas	Revisa tu lista de tareas y ajusta las prioridades. Hazlo cuando tengas un momento libre.
+Poco Urgente	Consultar a un médico de cabecera	Tienes que consultar a tu médico de cabecera. No es urgente, pero no lo dejes pasar mucho tiempo.
+Poco Urgente	Reservar cita médica	Considera reservar una cita médica para el chequeo anual. No es urgente, pero es importante.
+Poco Urgente	Revisar el calendario de cumpleaños	Revisa el calendario de cumpleaños para asegurarte de que no te pierdas ningún evento. Tómate tu tiempo.
+Poco Urgente	Organizar el armario	Es hora de organizar el armario. No es urgente, pero te ayudará a tener más espacio.
+Poco Urgente	Enviar la tarjeta de cumpleaños	Ten en cuenta enviar la tarjeta de cumpleaños. Puedes hacerlo en cualquier momento antes del día especial.
+Poco Urgente	Revisar correos antiguos	Tómate un tiempo para revisar correos antiguos. No es urgente, pero puede contener información útil.
+Poco Urgente	Cambiar la contraseña	Es buena idea cambiar la contraseña de tu cuenta. No es urgente, pero es recomendable hacerlo de vez en cuando.
+Poco Urgente	Actualizar el currículum	Revisa y actualiza tu currículum. No es urgente, pero sería útil tenerlo al día.
+Poco Urgente	Leer un libro	Considera leer ese libro que compraste hace tiempo. No es urgente, pero disfrutarás el tiempo de lectura.
+Poco Urgente	Comprar cerveza para la reunión del viernes	Puede hacerse en cualquier momento antes de la reunión.
+Poco Urgente	Recordar comprar galletitas para el café del lunes	No hay prisa, se puede hacer más tarde.
+Poco Urgente	Revisar precios de cervezas en el supermercado	No es urgente, solo cuando tengas tiempo.
+Poco Urgente	Pensar en qué galletitas llevar a la fiesta de cumpleaños	Decídelo cuando puedas, no es urgente.
+Poco Urgente	Comprar cerveza para disfrutar el fin de semana	Tómalo como un plan, pero no hay necesidad de apresurarse.
+Poco Urgente	Hacer una lista de galletitas para comprar la próxima vez	Es solo una sugerencia, se puede hacer más adelante.
+Poco Urgente	Recordar revisar si hay suficiente cerveza para el partido	Puedes hacerlo en cualquier momento, no es urgente.
+Poco Urgente	Consultar opciones de galletitas para un picnic en el parque	Hazlo cuando tengas tiempo, no hay apuro.
+Poco Urgente	Comprar una caja de cerveza para disfrutar en casa	Puede hacerse cualquier día, sin prisa.
+Poco Urgente	Ver qué galletitas quedan en la despensa antes de salir	Puedes hacerlo antes de salir, pero no es urgente.
+Poco Urgente	Hacer limpieza de primavera	Tómate un día para hacer una limpieza de primavera en casa. No es urgente, pero es gratificante.
+Poco Urgente	Explorar un nuevo hobby	Podrías buscar información sobre un nuevo hobby. No es urgente, solo algo para explorar.
+Poco Urgente	Ver el partido del domingo	Recuerda que el domingo es el partido. No es urgente, simplemente para que lo tengas en cuenta si deseas verlo.
+Poco Urgente	Comprar una planta para la casa	Si tienes tiempo, compra una planta para decorar la casa. No es urgente, solo algo opcional.
+Poco Urgente	Pensar en un próximo viaje	Puedes pensar en el destino de tu próximo viaje. No es urgente, solo una idea para ir planificando.
+Poco Urgente	Actualizar tu playlist musical	Revisa y actualiza tus listas de reproducción. No es urgente, solo para disfrutar de buena música.
+Poco Urgente	Hacer una caminata en el parque	Si el clima es bueno, considera una caminata. No es urgente, solo para relajarse un poco.
+Poco Urgente	Investigar una nueva serie para ver	Podrías buscar una nueva serie interesante para ver. No es urgente, simplemente para entretenimiento.
+Poco Urgente	Limpiar la despensa cuando tengas tiempo	Organiza la despensa cuando tengas un momento libre. No es urgente, solo para mantener el orden.
+Poco Urgente	Revisar el armario para ropa de invierno	Puedes revisar tu ropa de invierno. No es urgente, pero te puede preparar para la temporada.
+Poco Urgente	Probar una receta de postre nuevo	Considera probar una nueva receta de postre. No es urgente, solo una opción para divertirte cocinando.
+Poco Urgente	Buscar recomendaciones de libros	Explora recomendaciones de libros para futuras lecturas. No es urgente, solo algo para tener en mente.
+Poco Urgente	Ver una serie de comedia	Piensa en ver una serie divertida en tus ratos libres. No es urgente, simplemente para pasar el tiempo.
+Urgente	Revisión de documento financiero urgente	Se necesita revisar y aprobar un documento financiero hoy mismo. Sin aprobación, se retrasan otros procesos.
+Urgente	Enviar resultados de prueba médica al doctor	Los resultados de las pruebas recientes deben ser enviados al doctor lo antes posible para revisión.
+Urgente	Reparar fuga de agua en la cocina	Se detectó una fuga de agua. Es necesario contactar a un plomero para evitar daños.
+Urgente	Confirmar cita de emergencia con el cardiólogo	Confirme la cita de emergencia con el cardiólogo para recibir atención a tiempo.
+Urgente	Actualizar software de seguridad en el servidor	Es imprescindible instalar la actualización de seguridad para evitar vulnerabilidades.
+Urgente	Realizar pago atrasado de impuestos	Es necesario saldar el pago de impuestos atrasados para evitar multas adicionales.
+Urgente	Recibir paquete importante en la oficina	El paquete necesita ser recibido hoy para cumplir con una fecha límite de proyecto.
+Urgente	Programar reunión con cliente importante	La reunión debe ser programada hoy para resolver asuntos urgentes del proyecto.
+Urgente	Contactar a soporte técnico por fallo de sistema	El sistema presenta fallos y está afectando operaciones. Contacte a soporte de inmediato.
+Urgente	Confirmar viaje por emergencia familiar	Es necesario confirmar el viaje por una emergencia familiar que requiere su presencia.
+Urgente	Solicitar reemplazo urgente de equipo de trabajo	El equipo se ha dañado y es esencial para cumplir con plazos de entrega. Ordene un reemplazo.
+Urgente	Informar ausencia en reunión importante	Notifique a su equipo que no podrá asistir y delegue funciones críticas.
+Urgente	Revisar notificación de posible fraude en la cuenta	Ha recibido una alerta de posible fraude en la cuenta bancaria. Verifique de inmediato.
+Urgente	Contactar a servicios de emergencia por corte de luz	La falta de electricidad está afectando equipos médicos críticos en casa. Contacte a emergencia.
+Urgente	Recibir aprobación de alta médica por operación	La alta médica debe ser confirmada hoy para dar seguimiento a los cuidados.
+Urgente	Coordinar evacuación por incendio en la oficina	Se ha detectado un incendio y debe coordinarse la evacuación inmediata.
+Urgente	Resolver problemas de acceso a cuenta bancaria	Ha perdido acceso a su cuenta y necesita resolverlo con el banco.
+Urgente	Entregar documentos legales para trámite judicial	Los documentos deben ser entregados hoy para proceder con un caso judicial.
+Urgente	Notificar problema de seguridad en la red de trabajo	Detectó una posible intrusión en la red de trabajo. Informe al equipo de IT.
+Urgente	Confirmar cita para cirugía programada	Es necesario confirmar la cita para una cirugía importante en los próximos días.
+Medio	Programar chequeo dental de rutina	Agende un chequeo dental preventivo para evitar problemas futuros.
+Medio	Revisar informe mensual de ventas	Es recomendable revisar el informe mensual para analizar el rendimiento, pero no es urgente.
+Medio	Hacer mantenimiento de la bicicleta	Verifique el estado de su bicicleta y realice ajustes para asegurar su buen funcionamiento.
+Medio	Actualizar lista de contactos profesionales	Agregue contactos recientes y mantenga la lista actualizada para futuras oportunidades.
+Medio	Revisar stock de suministros en la oficina	Revise el inventario y planee la compra de insumos cuando sea necesario.
+Medio	Leer la última revista de la industria	Revise la última edición para mantenerse informado sobre tendencias y novedades.
+Medio	Enviar recordatorio de pago a un cliente	Envía un recordatorio de cortesía a un cliente para agilizar el proceso de pago.
+Medio	Verificar los horarios de transporte para un viaje próximo	Confirme los horarios para su viaje y evite imprevistos.
+Medio	Realizar tareas de limpieza en el escritorio	Organice su espacio de trabajo, ayudará a mantener la concentración.
+Medio	Crear un archivo de respaldo de los documentos importantes	Cree una copia de respaldo para prevenir la pérdida de información relevante.
+Medio	Organizar carpetas digitales en el ordenador	Clasifique archivos digitales para encontrar documentos importantes fácilmente.
+Medio	Programar revisión de seguro de automóvil	Agende una revisión para verificar si necesita cambios en la póliza.
+Medio	Actualizar la aplicación bancaria en el teléfono	Verifique que la aplicación bancaria esté actualizada para evitar fallos de seguridad.
+Medio	Enviar solicitud de cotización para próximo proyecto	Contacte a proveedores y solicite precios para planificar presupuestos futuros.
+Medio	Consultar opciones de inversión a largo plazo	Investigue opciones de inversión para mejorar sus finanzas a largo plazo.
+Medio	Revisar notificaciones pendientes en la intranet de la empresa	Consulte notificaciones en la intranet para estar al tanto de actualizaciones internas.
+Medio	Planificar una actividad de equipo para fomentar la cohesión	Coordine una actividad recreativa para mejorar el ambiente de trabajo.
+Medio	Leer informe de análisis de mercado	Lea el informe para comprender mejor la situación del mercado en su sector.
+Medio	Actualizar información personal en aplicaciones de salud	Asegúrese de que los datos de salud en sus aplicaciones estén correctos y completos.
+Medio	Consultar resultados de exámenes anuales de salud	Revise los resultados de sus exámenes anuales para monitorear su estado de salud.
+Urgente	Notificar de pérdida de documento oficial importante	Informe de inmediato para evitar posibles problemas de identidad.
+Urgente	Reportar accidente laboral a recursos humanos	Si ha sufrido un accidente en el trabajo, notifíquelo inmediatamente para recibir asistencia.
+Urgente	Solicitar ayuda para persona enferma en lugar público	Pida ayuda a las autoridades o servicios de emergencia si ve a alguien en problemas de salud.
+Urgente	Atender un problema crítico de cliente	Un cliente tiene una situación crítica que necesita ser atendida inmediatamente para evitar problemas.
+Urgente	Confirmar asistencia a evento profesional inminente	Confirme si asistirá a un evento importante que inicia pronto.
+Urgente	Reportar incidente de seguridad en la empresa	Si ha notado una posible vulnerabilidad, informe a seguridad de inmediato.
+Urgente	Recibir resultados críticos de una prueba médica	Es fundamental conocer el resultado para tomar decisiones rápidas en cuanto a tratamiento.
+Urgente	Atender requerimiento de auditoría en la empresa	Es necesario cumplir con los documentos solicitados por los auditores para evitar sanciones.
+Urgente	Coordinar ayuda para una emergencia familiar	Un familiar necesita apoyo inmediato debido a una situación grave.
+Urgente	Solicitar renovación de un permiso de trabajo próximo a vencerse	Si el permiso vence pronto, es fundamental renovarlo para seguir trabajando.
+Urgente	Revisar sistema de respaldo tras fallo reciente en servidores	Realice una revisión completa del sistema de respaldo para evitar pérdidas de datos.
+Urgente	Solicitar intervención para resolver conflicto en el equipo	Si hay un conflicto que afecta el trabajo, es necesario buscar una solución rápida.
+Urgente	Revisar pedido de cliente antes de fin de mes para entrega	Un pedido necesita ser revisado para cumplir con la fecha de entrega establecida.
+Urgente	Notificar sospecha de fraude en cuentas corporativas	Si nota actividad sospechosa en la cuenta corporativa, informe al departamento de finanzas.
+Urgente	Recibir confirmación de vuelos antes de viajar	Es importante asegurarse de que los vuelos estén confirmados para evitar retrasos.
+Urgente	Consultar médicos por posible reacción alérgica grave	Si nota síntomas graves, consulte a un médico de inmediato.
+Urgente	Responder consulta de cliente insatisfecho	Responda al cliente rápidamente para evitar problemas de reputación.
+Urgente	Planificar transporte de carga sensible antes de la fecha límite	Asegúrese de que la carga llegue a tiempo para evitar pérdidas.
+Urgente	Entregar documentos a notaría para trámite urgente	Los documentos deben ser entregados hoy para avanzar en un trámite legal.
+Medio	Revisión del proyecto de diseño	Realicemos una revisión del diseño la próxima semana. Organízate para discutir algunos ajustes.
+Medio	Actualización de software	La próxima semana se implementará una actualización de sistema. Por favor, asegúrate de respaldar tu información.
+Medio	Control de rutina	Te recordamos tu consulta médica de control para el próximo martes. Confirma tu asistencia.
+Medio	Revisión de contrato laboral	Es importante que revises los nuevos términos de tu contrato para asegurar que todo esté en orden.
+Medio	Recordatorio de limpieza de primavera	Este fin de semana haremos limpieza general. Revisa tus áreas asignadas para asegurar que estén listas.
+Medio	Preparación de informes mensuales	Prepara el informe mensual para la próxima semana. Este reporte será revisado en la siguiente junta.
+Medio	Organización de documentos fiscales	Te recordamos organizar tus documentos fiscales para la próxima declaración. Tienes hasta final de mes.
+Urgente	Cancelación de cita médica	Llama de inmediato a tu médico para reprogramar tu cita cancelada de hoy.
+Urgente	Error en facturación de cliente	Hemos detectado un error en la facturación. Necesitamos resolverlo hoy mismo.
+Urgente	Rotura de cañerías en casa	Hay una fuga de agua importante en el sótano. Llama a un plomero lo antes posible.
+Urgente	Presentación final de proyecto	Necesitamos completar la presentación del proyecto para enviarla mañana por la mañana sin falta.
+Urgente	Alerta de virus informático	Se detectó un virus en el servidor principal. El equipo de seguridad debe solucionarlo urgentemente.
+Urgente	Análisis de emergencia para cirugía	Realiza los análisis de laboratorio hoy para proceder con la cirugía urgente de mañana.
+Urgente	Corte de energía programado	Hoy habrá un corte de energía en la oficina. Asegúrate de respaldar tu trabajo en las próximas horas.
+Poco Urgente	Recordatorio de clase de yoga	Recuerda que tienes clase de yoga esta noche. Puedes saltarla si no tienes tiempo.
+Poco Urgente	Compra de víveres para la semana	Ve al supermercado cuando tengas tiempo esta semana para reponer alimentos.
+Poco Urgente	Lavado de coche	Recuerda lavar el coche este mes cuando sea conveniente.
+Poco Urgente	Ver una película pendiente	Te queda una película pendiente para ver este mes. La puedes ver cuando tengas tiempo libre.
+Poco Urgente	Leer el libro recomendado	Si tienes tiempo, comienza el libro recomendado este fin de semana.
+Poco Urgente	Organizar el cajón de la cocina	Acomoda el cajón de la cocina cuando tengas un rato libre.
+Poco Urgente	Revisión de documentos personales	Actualiza tus documentos cuando tengas tiempo. No hay prisa.
+Poco Urgente	Actualizar aplicaciones en el celular	Recuerda actualizar tus aplicaciones cuando te conectes a WiFi.
+Poco Urgente	Pasear por el parque este fin de semana	Planea dar un paseo si tienes tiempo libre el domingo.
+Poco Urgente	Revisar correos no importantes	Revisa tus correos menos importantes cuando tengas un momento.
+Poco Urgente	Organizar el escritorio de trabajo	Ordena el escritorio cuando no estés ocupado.
+Medio	Limpiar el armario esta semana	Recuerda organizar tu ropa y deshacerte de lo que ya no usas.
+Medio	Enviar informe de revisión a tu supervisor	Prepara el informe y envíalo antes de la siguiente reunión semanal.
+Medio	Reunión de seguimiento de proyecto	Prográmate para revisar los avances en la reunión del viernes.
+Medio	Control médico de rutina este mes	No olvides tu cita de revisión este mes.
+Medio	Actualizar tus claves de acceso	Recuerda cambiar tus contraseñas en las próximas semanas.
+Medio	Coordinar salida de equipo de trabajo	Recuerda coordinar la salida del equipo para el próximo viernes.
+Medio	Revisar cuentas de fin de mes	Antes del fin de mes, realiza una revisión de tus cuentas bancarias.
+Medio	Pagar el gimnasio este mes	No olvides el pago del gimnasio para evitar el recargo.
+Medio	Confirmación de cita para corte de cabello	Confirma si irás a tu cita programada de esta semana.
+Medio	Consulta sobre curso en línea	Explora opciones de curso para mejorar tus habilidades, antes del final del mes.
+Urgente	Actualización urgente de seguridad	Instala la actualización de seguridad hoy para proteger tu equipo.
+Urgente	Anulación de tarjeta extraviada	Si perdiste tu tarjeta, repórtala inmediatamente para evitar cargos no autorizados.
+Urgente	Confirmación de cirugía importante	Confirma tu asistencia a la cirugía programada esta semana.
+Urgente	Cierre de registro de proyecto final	Envía la documentación hoy, ya que el plazo cierra en pocas horas.
+Urgente	Alerta de falla en servidor principal	Se ha detectado una falla crítica. El equipo de TI debe resolverla de inmediato.
+Urgente	Notificación de evento peligroso en la ciudad	Mantente alerta y evita el área afectada hasta nuevo aviso.
+Urgente	Pérdida de documento oficial	Reporta la pérdida para evitar posibles problemas de identidad.
+Urgente	Accidente en las instalaciones	Notifica a recursos humanos y solicita atención médica si es necesario.
+Urgente	Solicitud de ayuda en situación de emergencia médica	Llama a emergencias y proporciona ayuda inicial si es posible.
+Poco Urgente	Ver el pronóstico del clima para el fin de semana	Consulta el pronóstico si planeas hacer una actividad al aire libre.
+Poco Urgente	Explorar opciones de viaje para vacaciones	Revisa opciones de viaje en tu tiempo libre.
+Poco Urgente	Leer las noticias del día	Lee las noticias cuando tengas un momento de descanso.
+Poco Urgente	Preparar un bocadillo para la tarde	Haz un bocadillo si tienes hambre más tarde.
+Poco Urgente	Ordenar los cables del escritorio	Organiza los cables cuando tengas tiempo para mejorar el espacio de trabajo.
+Poco Urgente	Actualizar los contactos del celular	Revisa y actualiza tus contactos cuando estés libre.
+Poco Urgente	Planear cena familiar en el futuro	Organiza una cena cuando todos tengan disponibilidad.
+Poco Urgente	Buscar recetas nuevas para cocinar	Encuentra nuevas recetas para probar el próximo fin de semana.
+Poco Urgente	Investigar sobre una nueva serie de televisión	Lee recomendaciones de series cuando busques algo nuevo para ver.
+Poco Urgente	Comprobar saldo en cuenta de ahorros	Revisa el saldo en tu tiempo libre.
+Medio	Programar cita médica para revisión semestral	Agenda tu consulta semestral para mantener un control de salud.
+Medio	Revisión de documentos fiscales anuales	Organiza y revisa los documentos antes del final del mes.
+Medio	Coordinar almuerzo de equipo esta semana	Agenda el almuerzo para discutir el progreso del proyecto.
+Medio	Planificar los gastos para el próximo mes	Haz un plan de gastos para evitar inconvenientes a fin de mes.
+Medio	Revisar estatus de la renovación de seguro	Consulta los detalles y verifica las coberturas del seguro.
+Medio	Preparar presentación para la próxima semana	Organiza la presentación y ensaya los puntos clave.
+Medio	Actualizar software de trabajo en el equipo principal	Instala las actualizaciones de software para mejorar el rendimiento.
+Medio	Verificar reportes de rendimiento de equipo	Revisa los reportes antes de la reunión de equipo.
+Medio	Enviar reporte semanal a supervisor	Envía el informe para documentar los avances de la semana.
+Medio	Consultar saldo de cuenta bancaria por gastos inesperados	Confirma que tienes suficiente saldo para el mes.
+Urgente	Notificación de corte de energía en la zona	Prepárate para un corte de energía programado en las próximas horas.
+Urgente	Confirmación de hospitalización urgente	Confirma la hospitalización para recibir el tratamiento a tiempo.
+Urgente	Reporte de falla en sistema de pago	El sistema está fuera de servicio; contacta al soporte técnico inmediatamente.
+Urgente	Alerta de fuga de gas en el edificio	Sal inmediatamente y notifica a los servicios de emergencia.
+Urgente	Confirmación de cirugía de emergencia	Es crucial confirmar tu asistencia para realizar la operación.
+Urgente	Interrupción en el servicio de internet de la empresa	Contacta a soporte para restablecer el servicio de inmediato.
+Urgente	Evacuación por incendio en el edificio	Deja el edificio y sigue las instrucciones de seguridad.
+Urgente	Solicitud de ayuda en accidente vial grave	Asiste y solicita apoyo de emergencia para el accidentado.
+Urgente	Cancelación de evento importante por condiciones climáticas	Infórmate de la reprogramación del evento debido a las condiciones adversas.
+Poco Urgente	Recordatorio del partido de fútbol de la semana	No olvides que el partido de fútbol es este fin de semana.
+Poco Urgente	Ver película recomendada por amigos	Toma nota para verla cuando tengas tiempo libre.
+Poco Urgente	Consultar el horario del concierto del mes próximo	Verifica el horario para coordinar la salida.
+Poco Urgente	Explorar opciones de libros recomendados para leer	Consulta recomendaciones cuando quieras leer algo nuevo.
+Poco Urgente	Reunión para ver el partido en casa de un amigo	Confirma asistencia si planeas ir a ver el partido en su casa.
+Poco Urgente	Recordatorio de evento de videojuegos en línea	Participa en el evento si tienes tiempo libre.
+Poco Urgente	Consulta sobre clase de yoga el próximo sábado	Asiste a la clase de yoga si te interesa y tienes disponibilidad.
+Poco Urgente	Plan para ir a una exposición de arte el próximo mes	Agenda una visita a la exposición en tu tiempo libre.
+Poco Urgente	Ver el resultado del juego del equipo favorito	Revisa el resultado cuando tengas un momento.
+Poco Urgente	Recordatorio para comprar boletos para el cine esta semana	Compra los boletos si quieres asistir, pero no es urgente.
+Poco Urgente	Encuentro para jugar fútbol el próximo fin de semana	Confirma si jugarás fútbol con amigos el sábado.
+Poco Urgente	Revisar la programación de series y películas de estreno	Consulta los nuevos estrenos para ver algo interesante.
+Poco Urgente	Planear una salida para ver la puesta de sol	Disfruta de la salida cuando tengas un tiempo libre.
+Poco Urgente	Reservar mesa en restaurante para la próxima semana	Reserva cuando sea conveniente si quieres asistir.
+Poco Urgente	Buscar recetas nuevas para probar este mes	Encuentra nuevas recetas para cocinar en algún momento.
+Poco Urgente	Revisar lista de lugares recomendados para visitar	Consulta la lista y elige un lugar cuando sea posible.
+Poco Urgente	Reunión para ver el partido de fútbol el sábado	Podemos ver el partido juntos si todos pueden asistir.
+Poco Urgente	Jugar al fútbol el próximo fin de semana	Planeamos jugar al fútbol, pero no es necesario confirmar hoy.
+Poco Urgente	Recordatorio para jugar al fútbol con amigos esta semana	Recuerda que vamos a jugar al fútbol, pero no es algo urgente.
+Poco Urgente	Ver el próximo partido de fútbol en casa de un amigo	Hazlo si te interesa, pero no es urgente.
+Poco Urgente	Consultar horarios del próximo partido de fútbol	Revisa los horarios cuando tengas un momento libre.
+Poco Urgente	Planificar una tarde de juegos de fútbol en el parque	Puede ser un buen plan, pero no es urgente.
+Poco Urgente	Jugar al fútbol en la liga amateur el sábado	Confirma tu participación cuando puedas, no es apremiante.
+Poco Urgente	Invitación a ver el partido de fútbol en el bar	local	Síguelo si quieres, pero no es urgente asistir.
+Poco Urgente	Recuerda que el partido de fútbol es el próximo domingo	Tómalo en cuenta, pero no es necesario que te apresures.
+Poco Urgente	Plan para jugar un amistoso de fútbol el próximo mes	Haremos el partido, pero puedes confirmarlo más tarde.
+Poco Urgente	Planificar un asado para ver el partido de fútbol	Podemos organizarlo, pero no hay prisa por decidir.
+Poco Urgente	Jugar una partida de fútbol entre amigos el fin de semana	Confirma tu asistencia cuando puedas.
+Poco Urgente	Revisar resultados del último partido de fútbol	Es bueno estar informado, pero no es urgente.
+Poco Urgente	Recordatorio de que este mes hay un partido de fútbol	Es solo un recordatorio, sin necesidad de acción inmediata.
+Poco Urgente	Conversar sobre estrategias para jugar al fútbol la próxima semana	Hablaremos de esto en nuestro tiempo libre.
+Poco Urgente	Comentar el último partido de fútbol en el grupo	No es necesario hacerlo de inmediato, podemos hacerlo más tarde.
+Poco Urgente	Jugar un partido amistoso de fútbol en el parque el próximo mes	Sólo un recordatorio, sin urgencia por confirmar.
+Poco Urgente	Pedir a amigos si quieren ver el partido de fútbol la próxima semana	Podemos coordinarlo, pero no es urgente.
+Poco Urgente	Revisar el calendario para ver cuándo es el próximo partido de fútbol	No es urgente, pero sería bueno tenerlo en mente.
+Poco Urgente	Proponer jugar al fútbol en el parque un día cualquiera	Puede ser un plan divertido, pero sin prisa.
+

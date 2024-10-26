@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Acciones";
+    var emails = ViewBag.Emails;
+ 
+}
+
+<div class="text-center">
+    <div>
+        <h2>View Actions para testear la vinculacion de cuentas</h2>
+        <a asp-controller="Account" asp-action="GoogleLogin" class="btn btn-primary">Vincular Cuenta de Google</a>
+        @if (ViewBag.Token != null)
+        {
+            <a asp-controller="Account" asp-action="GoogleLogout" class="btn btn-secondary">Desvincular Cuenta de Google</a>
+
+            <a asp-controller="Actions" asp-action="Inbox" class="btn btn-primary">Ver Correo entrante</a>
+
+            <a asp-controller="Observer" asp-action="SubscribeToGmailNotifications" class="btn btn-primary">notification</a>
+
+            <h2>Datos de usuario</h2>
+
+            <img src="@ViewBag.UserPicture" alt="Avatar" />
+            <p>@ViewBag.Name</p>
+            <p>@ViewBag.Email</p>
+            <h3>Token</h3>
+            <p>@ViewBag.Token</p>
+            <h4>@ViewBag.SuscriptionId</h4>
+
+            
+
+            <h2>Lista de Correos</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>HistoryID</th>
+                        <th>Id</th>
+                        <th>Remitente</th>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Cuerpo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (emails != null)
+                    {
+                        @foreach (var email in emails)
+                        {
+                            <tr>
+                                <td>@email.HistoryId</td>
+                                <td>@email.Id</td>
+                                <td>@email.Sender</td>
+                                <td>@email.Subject</td>
+                                <td>@email.Date.ToString("g")</td>
+                                <td>@email.Body</td>
+                            </tr>
+                        }
+                    }
+
+
+                </tbody>
+            </table>
+        }
+    </div>
+
+
+</div>

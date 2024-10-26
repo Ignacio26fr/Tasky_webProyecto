@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,10 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tasky.AIModel\Tasky.AIModel.csproj" />
     <ProjectReference Include="..\Tasky.Datos\Tasky.Datos.csproj" />
+    <ProjectReference Include="..\Tasky.Entidad\Tasky.Entidad.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.68.0.3427" />
+    <PackageReference Include="Google.Cloud.PubSub.V1" Version="3.18.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.35" />
     <PackageReference Include="Twilio" Version="7.5.0" />
   </ItemGroup>
 
