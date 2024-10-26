@@ -93,7 +93,7 @@ namespace Tasky_AIModel
                                     .Append(mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"texto",outputColumnName:@"texto"))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"asunto",@"texto"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"urgencia",inputColumnName:@"urgencia",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.LbfgsMaximumEntropy(new LbfgsMaximumEntropyMulticlassTrainer.Options(){L1Regularization=0.03125F,L2Regularization=0.03125F,LabelColumnName=@"urgencia",FeatureColumnName=@"Features"}))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator: mlContext.BinaryClassification.Trainers.LbfgsLogisticRegression(new LbfgsLogisticRegressionBinaryTrainer.Options(){L1Regularization=0.06379178F,L2Regularization=0.56631726F,LabelColumnName=@"urgencia",FeatureColumnName=@"Features"}), labelColumnName:@"urgencia"))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;
