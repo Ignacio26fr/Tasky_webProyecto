@@ -33,8 +33,10 @@ public partial class AspNetUsers : IdentityUser
         public override DateTimeOffset? LockoutEnd { get; set; }
         public override bool LockoutEnabled { get; set; }
         public override int AccessFailedCount { get; set; }
+        
+        public string AccessToken { get; set; }
 
-        public virtual ICollection<AspNetUserClaim> AspNetUserClaims { get; set; } = new List<AspNetUserClaim>();
+    public virtual ICollection<AspNetUserClaim> AspNetUserClaims { get; set; } = new List<AspNetUserClaim>();
         public virtual ICollection<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual ICollection<AspNetUserToken> AspNetUserTokens { get; set; }
 

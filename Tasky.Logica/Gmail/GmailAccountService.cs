@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
 using Tasky.Entidad.GmailAccount;
 using Microsoft.AspNetCore.Authentication.Google;
+using Tasky.Datos.EF;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace Tasky.Logica.Gmail;
@@ -12,17 +14,19 @@ public interface IGmailAccountService
 {
     AuthenticationProperties GetGoogleAuthProperties(string redirectUrl);
     ChallengeResult Challenge(AuthenticationProperties properties);
-    Task<GmailAccount> GetAccount(AuthenticateResult authenticateResult);
+    Task<AspNetUsers> GetAccount(AuthenticateResult authenticateResult);
 }
 
 public class GmailAccountService : IGmailAccountService
 {
 
     private readonly HttpClient _httpClient;
+    private readonly UserManager<AspNetUsers> _userManager;
   
-    public GmailAccountService(HttpClient httpClient)
+    public GmailAccountService(HttpClient httpClient, UserManager<AspNetUsers> userManager)
     {
         _httpClient = httpClient;
+        _userManager = userManager;
   
     }
 
@@ -38,31 +42,37 @@ public class GmailAccountService : IGmailAccountService
         return new ChallengeResult(GoogleDefaults.AuthenticationScheme, properties);
     }
 
-    public async Task<GmailAccount> GetAccount(AuthenticateResult authenticateResult)
+    public async Task<AspNetUsers> GetAccount(AuthenticateResult authenticateResult)
     {
        
 
         var accessToken = authenticateResult.Properties.GetTokenValue("access_token");
 
-        if (accessToken == null) 
+        if (string.IsNullOrEmpty(accessToken)) 
             return null;
 
       
 
-        var userInfo = GetUserInfoAsync(accessToken).Result;
+        var userInfo = await GetUserInfoAsync(accessToken);
 
         if (userInfo == null)
             return null;
 
-        return new GmailAccount
+        var user = await _userManager.FindByEmailAsync(userInfo.Email);
+
+        //Aca podria comparar para ver si el usuario tiene el mismo access en la bd 
+
+        return user;
+        
+      /*  return new GmailAccount
         {
             Name = userInfo.Name,
             Email = userInfo.Email,
             Picture = userInfo.Picture,
             AccessToken = accessToken,
-          //  SuscriptionId = subscriptionId
+          //  SuscriptionId = subscriptionId  */
 
-        };
+        
     }
 
     private async Task<GoogleUserInfo> GetUserInfoAsync(string accessToken)

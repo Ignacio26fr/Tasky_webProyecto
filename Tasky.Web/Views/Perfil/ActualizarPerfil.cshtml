@@ -1,0 +1,41 @@
+﻿@model Tasky.Datos.EF.AspNetUsers
+
+<div class="container mt-5">
+    <h2 class="text-center">Actualizar Perfil</h2>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form asp-action="ActualizarPerfil" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="FirstName">Nombre</label>
+                            <input type="text" class="form-control" id="FirstName" name="FirstName" value="@Model.FirstName" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="LastName">Apellido</label>
+                            <input type="text" class="form-control" id="LastName" name="LastName" value="@Model.LastName" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="PhoneNumber">Teléfono</label>
+                            <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber" />
+                        </div>
+                        <div class="form-group">
+                            <label for="foto">Foto de Perfil</label>
+                            <input type="file" name="foto" accept="image/*" class="form-control-file" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </form>
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger mt-3">@TempData["Error"]</div>
+                    }
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success mt-3">@TempData["Success"]</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

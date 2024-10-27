@@ -33,9 +33,16 @@ builder.Services.AddAuthentication(options =>
     .AddCookie()
     .AddGoogle(options =>
     {
+        
+      options.Scope.Add(builder.Configuration["email.readonly"]); // Permisos para leer correos
+     options.Scope.Add(builder.Configuration["userinfo.email"]); // Permisos para obtener información del usuario
+        options.Scope.Add(builder.Configuration["userinfo.profile"]); // Permisos para obtener información del usuario
+
         options.ClientId = builder.Configuration["Google:ClientId"];
         options.ClientSecret = builder.Configuration["Google:ClienteSecret"];
+        
         options.Scope.Add("email");
+        options.SaveTokens = true;
     });
 
 

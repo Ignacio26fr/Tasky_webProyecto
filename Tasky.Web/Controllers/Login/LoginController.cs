@@ -191,6 +191,7 @@ namespace Tasky.Web.Controllers.Login
         [HttpPost]
         public async Task<IActionResult> Salir()
         {
+            HttpContext.Session.Remove("AccessToken");
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Login");
         }
@@ -206,6 +207,8 @@ namespace Tasky.Web.Controllers.Login
         public async Task<IActionResult> ExternalLoginCallback(string returnUrl = null)
         {
             var result = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+            var token = result.Properties.GetTokenValue("access_token");
+            Console.WriteLine($"Mostrar token {token}");
 
             if (!result.Succeeded)
             {
@@ -217,6 +220,9 @@ namespace Tasky.Web.Controllers.Login
 
             var email = claimsIdentity?.FindFirst(ClaimTypes.Email)?.Value;
             var phone = claimsIdentity?.FindFirst(ClaimTypes.MobilePhone)?.Value;
+            var name = claimsIdentity?.FindFirst(ClaimTypes.GivenName)?.Value;
+            var lastname = claimsIdentity?.FindFirst(ClaimTypes.Surname)?.Value;
+            var imagen = claimsIdentity?.FindFirst(ClaimTypes.Uri)?.Value;
 
             var user = await _userManager.FindByEmailAsync(email);
 
@@ -230,6 +236,11 @@ namespace Tasky.Web.Controllers.Login
                     NormalizedEmail = email.ToUpper(),
                     NormalizedUserName = email.ToUpper(),
                     PhoneNumber = phone,
+                    FirstName = name,
+                    LastName = lastname,
+                    imagenDePerfil = imagen,
+                    EmailConfirmed = true,
+                    AccessToken = token
 
 
                 };

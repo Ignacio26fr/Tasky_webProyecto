@@ -31,4 +31,8 @@
     <ProjectReference Include="..\Tasky.Logica\Tasky.Logica.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Perfil\" />
+  </ItemGroup>
+
 </Project>

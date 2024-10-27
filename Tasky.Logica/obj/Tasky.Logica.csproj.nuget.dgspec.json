@@ -4,6 +4,81 @@
     "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {}
   },
   "projects": {
+    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj",
+        "projectName": "Tasky.AIModel",
+        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj",
+        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.ML.FastTree": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.ML.LightGbm": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -67,6 +142,67 @@
               "version": "[6.0.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj",
+        "projectName": "Tasky.Entidad",
+        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj",
+        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

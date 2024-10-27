@@ -56,9 +56,9 @@ public class AccountController : Controller
 
         //guarddamos los datos del usuario en la session con el token de acceso
      
-        await _redisSessionService.SetValueAsync("goo_user_name", googleUser.Name!);
+        await _redisSessionService.SetValueAsync("goo_user_name", googleUser.FirstName!);//lo cambie por name
         await _redisSessionService.SetValueAsync("goo_user_email", googleUser.Email!);
-        await _redisSessionService.SetValueAsync("goo_user_picture", googleUser.Picture!);
+        await _redisSessionService.SetValueAsync("goo_user_picture", googleUser.imagenDePerfil!);//lo cambie por imagen
         await _redisSessionService.SetValueAsync("goo_access_token", googleUser.AccessToken!);
 
 

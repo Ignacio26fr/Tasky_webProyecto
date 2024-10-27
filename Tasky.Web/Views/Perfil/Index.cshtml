@@ -1,0 +1,53 @@
+﻿@model Tasky.Datos.EF.AspNetUsers
+<div class="container mt-5">
+    <h2 class="text-center">Perfil de Usuario</h2>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="text-center mt-3">
+                    @if (!string.IsNullOrEmpty(Model.imagenDePerfil))
+
+                    {
+                        <img src="@Url.Content("~/images/perfil/" + Model.imagenDePerfil)" class="rounded-circle" alt="Imagen de Perfil" width="100" height="100" />
+                    }
+
+                    else
+
+                    {
+
+                        var initials = $"{Model.FirstName.FirstOrDefault()}{Model.LastName.FirstOrDefault()}".ToUpper();
+                        <div class="rounded-circle bg-secondary text-white d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+                            <h5 class="mb-0">@initials</h5>
+                        </div>
+                    }
+                </div>
+
+                <div class="card-body text-center mt-3">
+                    <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+                    <p class="card-text"><strong>Email:</strong> @Model.Email</p>
+                    <p class="card-text"><strong>Teléfono:</strong> @(string.IsNullOrEmpty(Model.PhoneNumber) ? "No disponible" : Model.PhoneNumber)</p>
+                </div>
+
+               
+                <div class="text-center mb-4 mt-3">
+                    <a asp-action="ActualizarPerfil"  class="btn btn-primary">Actualizar Perfil</a>
+                </div>
+
+               
+                @if (TempData["Error"] != null)
+
+                {
+                    <div class="alert alert-danger mt-3 text-center">@TempData["Error"]</div>
+                }
+                @if (TempData["Success"] != null)
+
+                {
+                    <div class="alert alert-success mt-3 text-center">@TempData["Success"]</div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+

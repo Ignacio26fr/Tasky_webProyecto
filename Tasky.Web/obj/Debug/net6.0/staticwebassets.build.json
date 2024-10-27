@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oAOJ4CqydDeaJkHreEjhhrCWGmIj1A6JuhIphxav7O4=",
+  "Hash": "EMVzsUgoiL50dGxZ5/Z9Eh0DRZ4SplPXmpH/c7yA34A=",
   "Source": "Tasky.Web",
   "BasePath": "_content/Tasky.Web",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\Logo.svg",
+      "SourceId": "Tasky.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\",
+      "BasePath": "_content/Tasky.Web",
+      "RelativePath": "resources/Logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\Logo.svg"
     }
   ]
 }

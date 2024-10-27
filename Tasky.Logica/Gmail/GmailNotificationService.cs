@@ -184,7 +184,7 @@ public class GmailNotificationService : IGmailNotificationService
         var request = new WatchRequest
         {
             LabelIds = new List<string> { "INBOX" },
-            TopicName = "projects/tasky-439320/topics/notifications",
+            TopicName = "projects/tasky-439413/topics/notifications",
         };
 
 
@@ -199,7 +199,7 @@ public class GmailNotificationService : IGmailNotificationService
 
 
 
-        return "projects/tasky-439320/subscriptions/notification-sub"; // Este es el subscriptionId
+        return "projects/tasky-439413/subscriptions/notification-sub"; // Este es el subscriptionId
     }
 
     // Lógica para cancelar la suscripción
