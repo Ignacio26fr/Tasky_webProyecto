@@ -5360,19 +5360,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\44729038\\.nuget\\packages\\": {}
+    "C:\\Users\\osnag\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
+      "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
       "projectName": "Tasky.Web",
-      "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
-      "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Web\\obj\\",
+      "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\Tasky.Web.csproj",
+      "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+      "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5387,11 +5387,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
-              "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
+            "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+              "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
             },
-            "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
-              "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj"
+            "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
+              "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj"
             }
           }
         }

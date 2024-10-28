@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {}
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj": {
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj",
+        "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj",
         "projectName": "Tasky.AIModel",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\obj\\",
+        "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj",
+        "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+        "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.AIModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,17 +79,17 @@
         }
       }
     },
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+        "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
         "projectName": "Tasky.Datos",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
+        "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj",
+        "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+        "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,17 +162,17 @@
         }
       }
     },
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj": {
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj",
+        "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj",
         "projectName": "Tasky.Entidad",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\obj\\",
+        "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj",
+        "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+        "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -223,17 +223,17 @@
         }
       }
     },
-    "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
+    "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
+        "projectUniqueName": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
         "projectName": "Tasky.Logica",
-        "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
-        "packagesPath": "C:\\Users\\44729038\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
+        "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
+        "packagesPath": "C:\\Users\\osnag\\.nuget\\packages\\",
+        "outputPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44729038\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osnag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -248,14 +248,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj": {
-                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj"
+              "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj": {
+                "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.AIModel\\Tasky.AIModel.csproj"
               },
-              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
-                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
+              "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj": {
+                "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Datos\\Tasky.Datos.csproj"
               },
-              "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj": {
-                "projectPath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj"
+              "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj": {
+                "projectPath": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Entidad\\Tasky.Entidad.csproj"
               }
             }
           }
