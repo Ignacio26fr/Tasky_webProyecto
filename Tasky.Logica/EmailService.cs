@@ -1,41 +1,53 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.Net.Mail;
 using System.Net;
-using System.Threading.Tasks;
 
 
-namespace Tasky.Logica
+namespace Tasky.Logica;
+
+public interface IEmailService
 {
-    public class EmailService
+    Task SendEmailAsync(string toEmail, string subject, string body);
+
+    Task SendConfirmationEmailAsync(string email, string callbackUrl);
+}
+
+public class EmailService : IEmailService
+{
+    private readonly IConfiguration _configuracion;
+
+
+    public EmailService(IConfiguration configuracion)
     {
-        private readonly IConfiguration _configuracion;
+        _configuracion = configuracion;
+    }
 
-
-        public EmailService(IConfiguration configuracion)
+    public async Task SendEmailAsync(string toEmail, string subject, string body)
+    {
+        var smtpSettings = _configuracion.GetSection("SmtpSettings");
+        var mailMessage = new MailMessage
         {
-            _configuracion = configuracion;
-        }
+            From = new MailAddress(smtpSettings["User"]),
+            Subject = subject,
+            Body = body,
+            IsBodyHtml = true
+        };
 
-        public async Task EnviarEmailAsync(string toEmail, string subject, string body)
+        mailMessage.To.Add(toEmail);
+
+        using (var client = new SmtpClient(smtpSettings["Host"], int.Parse(smtpSettings["Port"])))
         {
-            var smtpSettings = _configuracion.GetSection("SmtpSettings");
-            var mailMessage = new MailMessage
-            {
-                From = new MailAddress(smtpSettings["User"]),
-                Subject = subject,
-                Body = body,
-                IsBodyHtml = true
-            };
+            client.Credentials = new NetworkCredential(smtpSettings["User"], smtpSettings["Password"]);
+            client.EnableSsl = bool.Parse(smtpSettings["EnableSSL"]);
 
-            mailMessage.To.Add(toEmail);
-
-            using (var client = new SmtpClient(smtpSettings["Host"], int.Parse(smtpSettings["Port"])))
-            {
-                client.Credentials = new NetworkCredential(smtpSettings["User"], smtpSettings["Password"]);
-                client.EnableSsl = bool.Parse(smtpSettings["EnableSSL"]);
-
-                await client.SendMailAsync(mailMessage);
-            }
+            await client.SendMailAsync(mailMessage);
         }
+    }
+
+    public async Task SendConfirmationEmailAsync(string email, string callbackUrl)
+    {
+        await SendEmailAsync(email, 
+                            "Confirma tu correo",
+                            $"Por favor confirma tu cuenta haciendo clic aquí: <a href='{callbackUrl}'>enlace</a>");
     }
 }

@@ -10,7 +10,7 @@ namespace Tasky.Datos.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "TablerosTrella",
+                name: "TablerosTrellos",
                 columns: table => new
                 {
                     IdTablero = table.Column<int>(type: "int", nullable: false)
@@ -69,7 +69,7 @@ namespace Tasky.Datos.Migrations
                     table.ForeignKey(
                         name: "FK_ListasTrellos_TablerosTrella_TableroId",
                         column: x => x.TableroId,
-                        principalTable: "TablerosTrella",
+                        principalTable: "TablerosTrellos",
                         principalColumn: "IdTablero",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -135,7 +135,7 @@ namespace Tasky.Datos.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TareasTrella",
+                name: "TareasTrellos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -178,12 +178,12 @@ namespace Tasky.Datos.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_TareasTrella_IdLista",
-                table: "TareasTrella",
+                table: "TareasTrellos",
                 column: "IdLista");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TareasTrella_IdObject",
-                table: "TareasTrella",
+                table: "TareasTrellos",
                 column: "IdObject");
 
             migrationBuilder.CreateIndex(
@@ -203,7 +203,7 @@ namespace Tasky.Datos.Migrations
                 name: "EventosCalendars");
 
             migrationBuilder.DropTable(
-                name: "TareasTrella");
+                name: "TareasTrellos");
 
             migrationBuilder.DropTable(
                 name: "ListasTrellos");
@@ -212,7 +212,7 @@ namespace Tasky.Datos.Migrations
                 name: "TaskyObjects");
 
             migrationBuilder.DropTable(
-                name: "TablerosTrella");
+                name: "TablerosTrellos");
 
             migrationBuilder.DropTable(
                 name: "TaskyPriorities");

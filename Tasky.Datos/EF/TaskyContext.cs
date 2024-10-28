@@ -8,18 +8,18 @@ namespace Tasky.Datos.EF;
 
 public partial class TaskyContext : IdentityDbContext<AspNetUsers>
 {
-    
 
-        public TaskyContext()
-        {
-        }
 
-        public TaskyContext(DbContextOptions<TaskyContext> options)
-            : base(options)
-        {
-        }
+    public TaskyContext()
+    {
+    }
 
-        public virtual DbSet<AspNetRole> AspNetRoles { get; set; } = null!;
+    public TaskyContext(DbContextOptions<TaskyContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<AspNetRole> AspNetRoles { get; set; } = null!;
     public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
     public virtual DbSet<AspNetUsers> AspNetUsers { get; set; } = null!;
     public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;

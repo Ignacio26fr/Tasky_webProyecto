@@ -8,7 +8,7 @@
                     <h4>Iniciar Sesión</h4>
                 </div>
                 <div class="card-body">
-                    <form asp-action="Ingresar" method="post">
+                    <form asp-action="SignIn" method="post">
                         <div class="form-group">
                             <label asp-for="Email" class="form-label"></label>
                             <input asp-for="Email" class="form-control" placeholder="Ingresa tu email" />
@@ -29,7 +29,7 @@
                     </form>
                     <div class="text-center mt-4">
                         <span class="d-block mb-3">O</span>
-                        <form asp-action="IniciarConGoogle" method="post" class="d-inline">
+                        <form asp-action="SignIn" asp-controller="Google" method="post" class="d-inline">
                             <button type="submit" class="btn btn-danger btn-block">
                                 <i class="fab fa-google me-2"></i> Iniciar sesión con Google
                             </button>

@@ -1,10 +1,7 @@
-﻿
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Tasky.Logica.Gmail;
-using Tasky.Logica.Redis;
+using Tasky.Datos.EF;
+
 
 
 namespace Tasky.Web.Controllers.Account;
@@ -12,56 +9,57 @@ namespace Tasky.Web.Controllers.Account;
 public class AccountController : Controller
 {
 
-    private readonly IGmailAccountService _gmailAccountService;
-    private readonly IRedisSessionService _redisSessionService;
+    private readonly UserManager<AspNetUsers> _userManager;
 
-    public AccountController(IGmailAccountService gmailAccountService, IRedisSessionService redisSessionService)
+    public AccountController(UserManager<AspNetUsers> userManager)
     {
-        _gmailAccountService = gmailAccountService;
-        _redisSessionService = redisSessionService;
+        _userManager = userManager;
     }
     public IActionResult Index()
     {
         return View();
     }
 
-    public IActionResult GoogleLogin()
-    {
-        // Redirige al usuario al flujo de autenticación de Google
-        // en redirectUrl le pasamos la acción que se ejecutará después de la autenticación
-        var redirectUrl = Url.Action("GoogleResponse", "Account", null, Request.Scheme);
+ 
 
-        if(redirectUrl == null)
-            return BadRequest();
-
-        var properties = _gmailAccountService.GetGoogleAuthProperties(redirectUrl);
-        return _gmailAccountService.Challenge(properties);
-    }
-
-    public async Task<IActionResult> GoogleLogout()
-    {
-        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-        return RedirectToAction("Index", "Actions");
-    }
-
-    public async Task<IActionResult> GoogleResponse()
+    [HttpGet]
+    public async Task<ActionResult> ConfirmarEmail(string userId, string token)
     {
 
-        var authenticateResult = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+        Console.WriteLine($"ConfirmarEmail - UserID: {userId}, Token: {token}");
 
-        var googleUser = await _gmailAccountService.GetAccount(authenticateResult);
+        if (userId == null || token == null)
+        {
+            Console.WriteLine("Entre aca");
+            return RedirectToAction("Login", "Index");
+        }
 
-        if (googleUser == null)
-            return BadRequest(); // Error en la autenticación
+        var usuario = await _userManager.FindByIdAsync(userId);
+        if (usuario == null)
+        {
+            Console.WriteLine("Usuario no encontrado");
+            return NotFound();
+        }
 
-        //guarddamos los datos del usuario en la session con el token de acceso
-     
-        await _redisSessionService.SetValueAsync("goo_user_name", googleUser.FirstName!);//lo cambie por name
-        await _redisSessionService.SetValueAsync("goo_user_email", googleUser.Email!);
-        await _redisSessionService.SetValueAsync("goo_user_picture", googleUser.imagenDePerfil!);//lo cambie por imagen
-        await _redisSessionService.SetValueAsync("goo_access_token", googleUser.AccessToken!);
-
-
-        return RedirectToAction("Index", "Actions");
+        var resultado = await _userManager.ConfirmEmailAsync(usuario, token);
+        if (resultado.Succeeded)
+        {
+            return RedirectToAction("Index", "Login");
+        }
+        else
+        {
+            var errores = string.Join(", ", resultado.Errors.Select(e => e.Description));
+            Console.WriteLine($"Error al confirmar correo: {errores}");
+            ModelState.AddModelError(string.Empty, $"Error: {errores}");
+            return View("Verificar");
+        }
     }
+
+    [HttpGet]
+    public IActionResult Verificar()
+    {
+        return View();
+    }
+
+
 }

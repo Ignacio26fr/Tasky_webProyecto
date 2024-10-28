@@ -46,7 +46,8 @@ namespace Tasky.Datos.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
                     AccessFailedCount = table.Column<int>(type: "int", nullable: false),
-                    AccessToken = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    AccessToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    GoogleHistoryId = table.Column<ulong>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
