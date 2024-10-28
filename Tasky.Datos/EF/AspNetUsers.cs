@@ -36,7 +36,7 @@ public partial class AspNetUsers : IdentityUser
         
         public string AccessToken { get; set; }
 
-        public ulong? GoogleHistoryId { get; set; }
+        public long? GoogleHistoryId { get; set; }
 
         public virtual ICollection<AspNetUserClaim> AspNetUserClaims { get; set; } = new List<AspNetUserClaim>();
         public virtual ICollection<AspNetUserLogin> AspNetUserLogins { get; set; }

@@ -36,7 +36,7 @@ public class ObserverController : Controller
         if (!_memoryCache.TryGetValue("user", out userAuthenticated))
         {
             // Si no está en caché, consultamos la sesion iniciada
-            var user = await _userManager.GetUserAsync(User);
+            var user =  _userManager.GetUserAsync(User).Result;
            
 
             // Almacenar el usuario en caché por 5 minutos (o el tiempo que creas necesario)

@@ -42,7 +42,7 @@ public class GoogleAccountService : IGoogleAccountService
             PhoneNumber = claimsIdentity?.FindFirst(ClaimTypes.MobilePhone)?.Value,
             GivenName = claimsIdentity?.FindFirst(ClaimTypes.GivenName)?.Value,
             Surname = claimsIdentity?.FindFirst(ClaimTypes.Surname)?.Value,
-            Picture = claimsIdentity?.FindFirst(ClaimTypes.Uri)?.Value,
+            Picture = claimsIdentity?.FindFirst("picture")?.Value,
             AccessToken = accessToken
         };
 

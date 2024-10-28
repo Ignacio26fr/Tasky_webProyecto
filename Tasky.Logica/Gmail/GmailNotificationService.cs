@@ -85,7 +85,7 @@ public class GmailNotificationService : IGmailNotificationService
         {
 
             var lastHistoryId = CurrenUser.GoogleHistoryId;
-            result = await Process(notification, CurrenUser.AccessToken, lastHistoryId ?? 0);
+            result = await Process(notification, CurrenUser.AccessToken,(ulong?) lastHistoryId ?? 0);
 
             //TODO: mandar la lista de correos a ML para procesar
             //TODO: mandar la lista de correos a la base de datos
@@ -175,7 +175,7 @@ public class GmailNotificationService : IGmailNotificationService
         var request = new WatchRequest
         {
             LabelIds = new List<string> { "INBOX" },
-            TopicName = "projects/tasky-439413/topics/notifications",
+            TopicName = "projects/tasky-439320/topics/notifications",
         };
 
 
@@ -190,7 +190,7 @@ public class GmailNotificationService : IGmailNotificationService
 
 
 
-        return "projects/tasky-439413/subscriptions/notification-sub"; // Este es el subscriptionId
+        return "projects/tasky-439320/subscriptions/notification-sub"; // Este es el subscriptionId
     }
 
     // Lógica para cancelar la suscripción
@@ -435,7 +435,7 @@ public class GmailNotificationService : IGmailNotificationService
 
     private async Task SaveHistoryId(ulong historyId)
     {
-        CurrenUser.GoogleHistoryId = historyId;
+        CurrenUser.GoogleHistoryId = (long)historyId;
         await _userManager.UpdateAsync(CurrenUser);
     }
 
