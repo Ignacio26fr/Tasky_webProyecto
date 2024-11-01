@@ -3,7 +3,6 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
 using Google.Apis.Services;
-using Microsoft.AspNetCore.Identity;
 using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
@@ -15,9 +14,10 @@ namespace Tasky.Logica.Gmail;
 
 public interface IGmailNotificationService
 {
-    AspNetUsers CurrenUser {  set; }
+    
+    GoogleSession CurrenSession {  set; }
     Task ProcessNotification(PubSubNotification notification);
-    Task<string> SubscribeToNotificationsAsync(AspNetUsers aspNetUsers);
+    Task<string> SubscribeToNotificationsAsync(GoogleSession session);
     Task UnsubscribeFromNotifications(string accessToken, string subscriptionId);
     void AddNotification(PubSubNotification notification);
 }
@@ -25,19 +25,20 @@ public interface IGmailNotificationService
 
 public class GmailNotificationService : IGmailNotificationService
 {
-    private readonly UserManager<AspNetUsers> _userManager;
-    private static readonly ConcurrentQueue<PubSubNotification> _notificationQueue = new ConcurrentQueue<PubSubNotification>();
-    private readonly ITaskManager _taskManager;
+    
+    private  readonly ConcurrentQueue<PubSubNotification> _notificationQueue;
+    private readonly ICoreBackgroundService _coreBackgroundService;
     private GmailService _gmailService;
     private bool _isProcessing;
    
-    public AspNetUsers CurrenUser { private get; set; }
+    public GoogleSession CurrenSession { private get; set; }
 
-    public GmailNotificationService( ITaskManager taskManager, UserManager<AspNetUsers> userManager)
+    public GmailNotificationService(ICoreBackgroundService coreBackgroundService)
     {
-        _userManager = userManager;
-        _taskManager = taskManager;
+
+        _coreBackgroundService = coreBackgroundService;
         _isProcessing = false;
+        _notificationQueue = new ConcurrentQueue<PubSubNotification>();
     }
 
     public void AddNotification(PubSubNotification notification)
@@ -76,7 +77,6 @@ public class GmailNotificationService : IGmailNotificationService
             _isProcessing = false;
         });
     }
-
     public async Task ProcessNotification(PubSubNotification notification)
     {
 
@@ -84,8 +84,8 @@ public class GmailNotificationService : IGmailNotificationService
         try
         {
 
-            var lastHistoryId = CurrenUser.GoogleHistoryId;
-            result = await Process(notification, CurrenUser.AccessToken,(ulong?) lastHistoryId ?? 0);
+            var lastHistoryId = CurrenSession.User.GoogleHistoryId;
+            result = await Process(notification, CurrenSession.AccessToken,(ulong?) lastHistoryId ?? 0);
 
             //TODO: mandar la lista de correos a ML para procesar
             //TODO: mandar la lista de correos a la base de datos
@@ -99,12 +99,11 @@ public class GmailNotificationService : IGmailNotificationService
         }
         catch (Exception ex)
         {
-            await UnsubscribeFromNotifications(CurrenUser.AccessToken, notification.Subscription!);
+            await UnsubscribeFromNotifications(CurrenSession.AccessToken, notification.Subscription!);
 
             Console.WriteLine($"error al procesar la notificacion: {ex}");
         }
     }
-
     private async Task<List<EmailInfo>> Process(PubSubNotification notification, string accessToken, ulong lastHistoryId)
     {
 
@@ -134,16 +133,7 @@ public class GmailNotificationService : IGmailNotificationService
                     //mostramos el primer correo de newEmail
                     foreach (var email in newEmails)
                     {
-                        Console.WriteLine("CORREO ENTRANTE");
-                        Console.WriteLine("================");
-                        Console.WriteLine($"Correo-id: {email.Id}");
-                        Console.WriteLine($"Correo-Hid: {email.HistoryId}");
-                        Console.WriteLine($"Correo-asunto: {email.Subject}");
-                        Console.WriteLine($"Correo-fecha: {email.Date}");
-                        Console.WriteLine($"Correo-remite: {email.Sender}");
-                        Console.WriteLine($"Correo-body: {email.Body}");
-
-                        _taskManager.GenerateTaskFromEmail(email);
+                       _coreBackgroundService.AddEmail(email);
                     }
 
 
@@ -159,16 +149,16 @@ public class GmailNotificationService : IGmailNotificationService
         return new List<EmailInfo>();
     }
 
-    public async Task<string> SubscribeToNotificationsAsync(AspNetUsers aspNetUsers)
+    public async Task<string> SubscribeToNotificationsAsync(GoogleSession session)
     {
-        CurrenUser = aspNetUsers;
+        CurrenSession = session;
 
-        var hId = await SyncHistoryInit(CurrenUser.AccessToken);
+        var hId = await SyncHistoryInit(CurrenSession.AccessToken);
         Console.WriteLine($"HistoryId de sincronizacion: {hId}");
 
         _gmailService = new GmailService(new BaseClientService.Initializer()
         {
-            HttpClientInitializer = GoogleCredential.FromAccessToken(aspNetUsers.AccessToken),
+            HttpClientInitializer = GoogleCredential.FromAccessToken(CurrenSession.AccessToken),
             ApplicationName = "Tasky",
         });
 
@@ -204,7 +194,7 @@ public class GmailNotificationService : IGmailNotificationService
                 ApplicationName = "Tasky",
             });
 
-            var stopRequest = _gmailService.Users.Stop("me");
+            var stopRequest = _gmailService.Users.Stop(CurrenSession.User.Email);
             await stopRequest.ExecuteAsync();
             Console.WriteLine("Unsubscribed from notifications");
         }
@@ -264,7 +254,7 @@ public class GmailNotificationService : IGmailNotificationService
                 ApplicationName = "Tasky",
             });
 
-            var historyRequest = service.Users.History.List("osnaghi.developer@gmail.com");
+            var historyRequest = service.Users.History.List("me");
 
             var LastHistoryId = await this.GetLastHistoryId(accessToken);
 
@@ -302,7 +292,7 @@ public class GmailNotificationService : IGmailNotificationService
             });
 
             // Buscar los correos nuevos a partir del HistoryId
-            var historyRequest = service.Users.History.List("me");
+            var historyRequest = service.Users.History.List(CurrenSession.User.Email);
             historyRequest.StartHistoryId = historyId;
             var historyResponse = await historyRequest.ExecuteAsync();
             var emails = new List<EmailInfo>();
@@ -315,7 +305,8 @@ public class GmailNotificationService : IGmailNotificationService
                     {
                         foreach (var messageAdded in history.MessagesAdded)
                         {
-                            var email = await service.Users.Messages.Get("me", messageAdded.Message.Id).ExecuteAsync();
+                            
+                            var email = await service.Users.Messages.Get(CurrenSession.User.Email, messageAdded.Message.Id).ExecuteAsync();
 
                             if (email != null)
                             {
@@ -349,6 +340,7 @@ public class GmailNotificationService : IGmailNotificationService
     {
         return new EmailInfo()
         {
+            UserId = CurrenSession.User.Id,
             HistoryId = email.HistoryId!.Value,
             Id = email.Id,
             Subject = email.Payload.Headers.FirstOrDefault(h => h.Name == "Subject")!.Value,
@@ -433,10 +425,13 @@ public class GmailNotificationService : IGmailNotificationService
         return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
     }
 
+
     private async Task SaveHistoryId(ulong historyId)
     {
-        CurrenUser.GoogleHistoryId = (long)historyId;
-        await _userManager.UpdateAsync(CurrenUser);
+        CurrenSession.User.GoogleHistoryId = (long)historyId;
+       // HistoryChange?.Invoke(this, new HistoryArgs(CurrenSession.User, historyId));
+       _coreBackgroundService.SaveHistoryId(CurrenSession.User, historyId);
+
     }
 
 }

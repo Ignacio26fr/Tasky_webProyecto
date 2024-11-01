@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Tasky.Datos.EF;
 using Tasky.Logica.Gmail;
+using Tasky.Logica.Session;
 
 namespace Tasky.Web.Controllers.Account;
 
@@ -15,19 +16,25 @@ public class GoogleController : Controller
     private readonly SignInManager<AspNetUsers> _signInManager;
     private readonly IGoogleAccountService _googleAccountService;
     private readonly IGmailNotificationService _gmailNotificationService;
+    private readonly IAcountSessionManager _acountSessionManager;
 
-    public GoogleController(UserManager<AspNetUsers> userManager, SignInManager<AspNetUsers> signInManager, IGoogleAccountService googleAccountService, IGmailNotificationService gmailNotificationService )
+    public GoogleController(UserManager<AspNetUsers> userManager, 
+                            SignInManager<AspNetUsers> signInManager, 
+                            IGoogleAccountService googleAccountService, 
+                            IGmailNotificationService gmailNotificationService,
+                            IAcountSessionManager acountSessionManager)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _googleAccountService = googleAccountService;
         _gmailNotificationService = gmailNotificationService;
+        _acountSessionManager = acountSessionManager;
     }
 
     [HttpPost]
     public IActionResult SignIn(string returnUrl = null)
     {
-        var redirectUrl = Url.Action("GoogleResponse", "Google", new { ReturnUrl = returnUrl });
+        var redirectUrl = Url.Action("GoogleResponse", "Google", null, Request.Scheme);
         var properties = new AuthenticationProperties { RedirectUri = redirectUrl };
         return Challenge(properties, GoogleDefaults.AuthenticationScheme);
     }
@@ -61,7 +68,7 @@ public class GoogleController : Controller
                 LastName = googleAccount.Surname,
                 imagenDePerfil = googleAccount.Picture,
                 EmailConfirmed = true,
-                AccessToken = googleAccount.AccessToken!
+                AccessToken = googleAccount.RefreshToken!
             };
 
             var resultado = await _userManager.CreateAsync(user);
@@ -72,9 +79,12 @@ public class GoogleController : Controller
         }
 
         //Todo OK entonces logueo al usuario y suscribo a notificaciones para estar a la escucha de nuevos correos entrantes
+        user.AccessToken = googleAccount.RefreshToken!;
+        await _userManager.UpdateAsync(user);
         await _signInManager.SignInAsync(user, isPersistent: false);
-        await _gmailNotificationService.SubscribeToNotificationsAsync(user);
-        return RedirectToAction("Index", "Home");
+        var session = await _acountSessionManager.RegisterSession(user, googleAccount.AccessToken);
+        await _gmailNotificationService.SubscribeToNotificationsAsync(session);
+        return RedirectToAction("Index", "Actions");
     }
 
 

@@ -1,3 +1,5 @@
+using Google;
+using Google.Api;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
@@ -6,6 +8,7 @@ using Tasky.Datos.EF;
 using Tasky.Logica;
 using Tasky.Logica.Core;
 using Tasky.Logica.Gmail;
+using Tasky.Logica.Session;
 
 
 
@@ -21,25 +24,17 @@ builder.Services.AddAuthentication(options =>
     options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
 })
-.AddCookie(options =>
-{
-    // Establece la expiración de la cookie como no persistente
-    options.Cookie.IsEssential = true; // Hace la cookie esencial para evitar bloqueos de GDPR
-    options.Cookie.HttpOnly = true;    // Asegura la cookie solo para HTTP, para evitar ataques de XSS
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Tiempo de expiración corto
-    options.SlidingExpiration = false; // No renueva la expiración automáticamente
-    options.Cookie.Expiration = null;  // Deja la cookie sin persistir
-
-    // Expira cuando el navegador se cierra
-    options.Cookie.MaxAge = null;
-})
+.AddCookie()
 .AddGoogle(googleOptions =>
 {
     googleOptions.ClientId = builder.Configuration["Google:ClientId"];
     googleOptions.ClientSecret = builder.Configuration["Google:ClienteSecret"];
-    googleOptions.Scope.Add(builder.Configuration["Google:email.readonly"]); // Permisos para leer correos
-    googleOptions.Scope.Add(builder.Configuration["Google:userinfo.email"]); // Permisos para obtener información del usuario
-    googleOptions.Scope.Add(builder.Configuration["Google:userinfo.profile"]); // Permisos para obtener información del usuario
+    googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.email");
+    googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.profile");
+    googleOptions.Scope.Add("openid");
+    googleOptions.Scope.Add("https://www.googleapis.com/auth/gmail.readonly");
+   
+    // Permisos para obtener información del usuario
     googleOptions.SaveTokens = true; // Guarda los tokens de acceso y refresh
 });
 
@@ -58,12 +53,17 @@ builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
 });
 
 
-//ideal transient para servicios de mail(por eso lo uso)
+builder.Services.AddHostedService<CoreBackgroundService>();
+builder.Services.AddSingleton<IEventService<TaskEventsArgs>, EventService<TaskEventsArgs>>();
+builder.Services.AddSingleton<ICoreBackgroundService, CoreBackgroundService>();
 builder.Services.AddTransient<EmailService>();
 builder.Services.AddScoped<IGoogleAccountService, GoogleAccountService>();
-builder.Services.AddScoped<IGmailNotificationService, GmailNotificationService>();
+builder.Services.AddSingleton<IGmailNotificationService, GmailNotificationService>();
 builder.Services.AddScoped<ITaskManager, TaskManager>();
 builder.Services.AddScoped<HttpClient>();
+builder.Services.AddScoped<IAcountSessionManager, AcountSessionManager>();
+
+
 
 
 builder.Services.AddControllersWithViews();
@@ -78,6 +78,14 @@ builder.Services.AddSession(options =>
 });
 
 var app = builder.Build();
+
+// Limpiar la tabla GoogleSession al iniciar la aplicación
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TaskyContext>();
+    dbContext.googleSessions.RemoveRange(dbContext.googleSessions);
+    dbContext.SaveChanges();
+}
 
 
 if (!app.Environment.IsDevelopment())

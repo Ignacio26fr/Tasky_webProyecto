@@ -12,7 +12,7 @@ public class EventosCalendar
     public string Localizacion { get; set; }
     public string Estado { get; set; }
     public bool Sincronizado { get; set; } = false;
-    public int? IdObject { get; set; }
+    public string? IdObject { get; set; }
     public DateTime CreadoEn { get; set; } = DateTime.Now;
     public TaskyObject TaskyObject { get; set; }
 }

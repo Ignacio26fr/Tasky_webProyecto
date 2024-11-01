@@ -25,13 +25,14 @@ public partial class TaskyContext : IdentityDbContext<AspNetUsers>
     public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
     //    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
     // public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
-    public DbSet<TaskyStatus> TaskyStatuses { get; set; }
-    public DbSet<TaskyPriority> TaskyPriorities { get; set; }
+
     public DbSet<TaskyObject> TaskyObjects { get; set; }
     public DbSet<EventosCalendar> EventosCalendars { get; set; }
     public DbSet<TablerosTrello> TablerosTrella { get; set; }
     public DbSet<ListasTrello> ListasTrellos { get; set; }
     public DbSet<TareasTrello> TareasTrella { get; set; }
+
+    public DbSet<GoogleSession> googleSessions { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -102,18 +103,31 @@ public partial class TaskyContext : IdentityDbContext<AspNetUsers>
                 .HasConstraintName("FK__AspNetUse__UserI__45F365D3");
         });
 
+        modelBuilder.Entity<GoogleSession>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).ValueGeneratedOnAdd();
+            entity.Property(e => e.AccessToken).HasMaxLength(500);
+            entity.Property(e => e.UserId).HasMaxLength(450);
+            // Configura la relación de clave foránea a través de la propiedad `User`
+            entity.HasOne(d => d.User)
+                .WithMany() // Suponiendo que `AspNetUsers` no tiene una colección de `GoogleSession`
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__GoogleSession__UserId");
+        });
 
-        modelBuilder.Entity<TaskyObject>()
-       .HasOne(t => t.Status)
-       .WithMany()
-       .HasForeignKey(t => t.IdStatus);
 
-        modelBuilder.Entity<TaskyObject>().HasKey(t => t.IdObject);
 
-        modelBuilder.Entity<TaskyObject>()
-            .HasOne(t => t.Priority)
-            .WithMany()
-            .HasForeignKey(t => t.IdPriority);
+
+        modelBuilder.Entity<TaskyObject>(entity =>
+        {
+            entity.HasKey(t => t.IdObject);
+            entity.Property(t => t.Priority)
+                    .HasConversion<int>();
+        });
+
+
+
 
 
         modelBuilder.Entity<EventosCalendar>()
@@ -149,11 +163,7 @@ public partial class TaskyContext : IdentityDbContext<AspNetUsers>
             .HasForeignKey(t => t.IdObject)
             .OnDelete(DeleteBehavior.SetNull);
 
-        modelBuilder.Entity<TaskyPriority>().
-            HasKey(p => p.IdPriority);
 
-        modelBuilder.Entity<TaskyStatus>().
-            HasKey(s => s.IdStatus);
 
 
 

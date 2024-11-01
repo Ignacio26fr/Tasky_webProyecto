@@ -50,7 +50,7 @@ namespace Tasky.Web.Controllers.Account
                     if (result.Succeeded)
                     {
                         
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Actions");
                     }
                     else
                     {

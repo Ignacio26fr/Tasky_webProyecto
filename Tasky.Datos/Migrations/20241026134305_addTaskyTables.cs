@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Tasky.Datos.EF;
 
 #nullable disable
 
@@ -9,6 +10,28 @@ namespace Tasky.Datos.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+               name: "GoogleSessions",
+               columns: table => new
+               {
+                   id = table.Column<int>(type: "int", nullable: false)
+                       .Annotation("SqlServer:Identity", "1, 1"),
+                   AccessToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                   UserId =  table.Column<string>(type: "nvarchar(450)", nullable: false),
+
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_GoogleSession", x => x.id);
+                   table.ForeignKey(
+                       name: "FK_GoogleSession_AspNetUsers",
+                       column: x => x.UserId,
+                       principalTable: "AspNetUsers",
+                       principalColumn: "Id",
+                       onDelete: ReferentialAction.Cascade);
+                 
+               });
+
             migrationBuilder.CreateTable(
                 name: "TablerosTrellos",
                 columns: table => new
@@ -26,31 +49,9 @@ namespace Tasky.Datos.Migrations
                     table.PrimaryKey("PK_TablerosTrella", x => x.IdTablero);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "TaskyPriorities",
-                columns: table => new
-                {
-                    IdPriority = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TaskyPriorities", x => x.IdPriority);
-                });
+           
 
-            migrationBuilder.CreateTable(
-                name: "TaskyStatuses",
-                columns: table => new
-                {
-                    IdStatus = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TaskyStatuses", x => x.IdStatus);
-                });
+        
 
             migrationBuilder.CreateTable(
                 name: "ListasTrellos",
@@ -78,31 +79,19 @@ namespace Tasky.Datos.Migrations
                 name: "TaskyObjects",
                 columns: table => new
                 {
-                    IdObject = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdObject = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Subjectt = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Body = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdStatus = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<bool>(type: "bit", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Spam = table.Column<bool>(type: "bit", nullable: false),
-                    IdPriority = table.Column<int>(type: "int", nullable: false)
+                    Priority = table.Column<TaskyPriority>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TaskyObjects", x => x.IdObject);
-                    table.ForeignKey(
-                        name: "FK_TaskyObjects_TaskyPriorities_IdPriority",
-                        column: x => x.IdPriority,
-                        principalTable: "TaskyPriorities",
-                        principalColumn: "IdPriority",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_TaskyObjects_TaskyStatuses_IdStatus",
-                        column: x => x.IdStatus,
-                        principalTable: "TaskyStatuses",
-                        principalColumn: "IdStatus",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -120,7 +109,7 @@ namespace Tasky.Datos.Migrations
                     Localizacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sincronizado = table.Column<bool>(type: "bit", nullable: false),
-                    IdObject = table.Column<int>(type: "int", nullable: true),
+                    IdObject = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     CreadoEn = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -146,7 +135,7 @@ namespace Tasky.Datos.Migrations
                     FechaVencimiento = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IdLista = table.Column<int>(type: "int", nullable: true),
-                    IdObject = table.Column<int>(type: "int", nullable: true),
+                    IdObject = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     CreadoEn = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -187,14 +176,9 @@ namespace Tasky.Datos.Migrations
                 column: "IdObject");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TaskyObjects_IdPriority",
-                table: "TaskyObjects",
-                column: "IdPriority");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TaskyObjects_IdStatus",
-                table: "TaskyObjects",
-                column: "IdStatus");
+                name: "IX_GoogleSession_UserId",
+                table: "GoogleSessions",
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -215,10 +199,7 @@ namespace Tasky.Datos.Migrations
                 name: "TablerosTrellos");
 
             migrationBuilder.DropTable(
-                name: "TaskyPriorities");
-
-            migrationBuilder.DropTable(
-                name: "TaskyStatuses");
+                name: "GoogleSessions");
         }
     }
 }

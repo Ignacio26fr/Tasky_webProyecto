@@ -34,7 +34,7 @@ public partial class AspNetUsers : IdentityUser
         public override bool LockoutEnabled { get; set; }
         public override int AccessFailedCount { get; set; }
         
-        public string AccessToken { get; set; }
+        public string? AccessToken { get; set; }
 
         public long? GoogleHistoryId { get; set; }
 

@@ -11,4 +11,6 @@ public class EmailInfo
     public string Body { get; set; } // Cuerpo del mensaje
     public DateTime Date { get; set; }
 
+    public string UserId { get; set; }
+
 }
