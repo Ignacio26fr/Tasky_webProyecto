@@ -1,0 +1,18 @@
+﻿@using Tasky.Datos.EF;
+
+<label class="control-label col-md-2">Prioridad</label>
+<input type="hidden" name="filtroSeccion" value="@ViewBag.FiltroSeccion" />
+<select id="idPrioridad" name="idPrioridad" onchange="this.form.submit()">
+    <option value="">Seleccione una prioridad</option>
+    @foreach (TaskyPriority item in ViewBag.Prioridades)
+    {
+        if (((TaskyPriority?)ViewBag.PrioridadSeleccionada).HasValue && ((TaskyPriority?)ViewBag.PrioridadSeleccionada).Value == item)
+        {
+            <option value="@item" selected="selected">@item</option>
+        }
+        else
+        {
+            <option value="@item">@item</option>
+        }
+    }
+</select>
