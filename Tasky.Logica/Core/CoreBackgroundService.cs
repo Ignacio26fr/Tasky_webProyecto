@@ -73,7 +73,9 @@ public class CoreBackgroundService: BackgroundService, ICoreBackgroundService
         Console.WriteLine($"Correo-remite: {email.Sender}");
         Console.WriteLine($"Correo-body: {email.Body}");
 
-       GenerateTaskFromEmail(email);
+        GenerateTaskFromEmail(email);
+
+       
     }
 
     public void GenerateTaskFromEmail(EmailInfo email)
@@ -167,4 +169,6 @@ public class CoreBackgroundService: BackgroundService, ICoreBackgroundService
        
         base.Dispose();
     }
+
+   
 }

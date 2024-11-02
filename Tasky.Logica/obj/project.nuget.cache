@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eU23053sP+E=",
+  "dgSpecHash": "YHhQYDNR/fQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\44729038\\Documents\\Github\\Tasky_webProyecto\\Tasky.Logica\\Tasky.Logica.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\44729038\\.nuget\\packages\\google.api.gax.grpc\\4.9.0\\google.api.gax.grpc.4.9.0.nupkg.sha512",
     "C:\\Users\\44729038\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\44729038\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\44729038\\.nuget\\packages\\google.apis.calendar.v3\\1.68.0.3557\\google.apis.calendar.v3.1.68.0.3557.nupkg.sha512",
     "C:\\Users\\44729038\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
     "C:\\Users\\44729038\\.nuget\\packages\\google.apis.gmail.v1\\1.68.0.3427\\google.apis.gmail.v1.1.68.0.3427.nupkg.sha512",
     "C:\\Users\\44729038\\.nuget\\packages\\google.cloud.iam.v1\\3.3.0\\google.cloud.iam.v1.3.3.0.nupkg.sha512",
