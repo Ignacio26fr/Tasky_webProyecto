@@ -1,5 +1,8 @@
 ﻿@model List<Tasky.Datos.EF.TaskyObject>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
 @{
     ViewData["Title"] = "Acciones";
     
@@ -42,6 +45,9 @@
                 <th scope="col">Asunto</th>
                 <th scope="col">Prioridad</th>
                 <th scope="col">De</th>
+                <th scope="col">
+                    Acciones
+                </th>
             </tr>
         </thead>
         <tbody id="tablaCuerpo">
@@ -49,9 +55,21 @@
             {
                 <tr>
                     <td><input type="checkbox" class="itemCheckbox"></td>
-                    <td>@mail.Sender</td>
+                    <td>@mail.Subjectt</td>
                     <td>@mail.Priority</td>
                     <td>@mail.Sender</td>
+                    <td>
+                        <a href="@Url.Action("Detalle", "Actions", new { id = mail.IdObject })" title="Ver">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                        <a href="@Url.Action("Editar", "Actions", new { id = mail.IdObject })" title="Editar">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                        <a href="@Url.Action("Eliminar", "Actions",
+                        new { id = mail.IdObject, filtroSeccion = ViewBag.FiltroSeccion, idPrioridad = ViewBag.PrioridadSeleccionada })">
+                        <i class="bi bi-trash"></i>
+                         </a>
+                    </td>
                 </tr>
             }
         </tbody>
