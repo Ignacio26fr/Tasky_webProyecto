@@ -1,11 +1,14 @@
 using Google;
 using Google.Api;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Tasky.Datos.EF;
 using Tasky.Logica;
+using Tasky.Logica.Calendar;
 using Tasky.Logica.Core;
 using Tasky.Logica.Gmail;
 using Tasky.Logica.Session;
@@ -29,6 +32,7 @@ builder.Services.AddAuthentication(options =>
 {
     googleOptions.ClientId = builder.Configuration["Google:ClientId"];
     googleOptions.ClientSecret = builder.Configuration["Google:ClienteSecret"];
+    googleOptions.Scope.Add("https://www.googleapis.com/auth/calendar");
     googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.email");
     googleOptions.Scope.Add("https://www.googleapis.com/auth/userinfo.profile");
     googleOptions.Scope.Add("openid");
@@ -37,6 +41,8 @@ builder.Services.AddAuthentication(options =>
     // Permisos para obtener información del usuario
     googleOptions.SaveTokens = true; // Guarda los tokens de acceso y refresh
 });
+
+
 
 
 builder.Services.AddDbContext<TaskyContext>(options =>
@@ -60,6 +66,7 @@ builder.Services.AddTransient<EmailService>();
 builder.Services.AddScoped<IGoogleAccountService, GoogleAccountService>();
 builder.Services.AddSingleton<IGmailNotificationService, GmailNotificationService>();
 builder.Services.AddScoped<ITaskManager, TaskManager>();
+builder.Services.AddScoped<IGoogleCalendarService, GoogleCalendarService>();
 builder.Services.AddScoped<HttpClient>();
 builder.Services.AddScoped<IAcountSessionManager, AcountSessionManager>();
 

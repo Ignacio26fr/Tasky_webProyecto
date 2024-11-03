@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Tasky.Datos.EF;
+using Tasky.Logica.Calendar;
 using Tasky.Logica.Core;
 using Tasky.Logica.Gmail;
 using Tasky.Web.Models;
@@ -12,12 +13,14 @@ public class ActionsController : Controller
 {
 
     private readonly ITaskManager _taskManager;
-  
+    private readonly IGoogleCalendarService _googleCalendarService;
 
-    public ActionsController( ITaskManager taskManager)
+
+    public ActionsController( ITaskManager taskManager, IGoogleCalendarService googleCalendarService)
     {
         _taskManager = taskManager;
-     
+        _googleCalendarService = googleCalendarService;
+
     }
 
     public async Task<IActionResult> Index(TaskyPriority? idPrioridad, string filtroInput, string filtroSeccion)
