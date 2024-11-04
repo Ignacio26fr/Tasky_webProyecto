@@ -69,6 +69,7 @@ builder.Services.AddScoped<ITaskManager, TaskManager>();
 builder.Services.AddScoped<IGoogleCalendarService, GoogleCalendarService>();
 builder.Services.AddScoped<HttpClient>();
 builder.Services.AddScoped<IAcountSessionManager, AcountSessionManager>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 
 

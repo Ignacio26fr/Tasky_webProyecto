@@ -38,7 +38,7 @@ public partial class TaskyContext : IdentityDbContext<AspNetUsers>
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=INF-037\\SQLEXPRESS;Database=SmartTask;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=GCX-PC;Database=SmartTask;Trusted_Connection=True;");
         }
     } 
 
