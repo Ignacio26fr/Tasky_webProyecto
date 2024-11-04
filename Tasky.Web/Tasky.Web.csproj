@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="Models\Login\**" />
+    <Compile Remove="wwwroot\images\**" />
     <Content Remove="Models\Login\**" />
+    <Content Remove="wwwroot\images\**" />
     <EmbeddedResource Remove="Models\Login\**" />
+    <EmbeddedResource Remove="wwwroot\images\**" />
     <None Remove="Models\Login\**" />
+    <None Remove="wwwroot\images\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,10 +34,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Tasky.Datos\Tasky.Datos.csproj" />
     <ProjectReference Include="..\Tasky.Logica\Tasky.Logica.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\images\Perfil\" />
   </ItemGroup>
 
 </Project>
