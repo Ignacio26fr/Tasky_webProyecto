@@ -19,4 +19,8 @@ public class TaskyObject
     public string UserId { get; set; }
     public bool Status { get; set; }
     public TaskyPriority Priority { get; set; }
+
+    public bool Delete { get; set; }
+
+    public DateTime ExpectData { get; set; }
 }

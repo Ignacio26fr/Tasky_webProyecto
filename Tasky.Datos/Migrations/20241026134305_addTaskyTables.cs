@@ -87,7 +87,9 @@ namespace Tasky.Datos.Migrations
                     Status = table.Column<bool>(type: "bit", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Spam = table.Column<bool>(type: "bit", nullable: false),
-                    Priority = table.Column<TaskyPriority>(type: "int", nullable: false)
+                    Priority = table.Column<TaskyPriority>(type: "int", nullable: false),
+                    Delete = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    ExpectData = table.Column<DateTime>(type: "datetime2", nullable: false),
                 },
                 constraints: table =>
                 {

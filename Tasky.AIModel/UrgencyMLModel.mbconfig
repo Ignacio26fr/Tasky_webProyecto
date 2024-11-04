@@ -50,11 +50,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.81469776883497036,
-        "RuntimeInSeconds": 0.509,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.809910939380693,
+        "RuntimeInSeconds": 0.492,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e7 * e11",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
             "InputColumnName": "asunto",
             "OutputColumnName": "asunto"
@@ -79,9 +79,9 @@
             "InputColumnName": "urgencia",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e7": {
-            "L1Regularization": 0.06379178,
-            "L2Regularization": 0.56631726,
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.112452805,
             "LabelColumnName": "urgencia",
             "FeatureColumnName": "Features"
           }
@@ -90,11 +90,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.81449935613655777,
-        "RuntimeInSeconds": 0.508,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.809910939380693,
+        "RuntimeInSeconds": 0.541,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e7 * e11",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
             "InputColumnName": "asunto",
             "OutputColumnName": "asunto"
@@ -119,9 +119,9 @@
             "InputColumnName": "urgencia",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e7": {
-            "L1Regularization": 0.04282293,
-            "L2Regularization": 0.6254886,
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.10089708,
             "LabelColumnName": "urgencia",
             "FeatureColumnName": "Features"
           }
@@ -130,11 +130,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.81278995442715607,
-        "RuntimeInSeconds": 0.487,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.809910939380693,
+        "RuntimeInSeconds": 0.515,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e7 * e11",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
             "InputColumnName": "asunto",
             "OutputColumnName": "asunto"
@@ -159,9 +159,9 @@
             "InputColumnName": "urgencia",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e7": {
-            "L1Regularization": 0.0382681,
-            "L2Regularization": 0.7990118,
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.103087336,
             "LabelColumnName": "urgencia",
             "FeatureColumnName": "Features"
           }
@@ -170,11 +170,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.81252194041989312,
-        "RuntimeInSeconds": 0.613,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.809910939380693,
+        "RuntimeInSeconds": 0.566,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e7 * e11",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
             "InputColumnName": "asunto",
             "OutputColumnName": "asunto"
@@ -199,9 +199,9 @@
             "InputColumnName": "urgencia",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e7": {
-            "L1Regularization": 0.068789355,
-            "L2Regularization": 0.16999726,
+          "e8": {
+            "L1Regularization": 0.033072546,
+            "L2Regularization": 0.10611056,
             "LabelColumnName": "urgencia",
             "FeatureColumnName": "Features"
           }
@@ -210,11 +210,11 @@
       {
         "Version": 1,
         "Type": "Trial",
-        "TrainerName": "LbfgsLogisticRegressionOva",
-        "Score": 0.81140106553826707,
-        "RuntimeInSeconds": 0.47,
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.809910939380693,
+        "RuntimeInSeconds": 0.515,
         "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e7 * e11",
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
             "InputColumnName": "asunto",
             "OutputColumnName": "asunto"
@@ -239,9 +239,9 @@
             "InputColumnName": "urgencia",
             "AddKeyValueAnnotationsAsText": false
           },
-          "e7": {
-            "L1Regularization": 0.03339592,
-            "L2Regularization": 1.0991215,
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.106891535,
             "LabelColumnName": "urgencia",
             "FeatureColumnName": "Features"
           }
@@ -272,7 +272,7 @@
     "Version": 2,
     "Subsampling": false,
     "Type": "ClassificationTrainingOption",
-    "TrainingTime": 120,
+    "TrainingTime": 180,
     "LabelColumn": "urgencia",
     "ValidationOption": {
       "Version": 0,

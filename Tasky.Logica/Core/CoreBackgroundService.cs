@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Hosting;
 using System.Collections.Concurrent;
 using Tasky.Datos.EF;
+using Tasky.Entidad;
 using Tasky.Logica.Gmail;
 using Tasky_AIModel;
 
@@ -73,11 +74,16 @@ public class CoreBackgroundService: BackgroundService, ICoreBackgroundService
         Console.WriteLine($"Correo-remite: {email.Sender}");
         Console.WriteLine($"Correo-body: {email.Body}");
 
-       GenerateTaskFromEmail(email);
+        GenerateTaskFromEmail(email);
+
+       
     }
 
     public void GenerateTaskFromEmail(EmailInfo email)
     {
+
+        var fechaExtractor = new FechaExtractor();
+        DateTime fechaPresunta = fechaExtractor.ExtraerFecha(email.Body);
 
         var iaModelData = new SpamMLModel.ModelInput()
         {
@@ -107,7 +113,8 @@ public class CoreBackgroundService: BackgroundService, ICoreBackgroundService
             Status = false,
             Spam = isSpam.PredictedLabel == 1,
             Priority = GetTaskyPriority(priority.PredictedLabel),
-            UserId = email.UserId
+            UserId = email.UserId,
+            ExpectData = fechaPresunta,
         };
 
         Console.WriteLine("TAREA GENERADA Y CLASIFICADA:");
@@ -167,4 +174,6 @@ public class CoreBackgroundService: BackgroundService, ICoreBackgroundService
        
         base.Dispose();
     }
+
+   
 }

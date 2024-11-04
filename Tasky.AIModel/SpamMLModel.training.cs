@@ -93,7 +93,7 @@ namespace Tasky_AIModel
                                     .Append(mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"texto",outputColumnName:@"texto"))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"asunto",@"texto"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"spam",inputColumnName:@"spam",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.LbfgsMaximumEntropy(new LbfgsMaximumEntropyMulticlassTrainer.Options(){L1Regularization=0.03125F,L2Regularization=0.79369247F,LabelColumnName=@"spam",FeatureColumnName=@"Features"}))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.LbfgsMaximumEntropy(new LbfgsMaximumEntropyMulticlassTrainer.Options(){L1Regularization=0.039317045F,L2Regularization=0.3211535F,LabelColumnName=@"spam",FeatureColumnName=@"Features"}))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;
