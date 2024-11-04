@@ -19,14 +19,7 @@ public class ActionsController : Controller
     private readonly IGoogleCalendarService _googleCalendarService;
 
 
-    public ActionsController( ITaskManager taskManager, IConfiguration configuration)
-    {
-        _taskManager = taskManager;
-
-=======
-   
-
-
+ 
     public ActionsController( ITaskManager taskManager, IGoogleCalendarService googleCalendarService , IConfiguration configuration)
     {
         _taskManager = taskManager;
@@ -37,12 +30,11 @@ public class ActionsController : Controller
 
     public async Task<IActionResult> Index(TaskyPriority? idPrioridad, string filtroInput, string filtroSeccion)
     {
-<<<<<<< HEAD
+        //necesario para menu
         ViewBag.MenuItems = _configuration.GetSection("MenuItems").Get<List<MenuViewModel>>().FindAll(m => m.Controller == "Actions");
         ViewBag.Controller = "Actions";
         ViewBag.Action = "Index";
-        return View();
-=======
+ 
 
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
         ViewBag.PrioridadSeleccionada = idPrioridad;
@@ -56,7 +48,7 @@ public class ActionsController : Controller
         }
 
         return View(tasks);
->>>>>>> Developer
+
     }
 
     public async Task<IActionResult> Hoy(TaskyPriority? idPrioridad, string filtroInput)
