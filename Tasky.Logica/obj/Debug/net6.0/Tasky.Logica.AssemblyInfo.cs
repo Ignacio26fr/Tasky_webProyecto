@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tasky.Logica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50484c130d5f6158e21e4401ecab4315eaabaf48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef00e6adc95969564654c5a8e3f3ca815fb38633")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tasky.Logica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tasky.Logica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
