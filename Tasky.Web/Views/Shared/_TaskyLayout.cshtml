@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tasky.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Tasky.Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark-variant-2">
+            <div class="container-fluid">
+               <partial name="_pvLogo" />
+            </div>
+        </nav>
+    </header>
+
+    <div class="d-flex main-container">
+        <partial name="_pvMainMenu" />
+        <partial name="_pvSubMenu" />
+        <main role="main"  >
+            @RenderBody()
+            <footer class="footer">
+                <div class="text-end">
+                    &copy; 2024 - Tasky.Web
+                </div>
+            </footer>
+        </main>
+    </div>
+
+   
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -35,4 +35,11 @@
     <Folder Include="wwwroot\images\Perfil\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Shared\_TaskyLayout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

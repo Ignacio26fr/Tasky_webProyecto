@@ -25,7 +25,7 @@ namespace Tasky.Web.Controllers.Account
 
         public IActionResult Index()
         {
-            return View();
+            return View("Login");
         }
         
 

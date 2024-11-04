@@ -1,0 +1,22 @@
+﻿
+@{
+    List<MenuViewModel> menuItems = ViewBag.MenuItems;
+}
+
+    <nav class="sub-menu">
+        <div class="sub-menu-header">
+            <h3>
+                Tareas
+            </h3>
+        </div>
+        <ul class="navbar-sub-menu">
+            @foreach(var item in menuItems)
+            {
+                <li class="nav-sub-item">
+                <a class="text-btn @(item.Action == ViewBag.Action ? "active" : null)" asp-controller="@item.Controller" asp-action="@item.Action">
+                        @item.Name
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>

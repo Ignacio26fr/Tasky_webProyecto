@@ -245,8 +245,236 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\Logo.svg",
-      "PackagePath": "staticwebassets\\resources\\Logo.svg"
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\Inter-Italic-VariableFont_opsz,wght.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\Inter-Italic-VariableFont_opsz,wght.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\Inter-VariableFont_opsz,wght.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\Inter-VariableFont_opsz,wght.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\OFL.txt",
+      "PackagePath": "staticwebassets\\resources\\fonts\\OFL.txt"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\README.txt",
+      "PackagePath": "staticwebassets\\resources\\fonts\\README.txt"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Black.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Black.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-BlackItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Bold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Bold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-ExtraBold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Italic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Italic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Light.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Light.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Medium.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Medium.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Regular.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Regular.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-Thin.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-Thin.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_18pt-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_18pt-ThinItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Black.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Black.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-BlackItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Bold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Bold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-ExtraBold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Italic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Italic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Light.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Light.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Medium.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Medium.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Regular.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Regular.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-Thin.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-Thin.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_24pt-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_24pt-ThinItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Black.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Black.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-BlackItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Bold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Bold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-ExtraBold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Italic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Italic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Light.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Light.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Medium.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Medium.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Regular.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Regular.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-Thin.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-Thin.ttf"
+    },
+    {
+      "Id": "D:\\FACULTAD\\PW3\\Tasky_webProyecto\\Tasky.Web\\wwwroot\\resources\\fonts\\static\\Inter_28pt-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\resources\\fonts\\static\\Inter_28pt-ThinItalic.ttf"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Tasky.Web.Microsoft.AspNetCore.StaticWebAssets.props",
