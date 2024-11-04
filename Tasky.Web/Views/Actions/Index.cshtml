@@ -6,29 +6,16 @@
 @{
     ViewData["Title"] = "Acciones";
     Layout = "_TaskyLayout";
+    string currentAction = ViewBag.Action;
     
 }
 
-<div class="container mt-4">
+<div>
     <h2>Lista de Mensajes</h2>
 
-    <div class="col-md-3">
-        <partial name="/Views/Shared/PartialViews/_pvMenuLateral.cshtml" />
-    </div>
-
-    @{
-        string actionName = "Index";
-        if (ViewBag.FiltroSeccion == "hoy")
-        {
-            actionName = "Hoy"; 
-        }
-        else if (ViewBag.FiltroSeccion == "spam")
-        {
-            actionName = "Spam";
-        }
-    }
+    
     <div>
-        @using (Html.BeginForm(actionName, "Actions", FormMethod.Get, new { id = "filtroForm" }))
+        @using (Html.BeginForm(currentAction, "Actions", FormMethod.Get, new { id = "filtroForm" }))
         {
             <input type="text" id="filtroInput" name="filtroInput" class="form-control"
                    placeholder="Filtrar por asunto o de" value="@ViewBag.FiltroInput" oninput="relentizarSubmit()" />
@@ -67,7 +54,7 @@
                             <i class="bi bi-pencil"></i>
                         </a>
                         <a href="@Url.Action("Eliminar", "Actions",
-                        new { id = mail.IdObject, filtroSeccion = ViewBag.FiltroSeccion, idPrioridad = ViewBag.PrioridadSeleccionada })">
+                        new { id = mail.IdObject, filtroSeccion = currentAction, idPrioridad = ViewBag.PrioridadSeleccionada })">
                         <i class="bi bi-trash"></i>
                          </a>
                     </td>
