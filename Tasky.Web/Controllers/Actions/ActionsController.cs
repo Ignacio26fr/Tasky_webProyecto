@@ -29,6 +29,7 @@ public class ActionsController : Controller
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
         ViewBag.PrioridadSeleccionada = idPrioridad;
         ViewBag.FiltroSeccion = filtroSeccion;
+        ViewBag.EnableDynamicSubmit = true;
 
         List<TaskyObject> tasks = await _taskManager.GetTasksForPriority(idPrioridad);
 
@@ -45,6 +46,7 @@ public class ActionsController : Controller
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
         ViewBag.PrioridadSeleccionada = idPrioridad;
         ViewBag.FiltroSeccion = "hoy";
+        ViewBag.EnableDynamicSubmit = true;
 
         List<TaskyObject> tasks = await _taskManager.GetTasksForToday(idPrioridad);
 
@@ -62,6 +64,7 @@ public class ActionsController : Controller
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
         ViewBag.PrioridadSeleccionada = idPrioridad;
         ViewBag.FiltroSeccion = "spam";
+        ViewBag.EnableDynamicSubmit = true;
 
         List<TaskyObject> tasks = await _taskManager.GetTasksSpam(idPrioridad);
 
@@ -132,9 +135,10 @@ public class ActionsController : Controller
     public async Task<IActionResult> Editar(EditPriorityViewModel task)
     {
 
-        if (!ModelState.IsValid || ViewBag.IdSaved != task.IdObject)
+        if (!ModelState.IsValid)
         {
             ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
+            Console.WriteLine("Entre Por aca");
             return View(task);
         }
         var tasky = await _taskManager.GetTaskyByIdAsync(task.IdObject);
@@ -143,8 +147,9 @@ public class ActionsController : Controller
             return NotFound();
         }
         tasky.Priority = task.Priority;
+        ViewBag.EnableDynamicSubmit = false;
         await _taskManager.UpdateTask(tasky);
-        return RedirectToAction("Detalle", new { id = task.IdObject });
+        return RedirectToAction("Detalle", new { IdObject = task.IdObject });
 
     }
 

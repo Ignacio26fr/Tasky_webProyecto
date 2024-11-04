@@ -3,7 +3,10 @@
 
 <label class="control-label col-md-2">Prioridad</label>
 <input type="hidden" name="filtroSeccion" value="@ViewBag.FiltroSeccion" />
-<select id="idPrioridad" name="idPrioridad" onchange="this.form.submit()">
+<select id="idPrioridad" name="idPrioridad" @if (ViewBag.EnableDynamicSubmit == true)
+{
+    <text>onchange="this.form.submit()"</text>
+}>
     <option value="">Seleccione una prioridad</option>
     @foreach (TaskyPriority item in ViewBag.Prioridades)
     {
