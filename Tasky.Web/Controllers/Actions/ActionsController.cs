@@ -13,24 +13,26 @@ public class ActionsController : Controller
 {
 
     private readonly ITaskManager _taskManager;
-<<<<<<< HEAD
+
     private readonly IConfiguration _configuration;
+
+    private readonly IGoogleCalendarService _googleCalendarService;
 
 
     public ActionsController( ITaskManager taskManager, IConfiguration configuration)
     {
         _taskManager = taskManager;
-        _configuration = configuration;
+
 =======
-    private readonly IGoogleCalendarService _googleCalendarService;
+   
 
 
-    public ActionsController( ITaskManager taskManager, IGoogleCalendarService googleCalendarService)
+    public ActionsController( ITaskManager taskManager, IGoogleCalendarService googleCalendarService , IConfiguration configuration)
     {
         _taskManager = taskManager;
         _googleCalendarService = googleCalendarService;
+         _configuration = configuration;
 
->>>>>>> Developer
     }
 
     public async Task<IActionResult> Index(TaskyPriority? idPrioridad, string filtroInput, string filtroSeccion)
