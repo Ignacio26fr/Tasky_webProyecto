@@ -1,11 +1,79 @@
-﻿@{
+﻿@model List<Tasky.Datos.EF.TaskyObject>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+@{
     ViewData["Title"] = "Acciones";
     
 }
 
-<div class="text-center">
-    <div>
-        <h2>Vista Inicial Actions</h2>
-      
+<div class="container mt-4">
+    <h2>Lista de Mensajes</h2>
+
+    <div class="col-md-3">
+        <partial name="/Views/Shared/PartialViews/_pvMenuLateral.cshtml" />
     </div>
+
+    @{
+        string actionName = "Index";
+        if (ViewBag.FiltroSeccion == "hoy")
+        {
+            actionName = "Hoy"; 
+        }
+        else if (ViewBag.FiltroSeccion == "spam")
+        {
+            actionName = "Spam";
+        }
+    }
+    <div>
+        @using (Html.BeginForm(actionName, "Actions", FormMethod.Get, new { id = "filtroForm" }))
+        {
+            <input type="text" id="filtroInput" name="filtroInput" class="form-control"
+                   placeholder="Filtrar por asunto o de" value="@ViewBag.FiltroInput" oninput="relentizarSubmit()" />
+
+            <partial name="/Views/Shared/PartialViews/_pvComboFiltroPrioridad.cshtml" />
+            
+        }
+    </div>
+
+   
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col"><input type="checkbox" id="selectAll"></th>
+                <th scope="col">Asunto</th>
+                <th scope="col">Prioridad</th>
+                <th scope="col">De</th>
+                <th scope="col">
+                    Acciones
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tablaCuerpo">
+            @foreach (var mail in Model)
+            {
+                <tr>
+                    <td><input type="checkbox" class="itemCheckbox"></td>
+                    <td>@mail.Subjectt</td>
+                    <td>@mail.Priority</td>
+                    <td>@mail.Sender</td>
+                    <td>
+                        <a href="@Url.Action("Detalle", "Actions", new { id = mail.IdObject })" title="Ver">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                        <a href="@Url.Action("Editar", "Actions", new { id = mail.IdObject })" title="Editar">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                        <a href="@Url.Action("Eliminar", "Actions",
+                        new { id = mail.IdObject, filtroSeccion = ViewBag.FiltroSeccion, idPrioridad = ViewBag.PrioridadSeleccionada })">
+                        <i class="bi bi-trash"></i>
+                         </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
+
+<script src="/js/site.js"></script>
