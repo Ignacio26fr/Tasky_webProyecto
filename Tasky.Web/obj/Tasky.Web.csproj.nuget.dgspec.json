@@ -203,6 +203,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "NodaTime": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -294,6 +300,10 @@
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[6.0.35, )"
+            },
+            "NodaTime": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             },
             "Twilio": {
               "target": "Package",

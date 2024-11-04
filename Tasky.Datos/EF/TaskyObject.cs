@@ -21,4 +21,6 @@ public class TaskyObject
     public TaskyPriority Priority { get; set; }
 
     public bool Delete { get; set; }
+
+    public DateTime ExpectData { get; set; }
 }

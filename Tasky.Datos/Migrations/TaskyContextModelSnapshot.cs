@@ -213,6 +213,9 @@ namespace Tasky.Datos.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("AccessToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -223,6 +226,15 @@ namespace Tasky.Datos.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("GoogleHistoryId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -257,6 +269,9 @@ namespace Tasky.Datos.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("imagenDePerfil")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -308,8 +323,8 @@ namespace Tasky.Datos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("IdObject")
-                        .HasColumnType("int");
+                    b.Property<string>("IdObject")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Localizacion")
                         .IsRequired()
@@ -331,6 +346,31 @@ namespace Tasky.Datos.Migrations
                     b.HasIndex("IdObject");
 
                     b.ToTable("EventosCalendars");
+                });
+
+            modelBuilder.Entity("Tasky.Datos.EF.GoogleSession", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AccessToken")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("googleSessions");
                 });
 
             modelBuilder.Entity("Tasky.Datos.EF.ListasTrello", b =>
@@ -419,8 +459,8 @@ namespace Tasky.Datos.Migrations
                     b.Property<int?>("IdLista")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdObject")
-                        .HasColumnType("int");
+                    b.Property<string>("IdObject")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Titulo")
                         .IsRequired()
@@ -441,11 +481,8 @@ namespace Tasky.Datos.Migrations
 
             modelBuilder.Entity("Tasky.Datos.EF.TaskyObject", b =>
                 {
-                    b.Property<int>("IdObject")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdObject"), 1L, 1);
+                    b.Property<string>("IdObject")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Body")
                         .IsRequired()
@@ -454,10 +491,13 @@ namespace Tasky.Datos.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdPriority")
-                        .HasColumnType("int");
+                    b.Property<bool>("Delete")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("IdStatus")
+                    b.Property<DateTime>("ExpectDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Priority")
                         .HasColumnType("int");
 
                     b.Property<string>("Sender")
@@ -467,51 +507,20 @@ namespace Tasky.Datos.Migrations
                     b.Property<bool>("Spam")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Subjectt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdObject");
 
-                    b.HasIndex("IdPriority");
-
-                    b.HasIndex("IdStatus");
-
                     b.ToTable("TaskyObjects");
-                });
-
-            modelBuilder.Entity("Tasky.Datos.EF.TaskyPriority", b =>
-                {
-                    b.Property<int>("IdPriority")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPriority"), 1L, 1);
-
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdPriority");
-
-                    b.ToTable("TaskyPriorities");
-                });
-
-            modelBuilder.Entity("Tasky.Datos.EF.TaskyStatus", b =>
-                {
-                    b.Property<int>("IdStatus")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdStatus"), 1L, 1);
-
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdStatus");
-
-                    b.ToTable("TaskyStatuses");
                 });
 
             modelBuilder.Entity("Tasky.Datos.EF.AspNetRole", b =>
@@ -630,6 +639,18 @@ namespace Tasky.Datos.Migrations
                     b.Navigation("TaskyObject");
                 });
 
+            modelBuilder.Entity("Tasky.Datos.EF.GoogleSession", b =>
+                {
+                    b.HasOne("Tasky.Datos.EF.AspNetUsers", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK__GoogleSession__UserId");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Tasky.Datos.EF.ListasTrello", b =>
                 {
                     b.HasOne("Tasky.Datos.EF.TablerosTrello", "Tablero")
@@ -656,25 +677,6 @@ namespace Tasky.Datos.Migrations
                     b.Navigation("Lista");
 
                     b.Navigation("TaskyObject");
-                });
-
-            modelBuilder.Entity("Tasky.Datos.EF.TaskyObject", b =>
-                {
-                    b.HasOne("Tasky.Datos.EF.TaskyPriority", "Priority")
-                        .WithMany()
-                        .HasForeignKey("IdPriority")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Tasky.Datos.EF.TaskyStatus", "Status")
-                        .WithMany()
-                        .HasForeignKey("IdStatus")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Priority");
-
-                    b.Navigation("Status");
                 });
 
             modelBuilder.Entity("Tasky.Datos.EF.AspNetUserClaim", b =>

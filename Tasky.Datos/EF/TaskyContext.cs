@@ -34,13 +34,13 @@ public partial class TaskyContext : IdentityDbContext<AspNetUsers>
 
     public DbSet<GoogleSession> googleSessions { get; set; }
 
-   /* protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-CTSE8NE;Database=Tasky;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=INF-037\\SQLEXPRESS;Database=SmartTask;Trusted_Connection=True;");
         }
-    } */
+    } 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

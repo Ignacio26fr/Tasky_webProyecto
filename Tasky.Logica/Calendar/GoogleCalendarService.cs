@@ -62,12 +62,12 @@ namespace Tasky.Logica.Calendar
                 Description = googleEvent.Descripcion,
                 Start = new EventDateTime()
                 {
-                    DateTimeDateTimeOffset = DateTimeOffset.Now,
+                    DateTimeDateTimeOffset = googleEvent.FechaInicio,
                     TimeZone = "America/Argentina/Buenos_Aires"
                 },
                 End = new EventDateTime()
                 {
-                    DateTimeDateTimeOffset = DateTimeOffset.Now,
+                    DateTimeDateTimeOffset = googleEvent.FechaFin,
                     TimeZone = "America/Argentina/Buenos_Aires"
                 }
 
@@ -137,8 +137,9 @@ namespace Tasky.Logica.Calendar
             return new EventosCalendar
             {
                 Titulo = task.Subjectt,
-                FechaInicio = task.Date,
-                FechaFin = task.Date.AddHours(1)
+                FechaInicio = task.ExpectData,
+                FechaFin = task.ExpectData.AddHours(1),
+
 
             };
         }
