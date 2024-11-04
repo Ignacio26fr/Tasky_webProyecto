@@ -108,6 +108,45 @@ spam	asunto	texto
 1	Gana un viaje a la playa este verano	Participa en nuestro concurso y podrías ganar un viaje a la playa. Solo necesitas hacer clic aquí para inscribirte.
 0	Resumen de las decisiones de la última reunión	Adjunto encontrarás el resumen de las decisiones tomadas en la última reunión. Por favor, revísalo.
 1	¡Tu suscripción ha sido seleccionada para un reembolso!	Has sido seleccionado para recibir un reembolso en tu suscripción. Haz clic aquí para reclamarlo.
+0	Actualización urgente de seguridad	Instala la actualización de seguridad hoy para proteger tu equipo.
+0	Anulación de tarjeta extraviada	Si perdiste tu tarjeta, repórtala inmediatamente para evitar cargos no autorizados.
+0	Confirmación de cirugía importante	Confirma tu asistencia a la cirugía programada esta semana.
+0	Cierre de registro de proyecto final	Envía la documentación hoy, ya que el plazo cierra en pocas horas.
+0	Alerta de falla en servidor principal	Se ha detectado una falla crítica. El equipo de TI debe resolverla de inmediato.
+0	Notificación de evento peligroso en la ciudad	Mantente alerta y evita el área afectada hasta nuevo aviso.
+0	Pérdida de documento oficial	Reporta la pérdida para evitar posibles problemas de identidad.
+0	Accidente en las instalaciones	Notifica a recursos humanos y solicita atención médica si es necesario.
+0	Solicitud de ayuda en situación de emergencia médica	Llama a emergencias y proporciona ayuda inicial si es posible.
+0	Ver el pronóstico del clima para el fin de semana	Consulta el pronóstico si planeas hacer una actividad al aire libre.
+0	Explorar opciones de viaje para vacaciones	Revisa opciones de viaje en tu tiempo libre.
+0	Leer las noticias del día	Lee las noticias cuando tengas un momento de descanso.
+0	Preparar un bocadillo para la tarde	Haz un bocadillo si tienes hambre más tarde.
+0	Ordenar los cables del escritorio	Organiza los cables cuando tengas tiempo para mejorar el espacio de trabajo.
+0	Actualizar los contactos del celular	Revisa y actualiza tus contactos cuando estés libre.
+0	Planear cena familiar en el futuro	Organiza una cena cuando todos tengan disponibilidad.
+0	Buscar recetas nuevas para cocinar	Encuentra nuevas recetas para probar el próximo fin de semana.
+0	Investigar sobre una nueva serie de televisión	Lee recomendaciones de series cuando busques algo nuevo para ver.
+0	Comprobar saldo en cuenta de ahorros	Revisa el saldo en tu tiempo libre.
+0	Programar cita médica para revisión semestral	Agenda tu consulta semestral para mantener un control de salud.
+0	Revisión de documentos fiscales anuales	Organiza y revisa los documentos antes del final del mes.
+0	Coordinar almuerzo de equipo esta semana	Agenda el almuerzo para discutir el progreso del proyecto.
+0	Planificar los gastos para el próximo mes	Haz un plan de gastos para evitar inconvenientes a fin de mes.
+0	Revisar estatus de la renovación de seguro	Consulta los detalles y verifica las coberturas del seguro.
+0	Preparar presentación para la próxima semana	Organiza la presentación y ensaya los puntos clave.
+0	Actualizar software de trabajo en el equipo principal	Instala las actualizaciones de software para mejorar el rendimiento.
+0	Verificar reportes de rendimiento de equipo	Revisa los reportes antes de la reunión de equipo.
+0	Enviar reporte semanal a supervisor	Envía el informe para documentar los avances de la semana.
+0	Consultar saldo de cuenta bancaria por gastos inesperados	Confirma que tienes suficiente saldo para el mes.
+0	Notificación de corte de energía en la zona	Prepárate para un corte de energía programado en las próximas horas.
+0	Confirmación de hospitalización urgente	Confirma la hospitalización para recibir el tratamiento a tiempo.
+0	Reporte de falla en sistema de pago	El sistema está fuera de servicio; contacta al soporte técnico inmediatamente.
+0	Alerta de fuga de gas en el edificio	Sal inmediatamente y notifica a los servicios de emergencia.
+0	Confirmación de cirugía de emergencia	Es crucial confirmar tu asistencia para realizar la operación.
+0	Interrupción en el servicio de internet de la empresa	Contacta a soporte para restablecer el servicio de inmediato.
+0	Evacuación por incendio en el edificio	Deja el edificio y sigue las instrucciones de seguridad.
+0	Solicitud de ayuda en accidente vial grave	Asiste y solicita apoyo de emergencia para el accidentado.
+0	Cancelación de evento importante por condiciones climáticas	Infórmate de la reprogramación del evento debido a las condiciones adversas.
+0	Recordatorio del partido de fútbol de la semana	No olvides que el partido de fútbol es este fin de semana.
 0	Consulta médica programada para la próxima semana	Te recordamos que tienes una consulta médica programada para el martes. Por favor, confirma tu asistencia.
 1	¡Compra uno y lleva dos! Ofertas increíbles	No te pierdas nuestras ofertas de "compra uno y lleva dos" en productos seleccionados. Haz clic aquí para ver más.
 0	Actualización de tu suscripción al boletín informativo	Te informamos que hemos actualizado tu suscripción al boletín. Puedes consultar las novedades en el siguiente enlace.
@@ -229,3 +268,296 @@ spam	asunto	texto
 0	Notificación de pago recibido	Te informamos que hemos recibido tu pago. Gracias por tu pronta respuesta.
 1	¡Consigue un préstamo sin intereses ahora!	Haz clic aquí para obtener un préstamo sin intereses de manera rápida y fácil. ¡No te lo pierdas!
 0	Recordatorio de entrega de proyecto	Te recordamos que la entrega del proyecto es el lunes. Por favor, asegúrate de cumplir con el plazo.
+0	Coordinar reunión de emergencia para revisión de presupuesto	Es necesaria una reunión para ajustar el presupuesto debido a gastos imprevistos.
+0	Confirmación de reunión	Este es un recordatorio para confirmar nuestra reunión el jueves a las 3:00 PM. ¿Sigue disponible?
+0	Coordinar reunión de emergencia para revisión de presupuesto	Es necesaria una reunión para ajustar el presupuesto debido a gastos imprevistos.
+0	Cita médica urgente	Estimado paciente, le recordamos que tiene una cita médica programada para mañana a las 10:00 AM. Es importante que asista.
+0	Pago inmediato requerido	Por favor, realice el pago de la factura adjunta antes del final del día para evitar cargos adicionales.
+0	Solicitud de informe	Estimado equipo, por favor, envíenme el informe de ventas de este mes para revisarlo antes de la reunión.
+0	Confirmación de reunión	Este es un recordatorio para confirmar nuestra reunión el jueves a las 3:00 PM. ¿Sigue disponible?
+0	Cumpleaños de Juan	¡Hola a todos! No olviden que el cumpleaños de Juan es este viernes. ¡Hagamos una pequeña celebración!
+0	Reunión de seguimiento	Quiero programar una reunión de seguimiento para discutir el progreso del proyecto. ¿Qué días tienen libres la próxima semana?
+0	Accidente de tráfico	Atención: ha habido un accidente de tráfico en la autopista. Se requiere asistencia inmediata.
+0	Actualización de proyecto	Hola, solo quería informarles que hemos avanzado en el proyecto y deberíamos estar listos para la revisión la próxima semana.
+0	Planificación de vacaciones	Quisiera discutir la planificación de nuestras vacaciones. Podemos hablar sobre esto en la próxima reunión.
+0	Resultados de la prueba	Los resultados de su prueba están disponibles. Por favor, contáctenos inmediatamente para discutirlos.
+0	Reunión urgente con el cliente	Necesitamos discutir el proyecto hoy a las 3 PM.
+0	Planificación de tareas	Planifiquemos las tareas para el próximo mes en nuestra próxima reunión.
+0	Notificación de cambio de horario	El horario de la reunión ha cambiado, revisa el calendario.
+0	Revisión del contrato	Necesito que revises el contrato adjunto antes de firmarlo.
+0	Actualización del estado del proyecto	El estado del proyecto está actualizado. Por favor, consulta el documento adjunto.
+0	Consulta sobre el pago	Estoy consultando sobre el estado de un pago pendiente.
+0	Recordatorio: pago de factura	No olvides el pago de la factura que vence el viernes.
+0	Planificación del evento	Estamos planificando el evento de fin de año. Más detalles pronto.
+0	Problema de seguridad	Se ha detectado un problema de seguridad que necesita atención inmediata.
+0	Vacaciones programadas	Recuerda que estoy de vacaciones la próxima semana y no estaré disponible.
+0	Revisión de documentos	Necesito que revises los documentos antes del viernes.
+0	Solicito confirmación de asistencia	Por favor, confirma tu asistencia a la reunión de mañana.
+0	Promoción de productos	Consulta nuestra nueva promoción de productos en la tienda.
+0	Reunión de emergencia	Hay una reunión de emergencia programada para hoy a las 4 PM. Asistencia obligatoria.
+0	Actualización de la política de trabajo	Por favor, revisa la actualización de nuestra política de trabajo a distancia.
+0	Propuesta de colaboración	Estamos interesados en una colaboración potencial. ¿Podemos discutirlo la próxima semana?
+0	Problemas con el sistema	El sistema se ha caído y necesita atención inmediata para evitar problemas mayores.
+0	Recordatorio de entrega	Este es un recordatorio para la entrega de tu informe el lunes.
+0	Invitación a la conferencia	Te invito a la conferencia sobre innovación tecnológica. Más detalles en el enlace.
+0	Actualizar perfil profesional en LinkedIn	Revise su perfil de LinkedIn y realice actualizaciones de logros recientes. No es urgente, pero ayudará a mejorar su presencia profesional.
+0	Planificar agenda para la próxima semana	Tome un momento para organizar su agenda de actividades y reuniones para la semana siguiente.
+0	Revisar facturas de servicios automáticos	Verifique los cobros automáticos de servicios y asegúrese de que todo esté en orden.
+0	Confirmar asistencia a evento virtual profesional	Revise la invitación y confirme su participación en el evento de networking.
+0	Hacer el presupuesto mensual de gastos	Es necesario planificar los gastos del mes para tener un mejor control financiero.
+0	Revisar términos de renovación del seguro	Verifique los términos de su seguro, la fecha de renovación se acerca y podría necesitar ajustes.
+0	Organizar documentos de impuestos	Empiece a organizar los documentos para la próxima declaración de impuestos.
+0	Preparar presentación para reunión de equipo	Revise y actualice la presentación que se usará en la próxima reunión.
+0	Actualizar registros médicos personales	Reúna y actualice sus registros médicos en el archivo familiar.
+1	Promoción exclusiva: iPhone gratis	Recibe un iPhone sin costo al completar una breve encuesta en línea.
+1	Gana dinero desde casa, sin experiencia necesaria	Inscríbete hoy y comienza a ganar fácilmente con nuestro programa.
+1	¡Última oportunidad! Prueba gratuita de software	Obtén un acceso exclusivo a nuestra herramienta premium durante 30 días.
+1	Descubre el secreto para mejorar tu crédito	Recibe asesoría financiera gratuita y mejora tu puntaje crediticio rápidamente.
+1	Certificado de regalo por valor de $1000	Aprovecha tu certificado de regalo, solo haz clic para reclamarlo ahora.
+1	Trabajo desde casa: Gana $500 a la semana	Únete a nuestro equipo de trabajo remoto y disfruta de horarios flexibles.
+1	El secreto de la juventud eterna	Adquiere nuestro producto milagroso y transforma tu vida para siempre.
+1	¡Tu suscripción ha sido renovada!	Si no deseas continuar, haz clic aquí para cancelar la renovación automática.
+1	Recompensas instantáneas por tus opiniones	Completa encuestas y recibe recompensas en efectivo y tarjetas de regalo.
+1	Regístrate para ganar un viaje de lujo	Participa en nuestro sorteo y podrías ganar un viaje de una semana a las Bahamas.
+0	Consultar recomendaciones sobre un curso en línea	Lea opiniones y recomendaciones de un curso que desea tomar, útil para su desarrollo profesional.
+0	Inscribirse en el gimnasio o club deportivo	Considere la inscripción en un gimnasio cercano. Sería beneficioso para su salud.
+0	Comprar insumos para proyectos de bricolaje	Revise los materiales necesarios y compre los faltantes para el proyecto de bricolaje que tiene en mente.
+0	Consultar con el médico sobre rutina de ejercicios	Agende una consulta para confirmar que su rutina física es adecuada.
+0	Planear un día de voluntariado con el equipo	Coordine un día de voluntariado para el equipo. No es urgente, pero motiva el trabajo en equipo.
+0	Verificar vencimiento de documentos personales	Revise si sus documentos (pasaporte, licencia) están al día y planifique renovaciones si es necesario.
+0	Crear lista de materiales para un nuevo curso	Si planea tomar un curso pronto, haga una lista de materiales necesarios.
+0	Revisar la limpieza de la oficina en casa	Es momento de organizar el espacio de trabajo en casa, mejorará la productividad.
+0	Leer artículos recientes de su campo profesional	Dedique tiempo a leer artículos relevantes para mantenerse actualizado.
+0	Planear actividades recreativas para el fin de semana	Organice alguna actividad para desconectar del trabajo, le ayudará a relajarse.
+0	Solicito tu opinión	Me gustaría saber tu opinión sobre la propuesta que envié anteriormente.
+0	Acción requerida: Contraseña	Por favor, actualiza tu contraseña antes de que finalice la semana.
+0	Reunión urgente con el cliente	Necesitamos discutir el proyecto hoy a las 3 PM.
+0	Planificación de tareas	Planifiquemos las tareas para el próximo mes en nuestra próxima reunión.
+0	Notificación de cambio de horario	El horario de la reunión ha cambiado, revisa el calendario.
+1	¡Increíbles ofertas en productos tecnológicos!	Compra ahora y ahorra hasta un 70% en los últimos gadgets.
+1	Certificado de regalo de Amazon de $500	Has sido seleccionado para recibir este certificado, ¡reclámalo ahora!
+1	Transforma tu cuerpo en 30 días	Únete a nuestro programa de fitness y comienza a ver resultados.
+1	¡No pagues más por tu factura de electricidad!	Descubre cómo puedes reducirla a la mitad.
+1	Te invitamos a un seminario web exclusivo	Aprende secretos de éxito de los mejores emprendedores.
+1	¡Compra uno y lleva dos gratis!	Oferta limitada en productos de belleza y cuidado personal.
+1	Recibe una consulta gratuita con un experto financiero	Obtén consejos personalizados para tus inversiones.
+1	¡Gana un viaje todo pagado a Europa!	Participa en nuestro concurso y podrías ser el afortunado ganador.
+1	Incrementa tus seguidores en redes sociales fácilmente	Utiliza nuestra herramienta y observa el crecimiento inmediato.
+1	Productos milagrosos para perder peso rápidamente	No te pierdas esta oportunidad de cambiar tu vida.
+0	Revisión del contrato	Necesito que revises el contrato adjunto antes de firmarlo.
+0	Actualización del estado del proyecto	El estado del proyecto está actualizado. Por favor, consulta el documento adjunto.
+0	Consulta sobre el pago	Estoy consultando sobre el estado de un pago pendiente.
+0	Recordatorio: pago de factura	No olvides el pago de la factura que vence el viernes.
+0	Planificación del evento	Estamos planificando el evento de fin de año. Más detalles pronto.
+0	Problema de seguridad	Se ha detectado un problema de seguridad que necesita atención inmediata.
+0	Vacaciones programadas	Recuerda que estoy de vacaciones la próxima semana y no estaré disponible.
+0	Revisión de documentos	Necesito que revises los documentos antes del viernes.
+0	Solicito confirmación de asistencia	Por favor, confirma tu asistencia a la reunión de mañana.
+0	Promoción de productos	Consulta nuestra nueva promoción de productos en la tienda.
+0	Reunión de emergencia	Hay una reunión de emergencia programada para hoy a las 4 PM. Asistencia obligatoria.
+0	Actualización de la política de trabajo	Por favor, revisa la actualización de nuestra política de trabajo a distancia.
+0	Propuesta de colaboración	Estamos interesados en una colaboración potencial. ¿Podemos discutirlo la próxima semana?
+0	Problemas con el sistema	El sistema se ha caído y necesita atención inmediata para evitar problemas mayores.
+0	Recordatorio de entrega	Este es un recordatorio para la entrega de tu informe el lunes.
+0	Invitación a la conferencia	Te invito a la conferencia sobre innovación tecnológica. Más detalles en el enlace.
+0	Solicito tu opinión	Me gustaría saber tu opinión sobre la propuesta que envié anteriormente.
+0	Acción requerida: Contraseña	Por favor, actualiza tu contraseña antes de que finalice la semana.
+0	Consulta sobre proyecto	¿Podrías darme una actualización sobre el estado del proyecto?
+0	Revisión de políticas de seguridad	Es hora de revisar nuestras políticas de seguridad. Por favor, consulta el documento adjunto.
+0	Confirmación de cita	Necesito que confirmes nuestra cita del miércoles a las 2 PM.
+0	Newsletter mensual	Aquí tienes nuestra newsletter mensual con las últimas actualizaciones.
+1	Oferta limitada: Gana $1000 cada semana	Inscríbete ahora y empieza a ganar dinero desde casa con solo un clic.
+1	¡Felicidades! Has ganado un viaje gratuito	Reclama tu viaje de ensueño a un destino exótico, solo responde a este correo.
+1	Medicamentos recetados a precios reducidos	Compra medicamentos sin receta y ahorra hasta un 90%, entrega rápida y discreta.
+1	Consulta gratuita sobre inversiones de alto rendimiento	Invierte en nuestra plataforma y obtén rendimientos garantizados en poco tiempo.
+1	Descubre cómo perder peso rápido sin esfuerzo	Prueba nuestro programa exclusivo y comienza a ver resultados en solo una semana.
+1	Acceso VIP a descuentos en productos de lujo	Únete a nuestro club y disfruta de precios exclusivos en productos de alta gama.
+1	Carta de un príncipe nigeriano	Ayúdame a transferir una fortuna a tu cuenta bancaria y obtén una gran recompensa.
+1	Invitación a un seminario web sobre cómo hacerse rico	No te pierdas esta oportunidad única de aprender de los expertos en finanzas.
+1	Reclama tu regalo sorpresa por tiempo limitado	Responde a este correo y recibe un obsequio exclusivo que no querrás perderte.
+1	Tu cuenta ha sido hackeada, verifica ahora	Para proteger tu información, haz clic aquí y restablece tu contraseña inmediatamente.
+0	Evaluación del desempeño	Es hora de completar la evaluación de desempeño del equipo.
+0	Solicitud de presupuesto	Por favor, envía el presupuesto solicitado antes del fin de semana.
+0	Información sobre la nueva herramienta	Hemos lanzado una nueva herramienta que puede facilitar tu trabajo. Más detalles a continuación.
+0	Planificación de proyecto	Debemos planificar el proyecto antes del fin de semana.
+0	Recordatorio de entrega	Recuerda enviar la entrega final del informe antes del lunes.
+0	Revisión de documento	Por favor, revisa el documento que te envié ayer.
+0	Confirmación de reunión	Confirma tu asistencia a la reunión de estrategia para la próxima semana.
+0	Compra de ingredientes	No olvides comprar fideos y otros ingredientes para la cena del sábado. Es importante que tengamos todo a tiempo.
+0	Sugerencia de menú	Para la cena de esta semana, podríamos preparar fideos. Confirma si estás de acuerdo con la idea.
+0	Organización de la cena	Por favor, asegúrate de comprar fideos y otros alimentos necesarios para la cena del viernes.
+0	Preparación de la lista de compras	Es hora de preparar la lista de compras. Asegúrate de incluir fideos, los necesitamos para la cena del próximo miércoles.
+0	Reunión para planificar la cena	Necesitamos planificar el menú para la cena. Los fideos son una opción, así que revisa tu disponibilidad para comprar.
+0	Confirmación de la compra	Por favor, confirma si podrás ir a comprar fideos para la cena de este fin de semana. 
+0	Planificación de la semana	Piensa en incluir fideos en el menú de la próxima semana. Haremos la compra el miércoles.
+0	Revisión de la receta	Asegúrate de que tengamos fideos para la receta que planeamos preparar el fin de semana.
+0	Cambio en la cena	La cena ha cambiado, así que por favor compra fideos para la nueva receta que vamos a hacer.
+0	Recordatorio de compra	Este es un recordatorio para que no olvides comprar fideos para la cena del jueves. Es mejor que estemos preparados.
+0	Reunión de emergencia	Se ha convocado una reunión de emergencia para hoy a las 3 PM. Tu asistencia es obligatoria.
+0	Informe de proyecto retrasado	El informe del proyecto debe ser entregado hoy. Asegúrate de tenerlo listo a más tardar a las 5 PM.
+0	Actualización del sistema	El sistema debe ser actualizado de inmediato para evitar problemas de seguridad. Por favor, realiza la actualización ahora.
+0	Contrato pendiente	Firma el contrato pendiente antes de finalizar el día para que podamos avanzar con el proyecto.
+0	Solicitud de vacaciones	Tu solicitud de vacaciones debe ser aprobada antes de mañana. Asegúrate de enviarla a Recursos Humanos.
+1	Oferta de inversión: Triplica tu dinero	Invierte hoy y observa cómo tu dinero crece rápidamente con nuestra estrategia secreta.
+1	Compra ahora, paga después	Obtén tu producto ahora y paga en cómodas cuotas más tarde. ¡No te lo pierdas!
+1	Tu cuenta ha sido comprometida	Verifica tu información personal para evitar el bloqueo de tu cuenta.
+1	Gana premios en efectivo jugando juegos en línea	Juega y gana dinero real en nuestros juegos de casino.
+1	Aviso importante de nuestra comunidad	Recibe un bono exclusivo al unirte a nuestra plataforma de inversión en línea.
+1	¡Felicidades! Has sido seleccionado para un premio	Reclama tu premio haciendo clic en el enlace a continuación.
+1	Curso gratuito para mejorar tus habilidades	Inscríbete en nuestro curso en línea sin costo alguno y aprende a tu ritmo.
+1	Atención: Oferta exclusiva para ti	Recibe un producto premium gratis, solo por ser un cliente especial.
+1	Obtén una tarjeta de crédito con límite alto	Aplica ahora y recibe una tarjeta de crédito con un límite de $10,000.
+1	Tu oportunidad de ser famoso	Envía tu video y podrías ser elegido para un programa de televisión popular.
+0	Cita médica urgente	Tu cita médica ha sido programada para mañana. Es crucial que asistas para evaluar tu salud.
+0	Resultados de pruebas	Los resultados de tus pruebas médicas están listos. Debes acudir a la consulta para discutirlos hoy.
+0	Medicamento crítico	Es imperativo que recojas tu medicamento antes del fin de semana. Tu salud depende de este tratamiento.
+0	Cambio de médico	Tu médico ha cambiado la fecha de tu próxima cita. Por favor, asegúrate de confirmar tu asistencia.
+0	Consulta de urgencia	Necesitas asistir a una consulta médica de urgencia. Por favor, no la pospongas.
+0	Lavar la ropa	No olvides lavar la ropa hoy. Es mejor que lo hagas antes de que se acumule más.
+0	Organizar el armario	Podrías organizar el armario este fin de semana. Así será más fácil encontrar lo que necesitas.
+0	Pagar la factura de electricidad	Tienes que pagar la factura de electricidad antes del fin de mes. No la dejes para el último momento.
+0	Comprar víveres	Recuerda hacer la compra de víveres el sábado. Haremos una comida en casa y necesitamos varios ingredientes.
+0	Planificación de la semana	Es hora de planificar la semana. Revisa tus tareas y asegúrate de que todo esté en orden.
+0	Reportar falla de equipo	El equipo ha fallado y necesita ser reparado inmediatamente para evitar interrupciones en el trabajo.
+0	Revisar la auditoría	La auditoría está programada para mañana. Debes revisarla y estar preparado para responder preguntas.
+0	Cambio en la política de la empresa	Se ha implementado un cambio importante en la política de la empresa. Todos los empleados deben ser informados de inmediato.
+0	Cita con el especialista	Tu cita con el especialista es mañana a las 10 AM. Asegúrate de tener todos los documentos necesarios.
+0	Recoger resultados de exámenes	Tienes que recoger los resultados de tus exámenes médicos hoy. Es esencial para tu tratamiento.
+0	Actualizar tu CV	Es un buen momento para actualizar tu CV. Podrías necesitarlo pronto para nuevas oportunidades.
+0	Revisar los gastos del mes	Revisa los gastos del mes y asegúrate de que todo esté en orden antes de finalizar el informe financiero.
+0	Planificar la reunión del equipo	Necesitas planificar la reunión del equipo para la próxima semana. Reúne los puntos que se deben discutir.
+0	Organizar documentos importantes	Tómate un tiempo para organizar tus documentos importantes. Será útil para futuras referencias.
+0	Comprar medicamentos de rutina	Asegúrate de comprar tus medicamentos de rutina esta semana para no quedarte sin ellos.
+0	Revisión de documento financiero urgente	Se necesita revisar y aprobar un documento financiero hoy mismo. Sin aprobación, se retrasan otros procesos.
+0	Enviar resultados de prueba médica al doctor	Los resultados de las pruebas recientes deben ser enviados al doctor lo antes posible para revisión.
+0	Reparar fuga de agua en la cocina	Se detectó una fuga de agua. Es necesario contactar a un plomero para evitar daños.
+0	Confirmar cita de emergencia con el cardiólogo	Confirme la cita de emergencia con el cardiólogo para recibir atención a tiempo.
+0	Actualizar software de seguridad en el servidor	Es imprescindible instalar la actualización de seguridad para evitar vulnerabilidades.
+0	Realizar pago atrasado de impuestos	Es necesario saldar el pago de impuestos atrasados para evitar multas adicionales.
+0	Recibir paquete importante en la oficina	El paquete necesita ser recibido hoy para cumplir con una fecha límite de proyecto.
+1	¡Gana un iPhone gratis!	Participa en nuestro sorteo y podrías ganar un nuevo iPhone. ¡Inscríbete ahora!
+1	Recupera tu contraseña en 5 minutos	Haz clic aquí para restablecer tu contraseña y acceder a tu cuenta.
+1	¡Felicitaciones! Has ganado un viaje de lujo	Responde este correo para reclamar tu premio y disfrutar de unas vacaciones inolvidables.
+1	Encuesta rápida: Gana tarjetas de regalo	Completa nuestra breve encuesta y recibe una tarjeta de regalo de $50.
+1	Descubre cómo ganar dinero desde casa	Únete a nuestro programa y aprende a ganar dinero trabajando desde tu hogar.
+1	Ofertas especiales solo por tiempo limitado	No te pierdas nuestras ofertas increíbles; actúa rápido antes de que se agoten.
+1	Compra un producto y recibe otro gratis	Realiza una compra y te regalamos un producto adicional de igual o menor valor.
+1	Atención: Reclama tu seguro de salud gratuito	Obtén cobertura de salud sin costo alguno. Inscríbete hoy mismo.
+1	Cursos de idiomas gratis por tiempo limitado	Aprende un nuevo idioma de forma gratuita. ¡Inscríbete antes de que termine la oferta!
+1	Compara precios y ahorra dinero en tus compras	Visita nuestro sitio web para encontrar las mejores ofertas y descuentos.
+1	¡No pierdas esta oportunidad única!	Invierte en nuestro producto y duplica tu dinero en un mes.
+1	Promoción exclusiva: 90% de descuento	Compra hoy y ahorra un 90% en nuestros artículos seleccionados.
+1	¡Eres el ganador! Reclama tu premio	Has sido seleccionado para recibir un premio sorpresa. Contáctanos para más detalles.
+1	Gana un televisor de última generación	Participa en nuestro concurso y podrías ganar un televisor OLED.
+1	Consigue tu préstamo personal aprobado en minutos	Solicita ahora y recibe fondos en tu cuenta hoy mismo.
+1	Consulta médica gratuita en línea	Agenda una consulta médica gratuita con nuestros especialistas.
+1	¡Es tu día de suerte! Gana hasta $10,000	Participa en nuestra rifa y podrías ser el afortunado ganador.
+1	No te quedes atrás: Mejora tu vida hoy	Descubre los secretos para una vida más feliz y exitosa.
+1	Prueba nuestro nuevo producto sin costo	Recibe una muestra gratis de nuestro último lanzamiento. ¡Solo por tiempo limitado!
+1	Consulta rápida para obtener descuentos	Completa este formulario y recibe descuentos exclusivos en tus próximas compras.
+0	Programar reunión con cliente importante	La reunión debe ser programada hoy para resolver asuntos urgentes del proyecto.
+0	Contactar a soporte técnico por fallo de sistema	El sistema presenta fallos y está afectando operaciones. Contacte a soporte de inmediato.
+0	Confirmar viaje por emergencia familiar	Es necesario confirmar el viaje por una emergencia familiar que requiere su presencia.
+0	Solicitar reemplazo urgente de equipo de trabajo	El equipo se ha dañado y es esencial para cumplir con plazos de entrega. Ordene un reemplazo.
+0	Informar ausencia en reunión importante	Notifique a su equipo que no podrá asistir y delegue funciones críticas.
+0	Revisar notificación de posible fraude en la cuenta	Ha recibido una alerta de posible fraude en la cuenta bancaria. Verifique de inmediato.
+0	Contactar a servicios de emergencia por corte de luz	La falta de electricidad está afectando equipos médicos críticos en casa. Contacte a emergencia.
+0	Recibir aprobación de alta médica por operación	La alta médica debe ser confirmada hoy para dar seguimiento a los cuidados.
+0	Coordinar evacuación por incendio en la oficina	Se ha detectado un incendio y debe coordinarse la evacuación inmediata.
+0	Resolver problemas de acceso a cuenta bancaria	Ha perdido acceso a su cuenta y necesita resolverlo con el banco.
+0	Entregar documentos legales para trámite judicial	Los documentos deben ser entregados hoy para proceder con un caso judicial.
+0	Notificar problema de seguridad en la red de trabajo	Detectó una posible intrusión en la red de trabajo. Informe al equipo de IT.
+0	Confirmar cita para cirugía programada	Es necesario confirmar la cita para una cirugía importante en los próximos días.
+0	Programar chequeo dental de rutina	Agende un chequeo dental preventivo para evitar problemas futuros.
+0	Revisar informe mensual de ventas	Es recomendable revisar el informe mensual para analizar el rendimiento, pero no es urgente.
+0	Hacer mantenimiento de la bicicleta	Verifique el estado de su bicicleta y realice ajustes para asegurar su buen funcionamiento.
+0	Actualizar lista de contactos profesionales	Agregue contactos recientes y mantenga la lista actualizada para futuras oportunidades.
+0	Revisar stock de suministros en la oficina	Revise el inventario y planee la compra de insumos cuando sea necesario.
+0	Leer la última revista de la industria	Revise la última edición para mantenerse informado sobre tendencias y novedades.
+0	Enviar recordatorio de pago a un cliente	Envía un recordatorio de cortesía a un cliente para agilizar el proceso de pago.
+0	Verificar los horarios de transporte para un viaje próximo	Confirme los horarios para su viaje y evite imprevistos.
+0	Realizar tareas de limpieza en el escritorio	Organice su espacio de trabajo, ayudará a mantener la concentración.
+0	Crear un archivo de respaldo de los documentos importantes	Cree una copia de respaldo para prevenir la pérdida de información relevante.
+0	Organizar carpetas digitales en el ordenador	Clasifique archivos digitales para encontrar documentos importantes fácilmente.
+0	Programar revisión de seguro de automóvil	Agende una revisión para verificar si necesita cambios en la póliza.
+1	¡Gana dinero desde casa!	Descubre cómo puedes generar ingresos fácilmente desde tu sofá.
+1	Promoción exclusiva: Viaje a Cancún por solo $99	Reserva ahora y escapa a la playa con un precio increíble.
+1	El secreto para mejorar tu salud en 30 días	Adquiere nuestro programa y transforma tu vida.
+1	¡Felicidades! Has ganado un cheque por $1,000	Reclama tu premio antes de que expire.
+1	Inscripción gratuita a un seminario de inversiones	Aprende a hacer dinero en el mercado de acciones.
+1	Descubre cómo eliminar tus deudas en solo 6 meses	Obtén nuestro plan de acción para una vida sin deudas.
+1	¡Última oportunidad! Acceso exclusivo a descuentos del 90%	No te pierdas nuestras ofertas antes de que se acaben.
+1	Consigue un seguro de salud por menos de $50 al mes	Obtén cobertura completa sin romper el banco.
+1	Cursos en línea gratuitos sobre cualquier tema	Amplía tus conocimientos con nuestros cursos accesibles.
+1	Ofertas de trabajo que pagan hasta $5,000 al mes	No te quedes fuera, aplica ahora y comienza a ganar.
+0	Actualizar la aplicación bancaria en el teléfono	Verifique que la aplicación bancaria esté actualizada para evitar fallos de seguridad.
+0	Enviar solicitud de cotización para próximo proyecto	Contacte a proveedores y solicite precios para planificar presupuestos futuros.
+0	Consultar opciones de inversión a largo plazo	Investigue opciones de inversión para mejorar sus finanzas a largo plazo.
+0	Revisar notificaciones pendientes en la intranet de la empresa	Consulte notificaciones en la intranet para estar al tanto de actualizaciones internas.
+0	Planificar una actividad de equipo para fomentar la cohesión	Coordine una actividad recreativa para mejorar el ambiente de trabajo.
+0	Leer informe de análisis de mercado	Lea el informe para comprender mejor la situación del mercado en su sector.
+0	Actualizar información personal en aplicaciones de salud	Asegúrese de que los datos de salud en sus aplicaciones estén correctos y completos.
+0	Consultar resultados de exámenes anuales de salud	Revise los resultados de sus exámenes anuales para monitorear su estado de salud.
+0	Notificar de pérdida de documento oficial importante	Informe de inmediato para evitar posibles problemas de identidad.
+0	Reportar accidente laboral a recursos humanos	Si ha sufrido un accidente en el trabajo, notifíquelo inmediatamente para recibir asistencia.
+0	Solicitar ayuda para persona enferma en lugar público	Pida ayuda a las autoridades o servicios de emergencia si ve a alguien en problemas de salud.
+0	Atender un problema crítico de cliente	Un cliente tiene una situación crítica que necesita ser atendida inmediatamente para evitar problemas.
+0	Confirmar asistencia a evento profesional inminente	Confirme si asistirá a un evento importante que inicia pronto.
+0	Reportar incidente de seguridad en la empresa	Si ha notado una posible vulnerabilidad, informe a seguridad de inmediato.
+0	Recibir resultados críticos de una prueba médica	Es fundamental conocer el resultado para tomar decisiones rápidas en cuanto a tratamiento.
+0	Atender requerimiento de auditoría en la empresa	Es necesario cumplir con los documentos solicitados por los auditores para evitar sanciones.
+0	Coordinar ayuda para una emergencia familiar	Un familiar necesita apoyo inmediato debido a una situación grave.
+0	Solicitar renovación de un permiso de trabajo próximo a vencerse	Si el permiso vence pronto, es fundamental renovarlo para seguir trabajando.
+0	Revisar sistema de respaldo tras fallo reciente en servidores	Realice una revisión completa del sistema de respaldo para evitar pérdidas de datos.
+0	Solicitar intervención para resolver conflicto en el equipo	Si hay un conflicto que afecta el trabajo, es necesario buscar una solución rápida.
+0	Revisar pedido de cliente antes de fin de mes para entrega	Un pedido necesita ser revisado para cumplir con la fecha de entrega establecida.
+0	Notificar sospecha de fraude en cuentas corporativas	Si nota actividad sospechosa en la cuenta corporativa, informe al departamento de finanzas.
+0	Recibir confirmación de vuelos antes de viajar	Es importante asegurarse de que los vuelos estén confirmados para evitar retrasos.
+0	Consultar médicos por posible reacción alérgica grave	Si nota síntomas graves, consulte a un médico de inmediato.
+1	Actualiza tu cuenta para evitar el bloqueo	Verifica tus datos ahora y mantén tu cuenta activa.
+1	¡Gran venta de liquidación! Hasta el 80% de descuento	Aprovecha esta oferta antes de que se acabe.
+1	Reclama tu tarjeta de crédito preaprobada	Solicita hoy y recibe tu tarjeta en 24 horas.
+1	¡Te has ganado un viaje gratis!	Participa y descubre si eres el afortunado ganador de unas vacaciones de lujo.
+1	¿Quieres ganar dinero desde casa?	Únete a nuestro equipo y comienza a ganar desde la comodidad de tu hogar.
+1	No te pierdas nuestras ofertas diarias exclusivas	Inscríbete para recibir ofertas especiales en tu correo.
+1	Consigue el cuerpo que siempre has querido	Descubre nuestros suplementos y transforma tu vida.
+1	Última oportunidad: productos gratis a cambio de tu opinión	Completa nuestra encuesta y recibe productos sin costo.
+1	Incrementa tus ingresos con este simple truco	Aprende cómo puedes hacer dinero extra cada mes.
+1	Descubre cómo conseguir seguidores en redes sociales rápidamente	Implementa nuestros consejos y verás resultados inmediatos.
+0	Responder consulta de cliente insatisfecho	Responda al cliente rápidamente para evitar problemas de reputación.
+0	Planificar transporte de carga sensible antes de la fecha límite	Asegúrese de que la carga llegue a tiempo para evitar pérdidas.
+0	Entregar documentos a notaría para trámite urgente	Los documentos deben ser entregados hoy para avanzar en un trámite legal.
+0	Revisión del proyecto de diseño	Realicemos una revisión del diseño la próxima semana. Organízate para discutir algunos ajustes.
+0	Actualización de software	La próxima semana se implementará una actualización de sistema. Por favor, asegúrate de respaldar tu información.
+0	Control de rutina	Te recordamos tu consulta médica de control para el próximo martes. Confirma tu asistencia.
+0	Revisión de contrato laboral	Es importante que revises los nuevos términos de tu contrato para asegurar que todo esté en orden.
+0	Recordatorio de limpieza de primavera	Este fin de semana haremos limpieza general. Revisa tus áreas asignadas para asegurar que estén listas.
+0	Preparación de informes mensuales	Prepara el informe mensual para la próxima semana. Este reporte será revisado en la siguiente junta.
+0	Organización de documentos fiscales	Te recordamos organizar tus documentos fiscales para la próxima declaración. Tienes hasta final de mes.
+0	Cancelación de cita médica	Llama de inmediato a tu médico para reprogramar tu cita cancelada de hoy.
+1	¡Hazte rico desde casa!	Descubre cómo miles están ganando dinero en línea con nuestro sistema fácil.
+1	Inversión garantizada con altos rendimientos	Únete a nuestro grupo exclusivo de inversores y asegura tu futuro.
+1	Ofertas especiales solo para ti	Compra productos de marca con descuentos increíbles, ¡solo por tiempo limitado!
+1	¡Tu factura de celular podría ser más baja!	Verifica si eres elegible para descuentos especiales en tu plan.
+1	Obtén un préstamo sin verificación de crédito	Accede a dinero rápido y fácil, sin complicaciones.
+1	¡Sé el primero en conocer nuestros nuevos productos!	Regístrate ahora y recibe actualizaciones exclusivas y ofertas.
+1	Ofrecemos servicios de limpieza a precios imbatibles	Contáctanos para obtener un presupuesto gratuito.
+1	Descubre el secreto para una piel perfecta	Prueba nuestro tratamiento revolucionario, ¡satisfacción garantizada!
+1	¡No más preocupaciones financieras!	Aprende a eliminar tus deudas de forma rápida y efectiva.
+1	Recibe un cheque de $1,000 solo por registrarte	No te pierdas esta oportunidad única de ganar dinero fácil.
+0	Error en facturación de cliente	Hemos detectado un error en la facturación. Necesitamos resolverlo hoy mismo.
+0	Rotura de cañerías en casa	Hay una fuga de agua importante en el sótano. Llama a un plomero lo antes posible.
+0	Presentación final de proyecto	Necesitamos completar la presentación del proyecto para enviarla mañana por la mañana sin falta.
+0	Alerta de virus informático	Se detectó un virus en el servidor principal. El equipo de seguridad debe solucionarlo urgentemente.
+0	Análisis de emergencia para cirugía	Realiza los análisis de laboratorio hoy para proceder con la cirugía urgente de mañana.
+0	Corte de energía programado	Hoy habrá un corte de energía en la oficina. Asegúrate de respaldar tu trabajo en las próximas horas.
+1	¡Gana un iPhone gratis!	Participa en nuestro sorteo y podrías ser el afortunado ganador.
+1	Revela el secreto para perder peso rápido	Descubre nuestra dieta revolucionaria que todos están usando.
+1	Obtén un préstamo de hasta $10,000 sin verificación de crédito	Aplica hoy y recibe el dinero en tu cuenta.
+1	¡Tu cuenta ha sido comprometida!	Confirma tu identidad para asegurar tu información personal.
+1	Aprovecha la oferta de suscripción gratuita por un mes	Regístrate ahora y disfruta de nuestro servicio premium sin costo.
+1	Consulta médica gratuita con solo un clic	Recibe atención médica profesional sin salir de casa.
+1	Ofertas de trabajo desde casa para todos	Consulta nuestras oportunidades laborales y comienza a trabajar hoy.
+1	¡Sorpresa! Has sido seleccionado para un regalo exclusivo	Reclama tu regalo antes de que se acabe.
+1	Aprende a invertir en criptomonedas sin riesgos	Inscríbete y comienza a ganar dinero con nuestras guías.
+1	No te pierdas la oportunidad de mejorar tu crédito	Consulta gratuita para obtener asesoramiento financiero.

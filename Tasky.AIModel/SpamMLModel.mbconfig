@@ -51,8 +51,48 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.99230769230769234,
-        "RuntimeInSeconds": 0.149,
+        "Score": 0.975267506979093,
+        "RuntimeInSeconds": 0.275,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
+          "e0": {
+            "InputColumnName": "asunto",
+            "OutputColumnName": "asunto"
+          },
+          "e1": {
+            "InputColumnName": "texto",
+            "OutputColumnName": "texto"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "asunto",
+              "texto"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "spam",
+            "InputColumnName": "spam",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.039317045,
+            "L2Regularization": 0.3211535,
+            "LabelColumnName": "spam",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.975267506979093,
+        "RuntimeInSeconds": 0.246,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
@@ -81,7 +121,7 @@
           },
           "e8": {
             "L1Regularization": 0.03125,
-            "L2Regularization": 0.79369247,
+            "L2Regularization": 0.7179517,
             "LabelColumnName": "spam",
             "FeatureColumnName": "Features"
           }
@@ -91,88 +131,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.99230769230769234,
-        "RuntimeInSeconds": 0.171,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
-          "e0": {
-            "InputColumnName": "asunto",
-            "OutputColumnName": "asunto"
-          },
-          "e1": {
-            "InputColumnName": "texto",
-            "OutputColumnName": "texto"
-          },
-          "e11": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
-          },
-          "e2": {
-            "InputColumnNames": [
-              "asunto",
-              "texto"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e3": {
-            "OutputColumnName": "spam",
-            "InputColumnName": "spam",
-            "AddKeyValueAnnotationsAsText": false
-          },
-          "e8": {
-            "L1Regularization": 0.03385493,
-            "L2Regularization": 0.31607342,
-            "LabelColumnName": "spam",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.99230769230769234,
-        "RuntimeInSeconds": 0.165,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
-          "e0": {
-            "InputColumnName": "asunto",
-            "OutputColumnName": "asunto"
-          },
-          "e1": {
-            "InputColumnName": "texto",
-            "OutputColumnName": "texto"
-          },
-          "e11": {
-            "OutputColumnName": "PredictedLabel",
-            "InputColumnName": "PredictedLabel"
-          },
-          "e2": {
-            "InputColumnNames": [
-              "asunto",
-              "texto"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e3": {
-            "OutputColumnName": "spam",
-            "InputColumnName": "spam",
-            "AddKeyValueAnnotationsAsText": false
-          },
-          "e8": {
-            "L1Regularization": 0.051040757,
-            "L2Regularization": 0.5467388,
-            "LabelColumnName": "spam",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.99230769230769234,
-        "RuntimeInSeconds": 0.156,
+        "Score": 0.975267506979093,
+        "RuntimeInSeconds": 0.304,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
@@ -201,7 +161,7 @@
           },
           "e8": {
             "L1Regularization": 0.03125,
-            "L2Regularization": 0.6415536,
+            "L2Regularization": 0.10902411,
             "LabelColumnName": "spam",
             "FeatureColumnName": "Features"
           }
@@ -211,8 +171,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LbfgsMaximumEntropyMulti",
-        "Score": 0.99230769230769234,
-        "RuntimeInSeconds": 0.155,
+        "Score": 0.975267506979093,
+        "RuntimeInSeconds": 0.255,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
           "e0": {
@@ -241,7 +201,47 @@
           },
           "e8": {
             "L1Regularization": 0.03125,
-            "L2Regularization": 0.6819096,
+            "L2Regularization": 0.14956987,
+            "LabelColumnName": "spam",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.975267506979093,
+        "RuntimeInSeconds": 0.228,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e8 * e11",
+          "e0": {
+            "InputColumnName": "asunto",
+            "OutputColumnName": "asunto"
+          },
+          "e1": {
+            "InputColumnName": "texto",
+            "OutputColumnName": "texto"
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "asunto",
+              "texto"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "spam",
+            "InputColumnName": "spam",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e8": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.7714766,
             "LabelColumnName": "spam",
             "FeatureColumnName": "Features"
           }
@@ -272,7 +272,7 @@
     "Version": 2,
     "Subsampling": false,
     "Type": "ClassificationTrainingOption",
-    "TrainingTime": 100,
+    "TrainingTime": 180,
     "LabelColumn": "spam",
     "ValidationOption": {
       "Version": 0,

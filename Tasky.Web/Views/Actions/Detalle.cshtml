@@ -1,0 +1,48 @@
+﻿@model Tasky.Datos.EF.TaskyObject
+
+@{
+    ViewData["Title"] = "Detalles de la Tarea";
+}
+
+<h1>@Model.Subjectt</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h4>Detalles de la Tarea</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.IdObject</dd>
+
+            <dt class="col-sm-3">Descripción</dt>
+            <dd class="col-sm-9">@Model.Body</dd>
+
+            <dt class="col-sm-3">Enviado por</dt>
+            <dd class="col-sm-9">@Model.Sender</dd>
+
+            <dt class="col-sm-3">Fecha</dt>
+            <dd class="col-sm-9">@Model.Date.ToString("dd/MM/yyyy HH:mm:ss")</dd>
+
+            <dt class="col-sm-3">Estado</dt>
+            <dd class="col-sm-9">
+                @if (Model.Status == false)
+                {
+                    <span class="badge badge-secondary">Pendiente</span>
+                }
+                else
+                {
+                    <span class="badge badge-success">Completado</span>
+                }
+            </dd>
+
+            <dt class="col-sm-3">Prioridad</dt>
+            <dd class="col-sm-9">
+                @Model.Priority
+            </dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Index" class="btn btn-primary">Volver a la lista</a>
+    </div>
+</div>

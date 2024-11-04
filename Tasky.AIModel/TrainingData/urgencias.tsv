@@ -604,4 +604,87 @@ Poco Urgente	Jugar un partido amistoso de fútbol en el parque el próximo mes	S
 Poco Urgente	Pedir a amigos si quieren ver el partido de fútbol la próxima semana	Podemos coordinarlo, pero no es urgente.
 Poco Urgente	Revisar el calendario para ver cuándo es el próximo partido de fútbol	No es urgente, pero sería bueno tenerlo en mente.
 Poco Urgente	Proponer jugar al fútbol en el parque un día cualquiera	Puede ser un plan divertido, pero sin prisa.
-
+Urgente	Eliminar archivo de configuración con contraseñas sensibles	Es imperativo que elimines el archivo de configuración que contiene las contraseñas para evitar posibles brechas de seguridad. Hazlo de inmediato.
+Urgente	Solicitar revisión de código para lanzamiento inmediato	El código debe ser revisado y aprobado antes de la implementación programada para mañana. Por favor, prioriza esta tarea.
+Urgente	Actualizar software de seguridad antes de fin de semana	Es necesario que actualices el software de seguridad en todos los equipos antes del viernes para proteger la red.
+Urgente	Notificar sobre falla crítica del servidor	Se ha detectado una falla en el servidor que requiere atención inmediata. Notifica al equipo de IT para que se solucione cuanto antes.
+Medio	Revisar los comentarios en el documento del proyecto	Asegúrate de revisar y aplicar los comentarios dejados en el documento del proyecto antes de la reunión del miércoles.
+Medio	Programar reunión para discutir la estrategia de marketing	Por favor, agenda una reunión para la próxima semana donde discutiremos la estrategia de marketing para el próximo trimestre.
+Medio	Actualizar la documentación del proyecto	Es importante que actualices la documentación del proyecto para que esté al día antes de la presentación a los stakeholders.
+Medio	Pasar en limpio las notas de la última reunión	Te agradecería que pasaras en limpio las notas de la última reunión para que todos tengamos acceso a la información.
+Poco Urgente	Revisar y archivar correos electrónicos antiguos	Tómate un tiempo para revisar y archivar los correos electrónicos antiguos en tu bandeja de entrada. No es necesario hacerlo de inmediato.
+Poco Urgente	Planear el almuerzo de equipo para el próximo mes	Haz una lista de posibles lugares para el almuerzo de equipo y comparte las opciones con el grupo cuando tengas un momento.
+Poco Urgente	Pensar en ideas para el próximo evento de la empresa	Tómate un tiempo para pensar en algunas ideas creativas para el próximo evento de la empresa. No hay prisa.
+Poco Urgente	Revisar los comentarios en el informe de ventas	Podemos revisar los comentarios en el informe de ventas cuando tengamos un espacio, no es urgente.
+Urgente	Reiniciar servidor crítico de la empresa	Es fundamental reiniciar el servidor que ha estado funcionando erróneamente. Esto debe hacerse de inmediato para evitar interrupciones.
+Urgente	Notificar sobre fuga de datos en el sistema	Ha habido una fuga de datos en el sistema. Es esencial que informes al equipo de seguridad para mitigar riesgos.
+Urgente	Actualizar contraseñas de acceso a sistemas sensibles	Por razones de seguridad, todas las contraseñas de acceso deben actualizarse antes de mañana. No lo postergues.
+Urgente	Desplegar el parche de seguridad urgentemente	Es necesario que se implemente el parche de seguridad en todos los sistemas para prevenir vulnerabilidades críticas.
+Medio	Enviar el informe de progreso del proyecto	Por favor, envía el informe de progreso del proyecto a los interesados antes del viernes. Asegúrate de incluir todos los puntos relevantes.
+Medio	Revisar el presupuesto del departamento para el próximo trimestre	Revisa el presupuesto y asegúrate de que todos los gastos estén justificados antes de la reunión con la dirección la próxima semana.
+Medio	Organizar los archivos en la carpeta compartida	Aprovecha el tiempo para organizar los archivos en la carpeta compartida. No es urgente, pero sería útil tenerlo listo pronto.
+Medio	Actualizar las listas de contactos del equipo	Asegúrate de que las listas de contactos del equipo estén actualizadas. Hazlo cuando puedas, no hay prisa.
+Poco Urgente	Enviar invitaciones para la fiesta de fin de año	Tómate tu tiempo para enviar las invitaciones a la fiesta de fin de año. No es necesario hacerlo de inmediato.
+Poco Urgente	Revisar los comentarios en el documento de políticas	Tómate un momento para revisar los comentarios en el documento de políticas. No es algo que deba hacerse ahora.
+Poco Urgente	Plantear ideas para el próximo taller	Tómate un tiempo para pensar en ideas para el próximo taller, pero no es necesario hacerlo con prisa.
+Poco Urgente	Archivar documentos impresos antiguos	Tómate un momento para archivar los documentos impresos antiguos. No es urgente, pero sería bueno hacerlo pronto.
+Urgente	Realizar copia de seguridad del servidor principal	Es crítico realizar una copia de seguridad del servidor principal antes del final del día para evitar pérdida de datos.
+Urgente	Notificar al equipo sobre una reunión de emergencia	Se ha convocado una reunión de emergencia. Por favor, notifica a todo el equipo inmediatamente.
+Urgente	Eliminar archivos temporales que afectan el rendimiento	Es urgente limpiar los archivos temporales del sistema para mejorar el rendimiento antes de la reunión con el cliente.
+Urgente	Arreglar la impresora que no funciona antes de la presentación	La impresora no está funcionando y necesitamos que esté operativa antes de la presentación de hoy. Por favor, resuélvelo urgentemente.
+Medio	Enviar el calendario de reuniones del próximo mes	Asegúrate de enviar el calendario de reuniones a todos antes del próximo lunes. Es importante, pero no hay prisa.
+Medio	Actualizar el software de gestión de proyectos	Por favor, actualiza el software de gestión de proyectos en la próxima semana. No es urgente, pero sería útil tenerlo al día.
+Medio	Revisar las solicitudes de vacaciones del personal	Tómate un momento para revisar las solicitudes de vacaciones del personal. Necesitamos tenerlas listas para el próximo mes.
+Medio	Preparar materiales para la reunión de la próxima semana	Prepara los materiales necesarios para la reunión de la próxima semana. No es urgente, pero asegúrate de tenerlos listos a tiempo.
+Poco Urgente	Decidir el lugar para la cena de equipo	Tómate tu tiempo para decidir el lugar para la cena de equipo. No es urgente, puedes hacerlo en cualquier momento.
+Poco Urgente	Actualizar la firma de correo electrónico	Asegúrate de actualizar tu firma de correo electrónico. No es urgente, pero sería bueno hacerlo pronto.
+Poco Urgente	Revisar la presentación antes de enviarla	Tómate un momento para revisar la presentación antes de enviarla. No es algo que necesite hacerse de inmediato.
+Poco Urgente	Agregar comentarios a la propuesta de proyecto	Tómate un tiempo para agregar comentarios a la propuesta de proyecto. No es necesario que lo hagas ahora.
+Urgente	Restablecer la contraseña de la cuenta de administrador	Es fundamental restablecer la contraseña de la cuenta de administrador de inmediato para mantener la seguridad.
+Urgente	Notificar un fallo crítico en la red	Informa al equipo de TI sobre el fallo crítico en la red. Es crucial solucionarlo lo antes posible.
+Urgente	Enviar el informe financiero antes de la fecha límite	Ten en cuenta que el informe financiero debe enviarse antes del final del día. No podemos permitirnos retrasos.
+Urgente	Cerrar el acceso a un usuario que ha dejado la empresa	Es urgente revocar el acceso del usuario que ha dejado la empresa para proteger la información sensible.
+Medio	Revisar el presupuesto del próximo trimestre	Por favor, revisa el presupuesto del próximo trimestre antes de la próxima reunión. Es importante, pero no es urgente.
+Medio	Enviar recordatorio para la evaluación de desempeño	Asegúrate de enviar un recordatorio sobre la evaluación de desempeño del equipo. No es urgente, pero ayuda a mantener a todos informados.
+Medio	Actualizar la documentación del proyecto	Tómate un tiempo para actualizar la documentación del proyecto. Es necesario, pero no hay prisa inmediata.
+Medio	Consultar a los miembros del equipo sobre la disponibilidad para un nuevo proyecto	Consulta con el equipo sobre su disponibilidad para el nuevo proyecto. Es importante, pero no hay apuro.
+Poco Urgente	Revisar y archivar correos electrónicos antiguos	Tómate un momento para revisar y archivar los correos electrónicos antiguos. No es urgente, pero sería bueno hacerlo.
+Poco Urgente	Organizar la carpeta de archivos compartidos	Aprovecha un momento para organizar la carpeta de archivos compartidos. No es algo urgente, pero mejorará la eficiencia.
+Poco Urgente	Hacer seguimiento de la entrega de suministros de oficina	Revisa el estado de la entrega de suministros de oficina cuando tengas un rato. No es urgente, pero es conveniente.
+Poco Urgente	Planificar el almuerzo de trabajo del próximo mes	Piensa en la planificación del almuerzo de trabajo del próximo mes. No es urgente y puedes hacerlo cuando quieras.
+Urgente	Restaurar el servidor crítico que ha caído	Es esencial restaurar el servidor crítico que ha caído para evitar interrupciones en el servicio.
+Urgente	Informar sobre una brecha de seguridad	Informa de inmediato sobre cualquier brecha de seguridad detectada en el sistema. Es vital para la protección de datos.
+Urgente	Actualizar la contraseña de acceso a la base de datos	Cambia la contraseña de acceso a la base de datos de inmediato para evitar accesos no autorizados.
+Urgente	Resolver un problema de conexión con un cliente	Contacta al cliente de inmediato para resolver un problema de conexión. Necesitamos mantener la comunicación abierta.
+Medio	Revisar el contenido del boletín informativo	Revisa el contenido del boletín informativo antes de enviarlo. Es importante para la comunicación, pero no hay prisa.
+Medio	Preparar el informe de progreso del proyecto	Prepara el informe de progreso del proyecto para la próxima reunión. Es relevante, pero no urgente.
+Medio	Actualizar la lista de contactos del equipo	Asegúrate de actualizar la lista de contactos del equipo. Es útil, pero no es necesario hacerlo de inmediato.
+Medio	Coordinar la reunión de planificación del próximo trimestre	Coordina la reunión de planificación del próximo trimestre. Es importante, pero puedes hacerlo más adelante.
+Poco Urgente	Archivar documentos de proyectos anteriores	Tómate un tiempo para archivar documentos de proyectos anteriores. No es urgente, pero ayudará a mantener el orden.
+Poco Urgente	Hacer limpieza en el espacio de trabajo	Cuando tengas un momento, haz limpieza en el espacio de trabajo. No es urgente, pero es recomendable.
+Poco Urgente	Revisar las políticas de trabajo remoto	Tómate un rato para revisar las políticas de trabajo remoto. No es urgente, pero sería útil estar al día.
+Poco Urgente	Planificar la celebración del aniversario de la empresa	Piensa en la planificación de la celebración del aniversario de la empresa. No es urgente, pero es un buen evento a preparar.
+Urgente	Resolver un fallo crítico en la aplicación	Es crucial solucionar el fallo crítico en la aplicación para evitar la pérdida de datos de los usuarios.
+Urgente	Notificar a todos sobre la política de trabajo desde casa	Informa a todos los empleados sobre la nueva política de trabajo desde casa inmediatamente.
+Urgente	Revisar el acceso a información confidencial	Es imperativo revisar quién tiene acceso a información confidencial y hacer ajustes necesarios de inmediato.
+Urgente	Actualizar el software de seguridad de la red	Asegúrate de que el software de seguridad de la red esté actualizado para proteger contra vulnerabilidades.
+Medio	Revisar el presupuesto del proyecto	Revisa el presupuesto del proyecto antes de la reunión de la próxima semana. Es importante, pero no es urgente.
+Medio	Programar capacitaciones para el equipo	Planifica las capacitaciones para el equipo en el próximo mes. Es relevante, pero puedes hacerlo con tiempo.
+Medio	Organizar las carpetas compartidas en el servidor	Organiza las carpetas compartidas en el servidor. Es útil, pero no es necesario hacerlo de inmediato.
+Medio	Discutir mejoras para el próximo trimestre	Tómate un tiempo para discutir mejoras para el próximo trimestre. Es importante, pero no es urgente.
+Poco Urgente	Revisar la política de vacaciones	Cuando puedas, revisa la política de vacaciones de la empresa. No es urgente, pero sería bueno estar informado.
+Poco Urgente	Cambiar el diseño de la presentación	Revisa y cambia el diseño de la presentación para la próxima reunión. No es urgente, pero puede mejorar la calidad.
+Poco Urgente	Actualizar tu perfil en la intranet	Actualiza tu perfil en la intranet cuando tengas un momento. No es urgente, pero es recomendable.
+Poco Urgente	Recoger suministros de oficina	Tómate un tiempo para recoger suministros de oficina. No es urgente, pero ayudará a mantener todo en orden.
+Urgente	Restaurar copias de seguridad de datos	Es necesario restaurar las copias de seguridad de datos para prevenir pérdidas de información crítica.
+Urgente	Notificar la caída del servidor al equipo	Es fundamental informar al equipo sobre la caída del servidor para que puedan tomar acciones inmediatas.
+Urgente	Corregir errores en el sistema de pago	Es urgente corregir los errores en el sistema de pago para evitar inconvenientes a los clientes.
+Urgente	Revisar los permisos de acceso de usuarios	Es crucial verificar y ajustar los permisos de acceso de los usuarios para proteger información sensible.
+Medio	Enviar el informe mensual a la dirección	Envía el informe mensual a la dirección antes de fin de mes. Es importante, pero puedes programarlo con antelación.
+Medio	Revisar las métricas de rendimiento del equipo	Revisa las métricas de rendimiento del equipo esta semana. Es relevante, pero no requiere atención inmediata.
+Medio	Organizar la reunión trimestral	Planifica la reunión trimestral con tiempo. Es importante para el equipo, pero no tiene una fecha límite inminente.
+Medio	Actualizar la lista de contactos del equipo	Tómate un momento para actualizar la lista de contactos del equipo. Es útil, pero no es urgente.
+Poco Urgente	Enviar felicitaciones por cumpleaños al equipo	Cuando puedas, envía felicitaciones por cumpleaños a los miembros del equipo. No es urgente, pero es un buen gesto.
+Poco Urgente	Revisar las redes sociales de la empresa	Revisa las redes sociales de la empresa y asegúrate de que estén actualizadas. No es urgente, pero es recomendable.
+Poco Urgente	Organizar el escritorio y archivos digitales	Organiza tu escritorio y archivos digitales cuando tengas tiempo. No es urgente, pero te ayudará a mantener el orden.
+Poco Urgente	Consultar con el equipo sobre la próxima actividad social	Cuando tengas un momento, consulta con el equipo sobre la próxima actividad social. No es urgente, pero puede ser divertido.
