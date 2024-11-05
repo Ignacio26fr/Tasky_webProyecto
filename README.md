@@ -7,7 +7,7 @@ Tasky es una aplicación de gestión de correos y tareas, desarrollada como part
 
 ## Integrantes del Grupo
 1. **Avalos, Mora**
-2. **Coscarelli, Agutina**
+2. **Coscarelli, Agustina**
 3. **Franco, Ignacio**
 4. **Cernik, Tomás**
 5. **Miranda, Ezequiel**
