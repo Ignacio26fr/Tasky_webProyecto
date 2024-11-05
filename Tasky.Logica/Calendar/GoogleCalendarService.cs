@@ -122,6 +122,12 @@ namespace Tasky.Logica.Calendar
          try
             {
                 var googleEvent = MapToGoogleCalendar(value.TaskObject);
+                if (googleEvent == null)
+                {
+                    Console.WriteLine("La tarea es spam, no se creará el evento.");
+                    return;
+                }
+
                 Console.WriteLine("Evento mapeado: " + googleEvent.Titulo);
                 using (var scope = _scopeFactory.CreateScope())
                 {
@@ -208,6 +214,12 @@ namespace Tasky.Logica.Calendar
 
         private EventosCalendar MapToGoogleCalendar(TaskyObject task)
         {
+
+            if(task.Spam)
+            {
+                return null;
+            }
+
             return new EventosCalendar
             {
                 Titulo = task.Subjectt,
