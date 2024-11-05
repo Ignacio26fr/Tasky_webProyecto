@@ -19,7 +19,8 @@ body {
     background-color: #181E2B !important;
     color: #fff !important;
     font-weight: 300 !important;
-    height: 100%;
+    height: calc(100vh - 70px);
+    min-height:100%!important;
 }
 
 main {
@@ -490,4 +491,8 @@ a {
 .card-header.bg-header {
     background-color: #222733 !important;
     padding-bottom:0 !important;
+}
+
+.hcalc{
+    height: calc(100vh - 70px);
 }
