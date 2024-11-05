@@ -104,15 +104,15 @@ namespace Tasky.Datos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     GoogleEventId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ZonaHoraria = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Localizacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Sincronizado = table.Column<bool>(type: "bit", nullable: false),
+                    ZonaHoraria = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Localizacion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Sincronizado = table.Column<bool>(type: "bit", nullable: true),
                     IdObject = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    CreadoEn = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    CreadoEn = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {

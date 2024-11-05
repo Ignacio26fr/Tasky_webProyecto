@@ -3,6 +3,7 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
 using Google.Apis.Services;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
@@ -28,17 +29,19 @@ public class GmailNotificationService : IGmailNotificationService
     
     private  readonly ConcurrentQueue<PubSubNotification> _notificationQueue;
     private readonly ICoreBackgroundService _coreBackgroundService;
+    private readonly IConfiguration _configuration;
     private GmailService _gmailService;
     private bool _isProcessing;
    
     public GoogleSession CurrenSession { private get; set; }
 
-    public GmailNotificationService(ICoreBackgroundService coreBackgroundService)
+    public GmailNotificationService(ICoreBackgroundService coreBackgroundService, IConfiguration configuration)
     {
 
         _coreBackgroundService = coreBackgroundService;
         _isProcessing = false;
         _notificationQueue = new ConcurrentQueue<PubSubNotification>();
+        _configuration = configuration;
     }
 
     public void AddNotification(PubSubNotification notification)
@@ -165,7 +168,7 @@ public class GmailNotificationService : IGmailNotificationService
         var request = new WatchRequest
         {
             LabelIds = new List<string> { "INBOX" },
-            TopicName = "projects/tasky-439413/topics/notifications", //Pasar al app setting
+            TopicName = _configuration.GetSection("Google").GetValue<string>("PubSubTopic"),
         };
 
 

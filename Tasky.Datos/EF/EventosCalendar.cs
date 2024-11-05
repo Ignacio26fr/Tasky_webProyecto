@@ -5,7 +5,7 @@ public class EventosCalendar
     public int IdEventoCalendar { get; set; }
     public string GoogleEventId { get; set; }
     public string Titulo { get; set; }
-    public string Descripcion { get; set; }
+    public string? Descripcion { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime FechaFin { get; set; }
     public string ZonaHoraria { get; set; }
