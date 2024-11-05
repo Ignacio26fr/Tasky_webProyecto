@@ -1,44 +1,44 @@
 ﻿@model RegistroViewModel
 
-<div class="container">
+<div class="container bg-dark">
     <div class="row justify-content-center">
         <div class="col-md-6 mt-5">
-            <div class="card">
-                <div class="card-header text-center">
-                    <h4>Registro</h4>
+            <div class="card p-5">
+                <div class="card-header text-center bg-primary text-white">
+                    <h4>Registrarse</h4>
                 </div>
                 <div class="card-body">
-                    <form asp-action="Registro" method="post">
+                    <form asp-action="Index" method="post">
                         <div class="form-group">
                             <label asp-for="Nombre" class="form-label"></label>
-                            <input asp-for="Nombre" class="form-control" placeholder="Ingresa tu nombre" />
+                            <input asp-for="Nombre" class="form-control bg-dark text-light" placeholder="Ingresa tu nombre" />
                             <span asp-validation-for="Nombre" class="text-danger"></span>
                         </div>
-                        <div class="form-group">
-                            <label asp-for="Telefono"></label>
-                            <input asp-for="Telefono" class="form-control" type="tel" />
-                            <span asp-validation-for="Telefono" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
+                        <div class="form-group mt-4">
                             <label asp-for="Email" class="form-label"></label>
-                            <input asp-for="Email" class="form-control" placeholder="Ingresa tu email" />
+                            <input asp-for="Email" class="form-control bg-dark text-light" placeholder="Ingresa tu dirección de email" />
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mt-4">
+                            <label asp-for="Telefono" class="form-label"></label>
+                            <input asp-for="Telefono" class="form-control bg-dark text-light" placeholder="Ingresa tu telefono" />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-4">
                             <label asp-for="Password" class="form-label"></label>
-                            <input asp-for="Password" type="password" class="form-control" placeholder="Ingresa tu contraseña" />
+                            <input asp-for="Password" type="password" class="form-control bg-dark text-light" placeholder="Ingresa una contraseña" />
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mt-4">
                             <label asp-for="ConfirmarPassword" class="form-label"></label>
-                            <input asp-for="ConfirmarPassword" type="password" class="form-control" placeholder="Confirma tu contraseña" />
+                            <input asp-for="ConfirmarPassword" type="password" class="form-control bg-dark text-light" placeholder="Repite la contraseña" />
                             <span asp-validation-for="ConfirmarPassword" class="text-danger"></span>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
                         </div>
                         <div class="text-center mt-3">
-                            <a asp-action="Login">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+                            <a asp-controller="Login" asp-action="Index" class="text-light text-decoration-none">¿Ya tienes cuenta? Inicia sesión aquí</a>
                         </div>
                     </form>
                 </div>

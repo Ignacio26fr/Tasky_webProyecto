@@ -11,58 +11,63 @@
 }
 
 <div>
-    <h2>Lista de Mensajes</h2>
+    @using (Html.BeginForm(currentAction, "Actions", FormMethod.Get, new { id = "filtroForm" }))
+    {
+        <div class="form-horizontal p-2 bg-dark-variant-1">
+            <div class="input-group">
+                <i class="bi bi-search"></i>
+                <input type="search" id="filtroInput" name="filtroInput" class="form-control rounded" placeholder="¿Qué deseas buscar?" value="@ViewBag.FiltroInput" oninput="relentizarSubmit()" />
+                <i class="bi bi-calendar ms-2"></i>
+            </div>
+        </div>
 
+       
+     
+    }
+</div>
+
+<div class="header-row">
+    <h4>Tareas - Hoy</h4>
     
-    <div>
-        @using (Html.BeginForm(currentAction, "Actions", FormMethod.Get, new { id = "filtroForm" }))
-        {
-            <input type="text" id="filtroInput" name="filtroInput" class="form-control"
-                   placeholder="Filtrar por asunto o de" value="@ViewBag.FiltroInput" oninput="relentizarSubmit()" />
+           
+        <div> <partial name="/Views/Shared/PartialViews/_pvComboFiltroPrioridad.cshtml" /></div>
+</div>
 
-            <partial name="/Views/Shared/PartialViews/_pvComboFiltroPrioridad.cshtml" />
-            
-        }
-    </div>
+<table class="table table-striped">
 
-   
-    <table class="table table-striped">
-        <thead>
+    <thead class="bg-dark-variant-2">
             <tr>
-                <th scope="col"><input type="checkbox" id="selectAll"></th>
+            <th scope="col"><input type="checkbox" class="itemCheckbox" id="selectAll"></th>
                 <th scope="col">Asunto</th>
                 <th scope="col">Prioridad</th>
                 <th scope="col">De</th>
-                <th scope="col">
-                    Acciones
-                </th>
+                <th scope="col">Acción</th>
             </tr>
         </thead>
         <tbody id="tablaCuerpo">
             @foreach (var mail in Model)
             {
-                <tr>
+            <tr class="table-body bg-dark">
                     <td><input type="checkbox" class="itemCheckbox"></td>
                     <td>@mail.Subjectt</td>
                     <td>@mail.Priority</td>
                     <td>@mail.Sender</td>
                     <td>
                         <a href="@Url.Action("Detalle", "Actions", new { id = mail.IdObject })" title="Ver">
-                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-eye mx-2"></i>
                         </a>
                         <a href="@Url.Action("Editar", "Actions", new { id = mail.IdObject })" title="Editar">
-                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-pencil mx-2"></i>
                         </a>
                         <a href="@Url.Action("Eliminar", "Actions",
                         new { id = mail.IdObject, filtroSeccion = currentAction, idPrioridad = ViewBag.PrioridadSeleccionada })">
-                        <i class="bi bi-trash"></i>
+                        <i class="bi bi-trash mx-2"></i>
                          </a>
                     </td>
                 </tr>
             }
         </tbody>
-    </table>
-</div>
+</table>
 
 <script src="/js/site.js"></script>
 
