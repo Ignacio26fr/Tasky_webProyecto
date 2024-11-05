@@ -59,6 +59,10 @@ public class ActionsController : Controller
         ViewBag.FiltroSeccion = "hoy";
         ViewBag.EnableDynamicSubmit = true;
 
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems").Get<List<MenuViewModel>>().FindAll(m => m.Controller == "Actions");
+        ViewBag.Controller = "Actions";
+        ViewBag.Action = "Hoy";
+
         List<TaskyObject> tasks = await _taskManager.GetTasksForToday(idPrioridad);
 
         if (!string.IsNullOrEmpty(filtroInput))
@@ -76,6 +80,10 @@ public class ActionsController : Controller
         ViewBag.PrioridadSeleccionada = idPrioridad;
         ViewBag.FiltroSeccion = "spam";
         ViewBag.EnableDynamicSubmit = true;
+
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems").Get<List<MenuViewModel>>().FindAll(m => m.Controller == "Actions");
+        ViewBag.Controller = "Actions";
+        ViewBag.Action = "Spam";
 
         List<TaskyObject> tasks = await _taskManager.GetTasksSpam(idPrioridad);
 

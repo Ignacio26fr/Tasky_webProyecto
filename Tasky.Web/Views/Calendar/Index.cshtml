@@ -1,0 +1,37 @@
+﻿@model List<Tasky.Datos.EF.EventosCalendar>
+@{
+    ViewBag.Title = "Mis Eventos de Google Calendar";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" rel="stylesheet" />
+
+<h2>@ViewBag.Title</h2>
+<div id="calendar"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        if (calendarEl) { // Verifica que el elemento exista
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.CalendarEvents)),
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                editable: true,
+                selectable: true,
+                locale: 'es' // Asegúrate de que el calendario esté configurado para usar el idioma español
+            });
+            calendar.render();
+        } else {
+            console.error("El elemento con ID 'calendar' no se encontró.");
+        }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/lang/es.js"></script>
