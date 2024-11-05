@@ -175,36 +175,6 @@ public class ActionsController : Controller
 
     }
 
-    public async Task<IActionResult> Editar(string id, string currentAction)
-    {
-        ViewBag.MenuItems = _configuration.GetSection("MenuItems")
-                                           .Get<List<MenuViewModel>>()
-                                           .FindAll(m => m.Controller == "Actions" );
-        ViewBag.Controller = "Actions";
-        ViewBag.Action = currentAction;
-
-        if (string.IsNullOrEmpty(id)) {
-
-            return RedirectToAction(currentAction);
-        }
-
-        var task = await _taskManager.GetTaskyByIdAsync(id);
-        if (task == null)
-        {
-            return NotFound();
-        }
-        ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
-        ViewBag.PrioridadSeleccionada = task.Priority;
-        ViewBag.IdSaved = id;
-
-        var model = new EditPriorityViewModel
-        {
-            IdObject = task.IdObject,
-            Priority = task.Priority
-        };
-
-        return View(model);
-    }
 
     [HttpPost]
     public async Task<IActionResult> Editar(TaskyObject task)
