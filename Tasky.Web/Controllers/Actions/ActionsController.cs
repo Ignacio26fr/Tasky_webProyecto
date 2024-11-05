@@ -28,68 +28,105 @@ public class ActionsController : Controller
 
     }
 
-    public async Task<IActionResult> Index(TaskyPriority? idPrioridad, string filtroInput, string filtroSeccion)
+    public async Task<IActionResult> Index(TaskyPriority? priority, string filtroInput)
     {
         //necesario para menu
-        ViewBag.MenuItems = _configuration.GetSection("MenuItems").Get<List<MenuViewModel>>().FindAll(m => m.Controller == "Actions");
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                            .Get<List<MenuViewModel>>()
+                                            .FindAll(m => m.Controller == "Actions");
         ViewBag.Controller = "Actions";
         ViewBag.Action = "Index";
- 
+        ViewBag.CurrentSection = _configuration.GetSection("MenuItems")
+                                                .Get<List<MenuViewModel>>()
+                                                .Find(m => m.Controller == "Actions" && m.Action == "Index")?
+                                                .Name;
+
 
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
-        ViewBag.PrioridadSeleccionada = idPrioridad;
-        ViewBag.FiltroSeccion = filtroSeccion;
+        ViewBag.PrioridadSeleccionada = priority;
+        ViewBag.DefaultComboText = "Todas";
+        ViewBag.FiltroInput = filtroInput;
         ViewBag.EnableDynamicSubmit = true;
 
-        List<TaskyObject> tasks = await _taskManager.GetTasksForPriority(idPrioridad);
+        List<TaskyObject> tasks = await _taskManager.GetTasksForPriority(priority);
 
         if(!string.IsNullOrEmpty(filtroInput))
         {
-            tasks = tasks.Where(x => x.Subjectt.Contains(filtroInput) || x.Sender.Contains(filtroInput)).ToList();
+            tasks = tasks.Where(x => x.Subjectt.ToLower().Contains(filtroInput.ToLower()) || x.Sender.ToLower().Contains(filtroInput.ToLower())).ToList();
+        }
+
+        if (priority != null)
+        {
+            tasks = tasks.FindAll(x => x.Priority == priority);
         }
 
         return View(tasks);
 
     }
 
-    public async Task<IActionResult> Hoy(TaskyPriority? idPrioridad, string filtroInput)
+    public async Task<IActionResult> Hoy(TaskyPriority? priority, string filtroInput)
     {
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
-        ViewBag.PrioridadSeleccionada = idPrioridad;
-        ViewBag.FiltroSeccion = "hoy";
+        ViewBag.PrioridadSeleccionada = priority;
+        ViewBag.currentAction = "hoy";
         ViewBag.EnableDynamicSubmit = true;
+        ViewBag.DefaultComboText = "Todas";
 
-        ViewBag.MenuItems = _configuration.GetSection("MenuItems").Get<List<MenuViewModel>>().FindAll(m => m.Controller == "Actions");
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                            .Get<List<MenuViewModel>>()
+                                            .FindAll(m => m.Controller == "Actions");
         ViewBag.Controller = "Actions";
         ViewBag.Action = "Hoy";
+        ViewBag.CurrentSection = _configuration.GetSection("MenuItems")
+                                                .Get<List<MenuViewModel>>()
+                                                .Find(m => m.Controller == "Actions" && m.Action == "Hoy")?
+                                                .Name;
 
-        List<TaskyObject> tasks = await _taskManager.GetTasksForToday(idPrioridad);
+        List<TaskyObject> tasks = await _taskManager.GetTasksForToday(priority);
 
         if (!string.IsNullOrEmpty(filtroInput))
         {
-            tasks = tasks.Where(x => x.Subjectt.Contains(filtroInput) || x.Sender.Contains(filtroInput)).ToList();
+            tasks = tasks.Where(x => x.Subjectt.ToLower().Contains(filtroInput.ToLower()) || x.Sender.ToLower().Contains(filtroInput.ToLower())).ToList();
+        }
+
+        if (priority != null)
+        {
+            tasks = tasks.FindAll(x => x.Priority == priority);
         }
 
         ViewBag.FiltroInput = filtroInput;
         return View("Index", tasks); 
     }
 
-    public async Task<IActionResult> Spam(TaskyPriority? idPrioridad, string filtroInput)
+    public async Task<IActionResult> Spam(TaskyPriority? priority, string filtroInput)
     {
         ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
-        ViewBag.PrioridadSeleccionada = idPrioridad;
-        ViewBag.FiltroSeccion = "spam";
+        ViewBag.PrioridadSeleccionada = priority;
+        ViewBag.currentAction = "spam";
         ViewBag.EnableDynamicSubmit = true;
+        ViewBag.DefaultComboText = "Todas";
 
-        ViewBag.MenuItems = _configuration.GetSection("MenuItems").Get<List<MenuViewModel>>().FindAll(m => m.Controller == "Actions");
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                            .Get<List<MenuViewModel>>()
+                                            .FindAll(m => m.Controller == "Actions" );
         ViewBag.Controller = "Actions";
         ViewBag.Action = "Spam";
+        ViewBag.CurrentSection = _configuration.GetSection("MenuItems")
+                                                    .Get<List<MenuViewModel>>()
+                                                    .Find(m => m.Controller == "Actions" && m.Action == "Spam")?
+                                                    .Name;
 
-        List<TaskyObject> tasks = await _taskManager.GetTasksSpam(idPrioridad);
+        List<TaskyObject> tasks = await _taskManager.GetTasksSpam(priority);
 
         if (!string.IsNullOrEmpty(filtroInput))
         {
-            tasks = tasks.Where(x => x.Subjectt.Contains(filtroInput) || x.Sender.Contains(filtroInput)).ToList();
+            tasks = tasks.Where(x => x.Subjectt.ToLower().Contains(filtroInput.ToLower()) || x.Sender.ToLower().Contains(filtroInput.ToLower())).ToList();
+
+        }
+
+        if (priority != null)
+        {
+            tasks = tasks.FindAll(x => x.Priority == priority);
         }
 
         ViewBag.FiltroInput = filtroInput;
@@ -98,38 +135,57 @@ public class ActionsController : Controller
 
     
 
-    public async Task<IActionResult> Eliminar(string id, string filtroSeccion, TaskyPriority? idPrioridad)
+    public async Task<IActionResult> Eliminar(string id, string currentAction, TaskyPriority? priority)
     {
-        if(string.IsNullOrEmpty(id))
+        
+
+        if (string.IsNullOrEmpty(id))
         {
-            return RedirectToAction("Index");
+            return RedirectToAction(currentAction);
         }
         await _taskManager.DeleteTask(id); 
        
-        return RedirectToAction("Index", new { filtroSeccion, idPrioridad });
+        return RedirectToAction(currentAction, new { priority });
     }
 
-    public async Task<IActionResult> Detalle(string id)
+    public async Task<IActionResult> Detalle(string id, string currentAction)
     {
-        if(string.IsNullOrEmpty(id))
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                           .Get<List<MenuViewModel>>()
+                                           .FindAll(m => m.Controller == "Actions" );
+        ViewBag.Controller = "Actions";
+        ViewBag.Action = currentAction;
+
+       
+
+
+        if (string.IsNullOrEmpty(id))
         {
-            return RedirectToAction("Index");
+            return RedirectToAction(currentAction);
         }
         var task = await _taskManager.GetTaskyByIdAsync(id);
         if (task == null)
         {
             return NotFound();
         }
+        ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
+        ViewBag.PrioridadSeleccionada = task.Priority;
+        ViewBag.StatusSeleccionado = task.Status;
         return View(task);
 
     }
 
-    public async Task<IActionResult> Editar(string id)
+    public async Task<IActionResult> Editar(string id, string currentAction)
     {
+        ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                           .Get<List<MenuViewModel>>()
+                                           .FindAll(m => m.Controller == "Actions" );
+        ViewBag.Controller = "Actions";
+        ViewBag.Action = currentAction;
 
         if (string.IsNullOrEmpty(id)) {
 
-            return RedirectToAction("Index");
+            return RedirectToAction(currentAction);
         }
 
         var task = await _taskManager.GetTaskyByIdAsync(id);
@@ -151,24 +207,15 @@ public class ActionsController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Editar(EditPriorityViewModel task)
+    public async Task<IActionResult> Editar(TaskyObject task)
     {
 
-        if (!ModelState.IsValid)
-        {
-            ViewBag.Prioridades = Enum.GetValues(typeof(TaskyPriority)).Cast<TaskyPriority>().ToList();
-            Console.WriteLine("Entre Por aca");
-            return View(task);
-        }
-        var tasky = await _taskManager.GetTaskyByIdAsync(task.IdObject);
-        if (tasky == null)
-        {
-            return NotFound();
-        }
-        tasky.Priority = task.Priority;
+        
+
+       
         ViewBag.EnableDynamicSubmit = false;
-        await _taskManager.UpdateTask(tasky);
-        return RedirectToAction("Detalle", new { IdObject = task.IdObject });
+        await _taskManager.UpdateTask(task);
+        return RedirectToAction("Detalle", new { Id = task.IdObject });
 
     }
 

@@ -145,6 +145,7 @@ public class TaskManager : ITaskManager, IObserver<TaskEventsArgs>
         }
 
         taskToUpdate.Priority = task.Priority;
+        taskToUpdate.Status = task.Status;
      
         _taskyContext.SaveChanges();
         return Task.FromResult(taskToUpdate);

@@ -1,14 +1,18 @@
 ﻿@using Tasky.Datos.EF;
 
-<div class="form-horizontal p-2">
+
     <div class="input-group">
         <label class="control-label"></label>
         <input type="hidden" name="filtroSeccion" value="@ViewBag.FiltroSeccion" />
-        <select class="form-control rounded" id="idPrioridad" name="idPrioridad" @if (ViewBag.EnableDynamicSubmit == true)
+        <select class="form-control rounded" id="idPrioridad" name="priority" @if (ViewBag.EnableDynamicSubmit == true)
         {
             <text>onchange="this.form.submit()"</text>
         }>
-    <option value="" >Seleccione una prioridad</option>
+            @if(ViewBag.DefaultComboText != null)
+            {
+                     <option value="" >@ViewBag.DefaultComboText</option>
+            }
+           
             @foreach (TaskyPriority item in ViewBag.Prioridades)
             {
                 if (((TaskyPriority?)ViewBag.PrioridadSeleccionada).HasValue && ((TaskyPriority?)ViewBag.PrioridadSeleccionada).Value == item)
@@ -17,11 +21,10 @@
                 }
                 else
                 {
-                    <option value="@item">@item</option>
+                     <option value="@item">@item</option>
                 }
             }
-</select>
+        </select>
     </div>
-</div>
 
 

@@ -1,48 +1,92 @@
-﻿@model Tasky.Datos.EF.TaskyObject
+﻿@using Tasky.Datos.EF
+@model Tasky.Datos.EF.TaskyObject
 
 @{
     ViewData["Title"] = "Detalles de la Tarea";
+    Layout = "_TaskyLayout";
 }
 
-<h1>@Model.Subjectt</h1>
 
-<div class="card">
-    <div class="card-header">
-        <h4>Detalles de la Tarea</h4>
-    </div>
-    <div class="card-body">
+
+<div class="card m-5">
+    <div class="card-header bg-header">
         <dl class="row">
-            <dt class="col-sm-3">ID</dt>
-            <dd class="col-sm-9">@Model.IdObject</dd>
+            <div class="col-6">
+                <dt class="dt-title">ID</dt>
+                <dd>@Model.IdObject</dd>
 
-            <dt class="col-sm-3">Descripción</dt>
-            <dd class="col-sm-9">@Model.Body</dd>
+                <dt class="dt-title">Enviado por</dt>
+                <dd>@Model.Sender</dd>
+            </div>
+            <div class="col-3">
+                <dt class="dt-title">Fecha Envío</dt>
+                <dd>@Model.Date.ToString("dd/MM/yyyy HH:mm:ss")</dd>
 
-            <dt class="col-sm-3">Enviado por</dt>
-            <dd class="col-sm-9">@Model.Sender</dd>
+                <dt class="dt-title">Fecha Esperada</dt>
+                <dd>@Model.ExpectData.ToString("dd/MM/yyyy HH:mm:ss")</dd>
+            </div>
+            <div class="col-3">
+                <dt class="dt-title">Prioridad</dt>
+                <dd>
+                    <span class="@(Model.Priority == TaskyPriority.Alta ? "flag-red" :
+                                           Model.Priority == TaskyPriority.Media ? "flag-yellow" : "flag-gray")">
+                        <partial name="_pvFlag" />
+                    </span>
+                    @Model.Priority
+                </dd>
 
-            <dt class="col-sm-3">Fecha</dt>
-            <dd class="col-sm-9">@Model.Date.ToString("dd/MM/yyyy HH:mm:ss")</dd>
 
-            <dt class="col-sm-3">Estado</dt>
-            <dd class="col-sm-9">
-                @if (Model.Status == false)
-                {
-                    <span class="badge badge-secondary">Pendiente</span>
-                }
-                else
-                {
-                    <span class="badge badge-success">Completado</span>
-                }
-            </dd>
+                <dt class="dt-title">Estado</dt>
+                <dd>
+                    @if (Model.Status == false)
+                    {
+                        <span class="badge badge-secondary">Pendiente</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-success">Completada</span>
+                    }
+                </dd>
+            </div>
 
-            <dt class="col-sm-3">Prioridad</dt>
-            <dd class="col-sm-9">
-                @Model.Priority
-            </dd>
         </dl>
     </div>
+    <div class="card-body">
+        <h5>@Model.Subjectt</h5>
+        <hr />
+
+
+        <dt class="col-sm-3">Descripción</dt>
+        <dd class="col-sm-9">@Model.Body</dd>
+    </div>
     <div class="card-footer">
-        <a asp-action="Index" class="btn btn-primary">Volver a la lista</a>
+
+
+        <form class="h-100" asp-action="Editar"  method="post">
+            <input type="hidden" name="IdObject" value="@Model.IdObject" />
+            <div class="row">
+                <div class="col">
+                    <label for="idPrioridad">Cambiar prioridad</label>
+                    <partial name="_pvComboFiltroPrioridad" />
+                </div>
+                <div class="col">
+                    <label for="idStatus">Cambiar Estado</label>
+                    <select class="form-control rounded" id="idStatus" name="status">
+                        <option value="false" selected="@(ViewBag.StatusSeleccionado == false ? "selected" : null)">Pendiente</option>
+                        <option value="true" selected="@(ViewBag.StatusSeleccionado == true ? "selected" : null)">Completada</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex mt-4 gap-3">
+                <a asp-action="@ViewBag.Action" class="btn btn-secondary">Volver</a>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </form>
+
+
+
+
+
     </div>
 </div>

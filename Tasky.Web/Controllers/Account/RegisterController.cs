@@ -54,7 +54,7 @@ public class RegisterController : Controller
                 var callbackUrl = Url.Action("ConfirmarEmail", "Login", new { userId = identity.Id, token }, Request.Scheme);
                 await _emailService.SendConfirmationEmailAsync(model.Email, callbackUrl);
 
-                return RedirectToAction("Verificar");
+                return RedirectToAction("Verificar","Account");
             }
 
             ModelState.AddModelError(string.Empty, "Fallo el ingreso verifique las credenciales");

@@ -22,7 +22,7 @@ namespace Tasky.Web.Controllers.Calendar
             try
             {
                 var calendarUrl = await _googleCalendarService.RedirectToGoogleCalendar();
-                return Redirect(calendarUrl);
+                return Json(new { url = calendarUrl });
             }
             catch (Exception ex)
             {

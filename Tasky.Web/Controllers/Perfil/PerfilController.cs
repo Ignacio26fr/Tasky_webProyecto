@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Tasky.Datos.EF;
+using Tasky.Web.Models;
 
 namespace Tasky.Web.Controllers.Perfil
 {
@@ -8,14 +10,22 @@ namespace Tasky.Web.Controllers.Perfil
     {
 
         private readonly UserManager<AspNetUsers> _userManager;
-       
-        public PerfilController(UserManager<AspNetUsers> userManager)
+        private readonly IConfiguration _configuration;
+
+        public PerfilController(UserManager<AspNetUsers> userManager, IConfiguration configuration)
         {
             _userManager = userManager;
+            _configuration = configuration;
         }
 
         public IActionResult Index()
         {
+            //necesario para menu
+            ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                                .Get<List<MenuViewModel>>()
+                                                .FindAll(m => m.Controller == "Perfil");
+            ViewBag.Controller = "Perfil";
+            ViewBag.Action = "Index";
 
             //quiero obtener el usuario que esta en session
             var user = _userManager.GetUserAsync(User).Result;
@@ -27,6 +37,12 @@ namespace Tasky.Web.Controllers.Perfil
 
         public IActionResult ActualizarPerfil()
         {
+            //necesario para menu
+            ViewBag.MenuItems = _configuration.GetSection("MenuItems")
+                                                .Get<List<MenuViewModel>>()
+                                                .FindAll(m => m.Controller == "Perfil");
+            ViewBag.Controller = "Perfil";
+            ViewBag.Action = "ActualizarPerfil";
             var user = _userManager.GetUserAsync(User).Result;
            
             if (user == null)

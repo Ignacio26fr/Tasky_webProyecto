@@ -1,12 +1,15 @@
 ﻿@model Tasky.Web.Models.EditPriorityViewModel
 @using Tasky.Datos.EF;
+@{
+    Layout = "_TaskyLayout";
+}
 
 <h2>Editar Prioridad</h2>
 
 <form asp-action="Editar" method="post">
     <input type="hidden" asp-for="IdObject" />
     
-    <partial name="/Views/Shared/PartialViews/_pvComboFiltroPrioridad.cshtml"/>
+    <partial name="_pvComboFiltroPrioridad"/>
 
 
     <button type="submit" class="btn btn-primary">Guardar Cambios</button>

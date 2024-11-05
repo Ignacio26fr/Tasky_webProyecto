@@ -5,9 +5,19 @@
 
     <nav class="sub-menu">
         <div class="sub-menu-header">
+        @if (ViewBag.Controller == "Actions")
+        {
             <h3>
                 Tareas
             </h3>
+            }
+            else{
+            <div class=" text-start ">
+                <h6 class="card-title">@Model.FirstName @Model.LastName</h6>
+                <p class="email-text text-opacity">@Model.Email</p>
+               
+            </div>
+            }
         </div>
         <ul class="navbar-sub-menu">
             @foreach(var item in menuItems)
