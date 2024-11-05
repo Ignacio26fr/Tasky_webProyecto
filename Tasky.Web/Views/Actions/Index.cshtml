@@ -118,9 +118,7 @@
                         <a href="@Url.Action("Detalle", "Actions", new { id = mail.IdObject, currentAction })" title="Ver">
                             <i class="bi bi-eye mx-2"></i>
                         </a>
-                        <a href="@Url.Action("Editar", "Actions", new { id = mail.IdObject, currentAction })" title="Editar">
-                            <i class="bi bi-pencil mx-2"></i>
-                        </a>
+     
                         <a href="@Url.Action("Eliminar", "Actions",
                             new { id = mail.IdObject, currentAction, idPrioridad = ViewBag.PrioridadSeleccionada })">
                             <i class="bi bi-trash mx-2"></i>

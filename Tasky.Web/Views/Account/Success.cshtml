@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Verificar Correo";
+    ViewData["Title"] = "Verificación";
 }
 <div class="container bg-dark hcalc d-flex justify-content-center align-items-center">
     <div class="row w-100 ">
@@ -13,19 +13,16 @@
                     </div>
                     <div class="w-100 p-4">
                         <div class="card-header text-center bg-primary text-white">
-                            <h4>Verificar</h4>
+                            <h4>Verificación de cuenta</h4>
                         </div>
-                        <div class="card-body text-center justify-content-center">
+                        <div class="card-body text-center">
                             <div>
-                                <h4 class="text-center">Se ha enviado un enlace de confirmación a su correo electrónico.</h4>
-                                <p class="mt-3 text-opacity">Por favor, revise su bandeja de entrada y haga clic en el enlace para confirmar su cuenta.</p>
-                                <p class="text-opacity">Si no encuentra el correo de verificación, revise su carpeta de spam o vuelva a solicitar el envío del mismo.</p>
+                                <h4 class="text-center">Gracias por registrarte!</h4>
+                                <p class="mt-3 text-opacity">La cuenta fué verificada con exito.</p>
+                                <p class="text-opacity">Ya podes iniciar sesión con tu cuenta para comenzar.</p>
                             </div>
                             <div>
-                                <p class="mt-5">
-                                    ¿Ya confirmaste tu correo?
-                                    <a asp-controller="Login" asp-action="Index">Iniciar sesión</a>
-                                </p>
+                                <a class="btn btn-primary mt-5" asp-action="Index" asp-asp-controller="Login">Iniciar Sesión</a>
                             </div>
                         </div>
                     </div>
@@ -34,3 +31,4 @@
         </div>
     </div>
 </div>
+

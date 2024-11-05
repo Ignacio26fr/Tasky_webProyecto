@@ -30,8 +30,8 @@ public class AccountController : Controller
 
         if (userId == null || token == null)
         {
-            Console.WriteLine("Entre aca");
-            return RedirectToAction("Login", "Index");
+            
+            return RedirectToAction("Index", "Login");
         }
 
         var usuario = await _userManager.FindByIdAsync(userId);
@@ -44,7 +44,7 @@ public class AccountController : Controller
         var resultado = await _userManager.ConfirmEmailAsync(usuario, token);
         if (resultado.Succeeded)
         {
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Success");
         }
         else
         {
@@ -57,6 +57,11 @@ public class AccountController : Controller
 
     [HttpGet]
     public IActionResult Verificar()
+    {
+        return View();
+    }
+
+    public IActionResult Success()
     {
         return View();
     }
