@@ -8,11 +8,11 @@ public class EventosCalendar
     public string? Descripcion { get; set; }
     public DateTime FechaInicio { get; set; }
     public DateTime FechaFin { get; set; }
-    public string ZonaHoraria { get; set; }
-    public string Localizacion { get; set; }
-    public string Estado { get; set; }
-    public bool Sincronizado { get; set; } = false;
+    public string? ZonaHoraria { get; set; }
+    public string? Localizacion { get; set; }
+    public string? Estado { get; set; }
+    public bool? Sincronizado { get; set; } = false;
     public string? IdObject { get; set; }
-    public DateTime CreadoEn { get; set; } = DateTime.Now;
+    public DateTime? CreadoEn { get; set; } = DateTime.Now;
     public TaskyObject TaskyObject { get; set; }
 }
