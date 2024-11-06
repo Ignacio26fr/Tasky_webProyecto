@@ -23,6 +23,14 @@
                     </svg>
                 </a>
             </li>
+        <li class="nav-item">
+            <a class="icon-btn @(ViewBag.Controller == "Logout" ? "active" : null)" asp-controller="Login" asp-action="LogOut">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.5 12a.5.5 0 0 1-.5-.5V9H5.707l4.646-4.646a.5.5 0 0 1 .708.708L6.414 8.5H10v-2a.5.5 0 0 1 1 0v3a.5.5 0 0 1-.5.5H5.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 1 0v2h4.293l-4.646 4.646a.5.5 0 0 1-.708-.708L10.5 9.5V12a.5.5 0 0 1-.5.5z" />
+                </svg>
+            </a>
+        </li>
+
            
         </ul>
     </nav>
