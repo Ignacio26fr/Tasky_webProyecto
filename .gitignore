@@ -5,6 +5,7 @@
 */bin
 */obj
 appsettings.json
+appsettings.Development.json
 /Tasky.Datos/obj/Debug/net6.0/Tasky.Datos.AssemblyInfo.cs
 /Tasky.Datos/obj/Debug/net6.0/Tasky.Datos.AssemblyInfoInputs.cache
 /Tasky.Logica/obj/Debug/net6.0/Tasky.Logica.AssemblyInfoInputs.cache
